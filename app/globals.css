@@ -2,26 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Add this CSS to your stylesheet */
+.relative {
+  transition: transform 0.3s ease-in-out;
+}
+
+.relative.hovered {
+  transform: translateX(-50px); /* Adjust the translation value as needed */
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../assets/fonts/sf_Display/SF-Pro-Display-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display Bold";
+  src: url("../assets/fonts/sf_Display/SF-Pro-Display-Bold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "SF Pro Display Regular", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply dark:bg-black bg-[#FBFCFF] font-sans w-full;
+  }
 }

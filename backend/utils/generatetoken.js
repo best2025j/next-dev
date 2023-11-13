@@ -6,7 +6,7 @@ const generateToken = (user) => {
     return new Promise((resolve, reject) => {
         jwt.sign(
       { userId: user._id, email: user.email, role: user.role },
-      secret_key,
+      key,
       { expiresIn: '3h' },
       (err, token) => {
         if (err) reject(err);

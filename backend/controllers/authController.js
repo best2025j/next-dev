@@ -12,7 +12,7 @@ const registerUser = async (req, res) => {
     return res.status(400).json({ error: 'All fields are required' });
   }
   if (!validator.isEmail(email)) return res.status(400).json({ error: 'invalid mail' });
-  if (!validator.isStrongPassword(email)) return res.status(400).json({ error: 'Password not strong enough' });
+  if (!validator.isStrongPassword(password)) return res.status(400).json({ error: "Password is not strong enough" });
 
   // Checks if email already exists
   const exists = await User.findOne({ email });
@@ -26,7 +26,7 @@ const registerUser = async (req, res) => {
     const user = await User.create(
       { firstname, lastname, email, password: hashedpw, role }
     );
-    const token = generateToken(user);
+    const token = await generateToken(user);
 
     if (!token) return res.status(500).json({ error: 'Token generation' });
     res.status(200).json({ user, token });
@@ -50,7 +50,7 @@ const loginUser = async (req, res) => {
     // Checks if password matches
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) return res.status(400).json({ error: 'Credentials do not match' });
-    const token = generateToken(user);
+    const token = await generateToken(user);
 
     res.status(200).json({ user, token });
   } catch (err) {

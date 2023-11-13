@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 connectDatabase();
 
 // Routes
-app.use('/api/users/', userRoute);
+app.use('/api/users', userRoute);
 
 app.listen(PORT, () => {
   console.log(`Server connected at port ${PORT}`);

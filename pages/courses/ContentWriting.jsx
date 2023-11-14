@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-
 import { ButtonWhite } from "@/components/Buttons/ButtonWhite";
 import { ViewAllCourseIcon } from "@/components/icons/ViewAllCourseIcon";
 import SectionContents from "@/components/layout/SectionContents";

@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import SectionContents from "../../components/layout/SectionContents";
-import Footer from "../../components/layout/Footer";
+import { ButtonWhite } from "@/components/Buttons/ButtonWhite";
+import { ViewAllCourseIcon } from "@/components/icons/ViewAllCourseIcon";
+import SectionContents from "@/components/layout/SectionContents";
+import { Footer } from "@/components/layout/Footer";
 import image from "../../assets/images//dataScience.png";
-import ButtonWhite from "../../components/Buttons/ButtonWhite";
-import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -18,7 +18,7 @@ export const DataAnalytics = () => {
         <p className="text-base font-normal text-[#4F616D]">
           Unlock Your Potential with Kwaratech Academy&apos;s Diverse Range of
           Tech Courses
-        </p>
+        </p>y 
 
         {/* Added a "Back to Courses" button using the Link component */}
         <Link to="/courses">

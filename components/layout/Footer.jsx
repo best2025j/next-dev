@@ -1,9 +1,6 @@
-"use client"
+"use client";
 import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
 import images from "../../assets/images/KTA. logo.png";
-import ButtonWhite from "../Buttons/ButtonWhite";
-import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
 import ig from "../../assets/svgs/ig.svg";
@@ -11,18 +8,21 @@ import Twitter from "../../assets/svgs/Twitterlogo.svg";
 import whatsapp from "../../assets/svgs/whatsapp.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { ButtonWhite } from "../Buttons/ButtonWhite";
+import { ViewAllCourseIcon } from "../icons/ViewAllCourseIcon";
 
-const Footer = () => {
+export const Footer = () => {
   const [nav, setNav] = useState(false);
   // Function to handle menu icon click
 
   // const handClick = () => setNav(!nav);
   const handleClose = () => setNav(!nav);
 
-  const location = useLocation();
-  const isActiveLink = (path) => {
-    return location.pathname === path;
-  };
+  // router
+  const router = useRouter();
+  const { pathName } = router;
+  console.log(pathName);
 
   const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
   const activeLink = inactiveLink + " text-[#00AFF0]"; // Added 'active-link' class
@@ -59,7 +59,13 @@ const Footer = () => {
 
         <div className="flex-col px-2 py-4 m-auto justify-between items-center sm:flex-row border-b flex text-center text-gray-500">
           <h3 className="hidden md:flex">
-            We also write here at KTA check out our blogs.
+            We also write here at KTA check out our
+            <span className="text-white underline">
+              <Link rel="stylesheet" href="/https://medium.com/@kwaratechacad">
+                Blog
+              </Link>
+            </span>
+            .
           </h3>
 
           <div className="flex space-x-5 justify-end items-center sm:w-[360px] pt-4 text-2xl cursor-pointer">
@@ -110,33 +116,33 @@ const Footer = () => {
               onClick={handleClose}
               className={isActiveLink("/") ? activeLink : inactiveLink}
             >
-              <NavLink exact="true" to="/">
+              <Link exact="true" to="/">
                 Home
-              </NavLink>
+              </Link>
             </li>
             <li
               onClick={handleClose}
               className={isActiveLink("/courses") ? activeLink : inactiveLink}
             >
-              <NavLink to="/courses">Courses</NavLink>
+              <Link to="/courses">Courses</Link>
             </li>
             <li
               onClick={handleClose}
               className={isActiveLink("/services") ? activeLink : inactiveLink}
             >
-              <NavLink to="/services">Services</NavLink>
+              <Link to="/services">Services</Link>
             </li>
             <li
               onClick={handleClose}
               className={isActiveLink("/about") ? activeLink : inactiveLink}
             >
-              <NavLink to="/about">About</NavLink>
+              <Link to="/about">About</Link>
             </li>
             <li
               onClick={handleClose}
               className={isActiveLink("/blog") ? activeLink : inactiveLink}
             >
-              <NavLink to="/blog">Blog</NavLink>
+              <Link to="/blog">Blog</Link>
             </li>
           </ul>
         </div>
@@ -144,5 +150,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;

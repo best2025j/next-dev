@@ -8,7 +8,7 @@ export const Services = () => {
     <>
       <div className="py-40">
         <h1>services page</h1>
-      </div>{" "}
+      </div>
       <SectionContents />
       <Footer />
     </>

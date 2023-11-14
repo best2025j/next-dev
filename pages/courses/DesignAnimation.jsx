@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import SectionContents from "../../components/layout/SectionContents";
-import Footer from "../../components/layout/Footer";
-import ButtonWhite from "../../components/Buttons/ButtonWhite";
-import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images/uifull.png";
 import Image from "next/image";
 import Link from "next/link";
+import { ButtonWhite } from "@/components/Buttons/ButtonWhite";
+import { ViewAllCourseIcon } from "@/components/icons/ViewAllCourseIcon";
+import SectionContents from "@/components/layout/SectionContents";
+import { Footer } from "@/components/layout/Footer";
 
 export const DesignAnimation = () => {
   // Access the &apos;id&apos; parameter from the route
@@ -280,4 +280,3 @@ export const DesignAnimation = () => {
     </>
   );
 };
-

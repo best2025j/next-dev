@@ -1,8 +1,11 @@
 "use client";
 import React from "react";
+
+import { ButtonWhite } from "@/components/Buttons/ButtonWhite";
+import { ViewAllCourseIcon } from "@/components/icons/ViewAllCourseIcon";
+import SectionContents from "@/components/layout/SectionContents";
+import { Footer } from "@/components/layout/Footer";
 import { useParams } from "react-router-dom";
-import Footer from "../../components/layout/Footer";
-import SectionContents from "../../components/layout/SectionContents";
 
 export const ContentWriting = () => {
   const { name } = useParams();
@@ -16,4 +19,3 @@ export const ContentWriting = () => {
     </div>
   );
 };
-

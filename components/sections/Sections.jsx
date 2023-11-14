@@ -1,8 +1,9 @@
 // import React from "react";
 "use client";
-import CoWorkingSpacesSVG from "../icons/CoWorkingSpacesSVG";
-import EssentialICTTrainingSVG from "../icons/EssentialICTTrainingSVG";
-import SpecializedProgrammesSVG from "../icons/SpecializedProgrammesSVG";
+
+import { CoWorkingSpacesSVG } from "../icons/CoWorkingSpacesSVG";
+import { EssentialICTTrainingSVG } from "../icons/EssentialICTTrainingSVG";
+import { SpecializedProgrammesSVG } from "../icons/SpecializedProgrammesSVG";
 
 export const Sections = () => {
   // SVG components

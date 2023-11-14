@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import SectionContents from "../../components/layout/SectionContents";
-import Footer from "../../components/layout/Footer";
-import ButtonWhite from "../../components/Buttons/ButtonWhite";
-import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
+import { ButtonWhite } from "@/components/Buttons/ButtonWhite";
+import { ViewAllCourseIcon } from "@/components/icons/ViewAllCourseIcon";
+import SectionContents from "@/components/layout/SectionContents";
+import { Footer } from "@/components/layout/Footer";
 import image from "../../assets/images//cyber.png";
 import Link from "next/link";
 import Image from "next/image";
@@ -118,4 +118,3 @@ export const CyberSecurity = () => {
     </>
   );
 };
-

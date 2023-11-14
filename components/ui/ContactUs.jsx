@@ -1,7 +1,7 @@
 // import React from "react";
 import Image from "next/image";
-import ButtonWhite from "../Buttons/ButtonWhite";
-import ContactIcon from "../icons/ContactIcon";
+import { ButtonWhite } from "../Buttons/ButtonWhite";
+import { ContactIcon } from "../icons/ContactIcon";
 
 export const ContactUs = () => {
   return (

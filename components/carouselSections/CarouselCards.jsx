@@ -1,11 +1,10 @@
 "use client";
 import "animate.css";
-import ButtonWhite from "../Buttons/ButtonWhite";
-import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import { ButtonWhite } from "../Buttons/ButtonWhite";
+import { ViewAllCourseIcon } from "../icons/ViewAllCourseIcon";
 
 export const CarouselCards = () => {
   const staffData = [

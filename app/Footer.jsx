@@ -1,84 +1,147 @@
 "use client";
-import { Select } from "@mantine/core";
+import { useState } from "react";
+import images from "../../assets/images/KTA. logo.png";
+import { FaFacebook } from "react-icons/fa";
+import { BiLogoLinkedin } from "react-icons/bi";
+import ig from "../../assets/svgs/ig.svg";
+import Twitter from "../../assets/svgs/Twitterlogo.svg";
+import whatsapp from "../../assets/svgs/whatsapp.svg";
 import Image from "next/image";
-import React from "react";
-import image1 from "../../Assets/images/Logo2.png";
-import map from "../../Assets/svgs/map.svg";
-import message from "../../Assets/svgs/message.svg";
-import twitter from "../../Assets/images/tw logo.png";
-import instagram from "../../Assets/svgs/instagram.svg";
-import facebook from "../../Assets/svgs/facebook logo.svg";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { ButtonWhite } from "../Buttons/ButtonWhite";
+import { ViewAllCourseIcon } from "../icons/ViewAllCourseIcon";
 
-const Footer = () => {
+export const Footer = () => {
+  const [nav, setNav] = useState(false);
+  // Function to handle menu icon click
+
+  // const handClick = () => setNav(!nav);
+  const handleClose = () => setNav(!nav);
+
+  // router
+  const router = useRouter();
+  const { pathName } = router;
+  console.log(pathName);
+
+  const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
+  const activeLink = inactiveLink + " text-[#00AFF0]"; // Added 'active-link' class
+
   return (
-    <footer className="px-4 text-white relative bg-[#002F43] py-10 space-y-10 dark:bg-black h-full w-full">
-      <div className="space-y-10 flex space-x-6 py-10 border-b-2 flex-col md:flex-row justify-around mx-auto">
-        <div className="h-auto w-auto">
-          <Image
-            src={image1}
-            alt="logo image"
-            className="w-[218px] h-[60px] md:w-[302px] md:h-[82px]"
-          />
+    <div className="bg-[#001E2D] md:py-40 py-6 text-white w-full md:h-[620px]">
+      <div className="w-[90%] mx-auto space-y-6">
+        <div className="flex justify-between items-center">
+          <div className="md:flex hidden">
+            <Image src={images} alt="" />
+          </div>
+
+          <div className="md:w-[456px]">
+            <p className="md:text-2xl text-xs">
+              &quot; Aim for the top with Kwara Tech Academy, empowering tech
+              enthusiasts through education that is who we are and that is what
+              we do!&quot;
+            </p>
+
+            <div className="py-6 items-center flex md:block justify-center">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center"
+                }
+                label={
+                  <>
+                    Join KTA today <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </div>
+          </div>
         </div>
 
-        <div className="space-y-6 ">
-          <h3 className="font-2xl font-bold underline underline-offset-8 decoration-2 ">
-            Contact
+        <div className="flex-col px-2 py-4 m-auto justify-between items-center sm:flex-row border-b flex text-center text-gray-500">
+          <h3 className="hidden md:flex">
+            We also write here at KTA check out our blogs.
           </h3>
-          <div className="flex flex-row space-x-4">
-            <span>
-              <Image src={map} alt="map" />
-            </span>
-            <h2>Lekki, Lagos</h2>
-          </div>
-          <div className="flex flex-row space-x-4">
-            <span>
-              <Image src={message} alt="message" />
-            </span>
-            <h2>info@studentrealestates.com</h2>
+
+          <div className="flex space-x-5 justify-end items-center sm:w-[360px] pt-4 text-2xl cursor-pointer">
+            <Link to="https://instagram.com/kwaratechacademy?igshid=MzRlODBiNWFlZA==">
+              <Image
+                alt="no image"
+                className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
+                width={30}
+                height={30}
+                src={ig}
+              />
+            </Link>
+
+            <Link to="https://twitter.com/kwaratech?s=21&t=sYf7NFdQaYs03psUDuFqhQ">
+              <Image
+                alt="no image"
+                className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
+                width={30}
+                height={30}
+                src={Twitter}
+              />
+            </Link>
+
+            <Link to="https://wa.me/07011198112">
+              <Image
+                alt="no image"
+                className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
+                width={30}
+                height={30}
+                src={whatsapp}
+              />
+            </Link>
+
+            <Link to="https://www.facebook.com/kwaratechacademy?mibextid=LQQJ4d">
+              <FaFacebook className="text-white bg-lightBlue h-8 rounded-full w-8 cursor-pointer hover:scale-110 ease-in duration-300 p-1" />
+            </Link>
+
+            <Link to="https://www.linkedin.com/in/kwara-tech-academy-a774a1244">
+              <BiLogoLinkedin className=" text-white h-8 rounded w-8 cursor-pointer hover:scale-110 ease-in duration-300 p-[2px]" />
+            </Link>
           </div>
         </div>
 
-        <div className="space-y-6">
-          <h3 className="font-2xl font-bold underline underline-offset-8 decoration-2 ">
-            Social Media
-          </h3>
-          <div className="flex flex-row space-x-4">
-            <span>
-              <Image src={twitter} alt="twitter" />
-            </span>
-            <h2>Twitter</h2>
-          </div>
-          <div className="flex flex-row space-x-4">
-            <span>
-              <Image src={instagram} alt="instagram" />
-            </span>
-            <h2>Instagram</h2>
-          </div>
-          <div className="flex flex-row space-x-4">
-            <span>
-              <Image src={facebook} alt="facebook" />
-            </span>
-            <h2>Facebook</h2>
-          </div>
-        </div>
-
-        <div className="w-80 h-14">
-          <select
-            name=""
-            id=""
-            className="w-full rounded text-black dark:text-white h-10"
-          >
-            <option value="eng">English</option>
-            <option value="yor">Yoruba</option>
-          </select>
+        <div className="md:flex space-y-4 justify-between">
+          <h6 className="text-center">© 2023 KTA. All rights reserved.</h6>
+          <ul className="md:flex hidden space-x-4 md:space-x-16 text-sm">
+            <li
+              onClick={handleClose}
+              className={isActiveLink("/") ? activeLink : inactiveLink}
+            >
+              <Link exact="true" to="/">
+                Home
+              </Link>
+            </li>
+            <li
+              onClick={handleClose}
+              className={isActiveLink("/courses") ? activeLink : inactiveLink}
+            >
+              <Link to="/courses">Courses</Link>
+            </li>
+            <li
+              onClick={handleClose}
+              className={isActiveLink("/services") ? activeLink : inactiveLink}
+            >
+              <Link to="/services">Services</Link>
+            </li>
+            <li
+              onClick={handleClose}
+              className={isActiveLink("/about") ? activeLink : inactiveLink}
+            >
+              <Link to="/about">About</Link>
+            </li>
+            <li
+              onClick={handleClose}
+              className={isActiveLink("/blog") ? activeLink : inactiveLink}
+            >
+              <Link to="/blog">Blog</Link>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div className="text-center py-5">
-        <p>&copy; 2022 Studentrealestates inc.</p>
-      </div>
-    </footer>
+    </div>
   );
 };
 

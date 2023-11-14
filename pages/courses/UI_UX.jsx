@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import SectionContents from "../../components/layout/SectionContents";
-import Footer from "../../components/layout/Footer";
-import ButtonWhite from "../../components/Buttons/ButtonWhite";
-import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
+import { ButtonWhite } from "@/components/Buttons/ButtonWhite";
+import { ViewAllCourseIcon } from "@/components/icons/ViewAllCourseIcon";
+import SectionContents from "@/components/layout/SectionContents";
+import { Footer } from "@/components/layout/Footer";
 import image from "../../assets/images//ui_ux.png";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,7 +19,7 @@ export const UI_UX = () => {
           Unlock Your Potential with Kwaratech Academy&apos;s Diverse Range of
           Tech Courses
         </p>
-        
+
         {/* Added a "Back to Courses" button using the Link component */}
         <Link to="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
@@ -118,4 +118,3 @@ export const UI_UX = () => {
     </>
   );
 };
-

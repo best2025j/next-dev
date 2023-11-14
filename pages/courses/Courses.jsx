@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import Footer from "../../components/layout/Footer";
-import SectionContents from "../../components/layout/SectionContents";
-import ButtonWhite from "../../components/Buttons/ButtonWhite";
-import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
 import Link from "next/link";
+import { ButtonWhite } from "@/components/Buttons/ButtonWhite";
+import { ViewAllCourseIcon } from "@/components/icons/ViewAllCourseIcon";
+import SectionContents from "@/components/layout/SectionContents";
+import { Footer } from "@/components/layout/Footer";
 
 export const Courses = () => {
   const courseData = [
@@ -229,7 +229,6 @@ export const Courses = () => {
   );
 };
 
-//   const courseData = [
 //     {
 //       id: 1,
 //       name: "web-development",

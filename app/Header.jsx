@@ -1,290 +1,209 @@
 "use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import image from "../../Assets/images/HeaderLogo.png";
-import "animate.css";
+
+import { useState } from "react";
+import image from "../../assets/images/kwaraTech.jpg";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import ButtonWhite from "../Buttons/ButtonWhite";
+import ButtonDefault from "../Buttons/ButtonDefault";
+import Image from "next/image";
+import DarkModeSwitch from "../ui/DarkModeSwitch";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
-import DarkModeSwitch from "../../components/DarkModeSwitch";
-// import DarkModeSwitch from "../components/DarkModeSwitch";
 
-const Header = () => {
+export const Header = () => {
   const [nav, setNav] = useState(false);
+  // Function to handle menu icon click
+  const handClick = () => setNav(!nav);
+  const handleClose = () => setNav(!nav);
 
-  const handClick = () => {
-    setNav(!nav);
-  };
+  // router
+  const router = useRouter();
+  const { pathName } = router;
+  console.log(pathName);
 
-  const handClose = () => {
-    setNav(!nav);
-  };
+  const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
+  // Added 'active-link' class
+  const activeLink = inactiveLink + " text-[#00AFF0]";
 
   return (
     <div
       className={
         nav
-          ? " bg-orange_light dark:bg-black h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
-          : "dark:bg-black bg-orange_light h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
+          ? "bg-white dark:bg-black h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
+          : "dark:bg-black border-b border-white shadow shadow-slate-400 bg-white h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
       }
     >
-      <nav className="flex justify-between h-full w-full items-center">
-        <Link href="/">
-          <Image src={image} alt="home" className="w-12 h-10" />
+      <div className="px-2 py-6 flex w-full justify-between items-center h-full 2xl:px-16">
+        <Link href="#">
+          <Image
+            src={image}
+            // quality={100}
+            alt="/"
+            width="110px"
+            height="128px"
+            className="cursor-pointer"
+          />
         </Link>
 
-        <ul className="md:flex hidden items-center space-x-6">
-          <li>
-            <Link
-              href="/"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-            >
+        {/* desktop view Navigation links */}
+        <ul className="hidden md:flex capitalize space-x-6">
+          <li className={pathName.includes("/") ? activeLink : inactiveLink}>
+            <Link exact="true" to="/">
               Home
             </Link>
           </li>
-          <li>
-            <Link
-              href="/about"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-            >
-              About Us
-            </Link>
+          <li
+            className={
+              pathName.includes("/courses") ? activeLink : inactiveLink
+            }
+          >
+            <Link to="/courses">Courses</Link>
           </li>
-          <li>
-            <Link
-              href="/contact"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-            >
-              Contact Us
-            </Link>
+          <li
+            className={
+              pathName.includes("/services") ? activeLink : inactiveLink
+            }
+          >
+            <Link to="/services">Services</Link>
           </li>
-          <li>
-            <Link
-              href="/login"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10"
-            >
-              Log In
-            </Link>
+          <li
+            className={pathName.includes("/about") ? activeLink : inactiveLink}
+          >
+            <Link to="/about">About</Link>
           </li>
-
-          <button className=" bg-orange10 rounded-xl h-10 w-[169px] ">
-            <Link href="/signup">Sign up</Link>
-          </button>
-
-          <DarkModeSwitch />
+          <li
+            className={pathName.includes("/blog") ? activeLink : inactiveLink}
+          >
+            <Link to="/blog">Blog</Link>
+          </li>
         </ul>
 
-        <button className="md:hidden cursor-pointer " onClick={handClick}>
-          {nav ? (
-            <AiOutlineClose className="w-7 h-7" />
-          ) : (
-            <AiOutlineMenu className="w-7 h-7" />
-          )}
-        </button>
-      </nav>
+        {/* FORM BUTTON*/}
 
-      {/* mobile view */}
+        <div className="hidden md:flex items-center justify-center ">
+          {/* <div className="">
+            <ButtonDefault label="Login" className={"text-[#00AFF0]"} />
+          </div>
+          <div className="">
+            <ButtonWhite label="Sign up" className={""} />
+          </div> */}
+          <div className="hidden lg:flex items-center justify-center space-y-2 ">
+            <div className="">
+              <ButtonWhite onClick={handleOrderClick} label="Get started" />
+            </div>
+            <div className="">
+              <DarkModeSwitch />
+            </div>
+          </div>
+        </div>
+
+        <div onClick={handClick} className="md:hidden cursor-pointer">
+          <AiOutlineMenu size={25} />
+        </div>
+      </div>
+
+      {/* modal */}
+      {/* MOBILE view */}
 
       <div
+        // backdrop color
         className={
-          nav
-            ? "md:hidden fixed left-0 bg-white dark:bg-black w-full h-full ease-in duration-500"
-            : "fixed left-[-100%] h-screen  ease-out duration-700"
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/80" : ""
         }
       >
-        <ul className="text-center space-y-10 py-10">
-          <li onClick={handClose}>
-            <Link
-              href="/"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-            >
-              Home
-            </Link>
-          </li>
-          <li onClick={handClose}>
-            <Link
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-              href="/about"
-            >
-              About Us
-            </Link>
-          </li>
-          <li onClick={handClose}>
-            <Link
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-              href="/contact"
-            >
-              Contact Us
-            </Link>
-          </li>
-          <li onClick={handClose}>
-            <Link
-              className="text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-              href="/login"
-            >
-              Log In
-            </Link>
-          </li>
+        {/* Side Drawer Menu */}
 
+        <div
+          className={
+            nav
+              ? " fixed left-0 top-0 w-[72%] sm:w-[60%] h-full bg-white dark:bg-black border-r rounded-r-3xl p-5 ease-in duration-700"
+              : "fixed left-[-100%] h-full top-0 p-5 ease-out duration-700 bg-white"
+          }
+        >
           <div className="">
-            <button className=" bg-orange10 rounded-xl h-12 w-[169px] ">
-              <Link href="/signup">Sign up</Link>
-            </button>
-          </div>
+            <div className="flex w-full items-center justify-between ">
+              <Link href="/">
+                <Image
+                  src={image}
+                  alt="/"
+                  width="110px"
+                  height="128px"
+                  className=" cursor-pointer"
+                />
+              </Link>
 
-          <div className="flex justify-center items-center">
-            <DarkModeSwitch />
+              <div
+                onClick={handClick}
+                className="rounded-full shadow  shadow-slate-500 p-2 cursor-pointer"
+              >
+                <AiOutlineClose size={20} />
+              </div>
+            </div>
+            {/*  */}
+            {/* <div className="border-b border-gray-400">
+              <p className="w-[90%] sm:w-[90%] md:w-full">
+                Let&#39; build something together
+              </p>
+            </div> */}
+            <div className="flex flex-col pt-3 ">
+              <ul className="font-500">
+                <li
+                  className={pathName.includes("/") ? activeLink : inactiveLink}
+                  onClick={handleClose}
+                >
+                  <Link to="/">Home</Link>
+                </li>
+                <li
+                  className={
+                    pathName.includes("/courses") ? activeLink : inactiveLink
+                  }
+                  onClick={handleClose}
+                >
+                  <Link to="/courses">Courses</Link>
+                </li>
+                <li
+                  className={
+                    pathName.includes("/services") ? activeLink : inactiveLink
+                  }
+                  onClick={handleClose}
+                >
+                  <Link to="/services">Services</Link>
+                </li>
+                <li
+                  className={
+                    pathName.includes("/about") ? activeLink : inactiveLink
+                  }
+                  onClick={handleClose}
+                >
+                  <Link to="/about">About</Link>
+                </li>
+                <li
+                  className={
+                    pathName.includes("/blog") ? activeLink : inactiveLink
+                  }
+                  onClick={handleClose}
+                >
+                  <Link to="/blog">Blog</Link>
+                </li>
+              </ul>
+
+              <div className="flex justify-center items-center h-40 w-full">
+                {/* <DarkModeSwitch /> */}
+              </div>
+            </div>
+
+            <div className="bottom-1 sm:bottom-0 absolute  items-center justify-center w-[80%]">
+              <div>
+                <ButtonWhite className={"w-full"} label="Sign up" />
+              </div>
+
+              <div>
+                <ButtonDefault className={"w-full"} label="Login" />
+              </div>
+            </div>
           </div>
-        </ul>
+        </div>
       </div>
     </div>
   );
 };
-
-export default Header;
-
-// "use client";
-// import React, { useState } from "react";
-// import Image from "next/image";
-// import logo from "../../Assets/images/HeaderLogo.png";
-// import Link from "next/link";
-// import "animate.css";
-// import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-// import DarkModeSwitch from "./DarkModeSwitch";
-
-// export default function Header() {
-//   const [nav, setNav] = useState(false);
-
-//   const handClick = () => {
-//     setNav(!nav);
-//   };
-
-//   const handClose = () => {
-//     setNav(!nav);
-//   };
-
-//   console.log("handClick");
-
-//   return (
-//     <div
-//       className={
-//         nav
-//           ? " bg-orange_light dark:bg-black h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
-//           : "dark:bg-black bg-orange_light h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
-//       }
-//     >
-//       <div className="flex justify-between h-full w-full items-center">
-//         <Link href="/">
-//           <Image
-//             width={500}
-//             height={500}
-//             src={logo}
-//             alt="home"
-//             className="w-12 h-10"
-//           />
-//         </Link>
-
-//         <ul className="md:flex hidden items-center space-x-6">
-//           <li>
-//             <Link
-//               href="/"
-//               className="text-base font-normal hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-//             >
-//               Home
-//             </Link>
-//           </li>
-//           <li>
-//             <Link
-//               href="/about"
-//               className="text-base font-normal hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-//             >
-//               About Us
-//             </Link>
-//           </li>
-//           <li>
-//             <Link
-//               href="/contact"
-//               className="text-base font-normal hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-//             >
-//               Contact Us
-//             </Link>
-//           </li>
-//           <li>
-//             <Link
-//               href="/login"
-//               className="text-base font-normal hover:text-orange10 active:text-orange10 focus:text-orange10"
-//             >
-//               Log In
-//             </Link>
-//           </li>
-//           <button className="text-base font-normal bg-orange10 rounded-xl h-10 w-[169px] ">
-//             <Link href="/signup">SignUp</Link>
-//           </button>
-//           <DarkModeSwitch />
-//         </ul>
-
-//         <button className="md:hidden cursor-pointer " onClick={handClick}>
-//           {nav ? (
-//             <AiOutlineClose className="w-7 h-7" />
-//           ) : (
-//             <AiOutlineMenu className="w-7 h-7" />
-//           )}
-//         </button>
-//       </div>
-
-//       {/* mobile view */}
-
-//       <div
-//         className={
-//           nav
-//             ? "md:hidden fixed left-0 bg-white dark:bg-black w-full h-full ease-in duration-500"
-//             : "fixed left-[-100%] h-screen  ease-out duration-700"
-//         }
-//       >
-//         <ul className="text-center space-y-10 py-10">
-//           <li onClick={handClose}>
-//             <Link
-//               href="/"
-//               className="text-base font-normal hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-//             >
-//               Home
-//             </Link>
-//           </li>
-//           <li onClick={handClose}>
-//             <Link
-//               className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-//               href="/about"
-//             >
-//               About Us
-//             </Link>
-//           </li>
-//           <li onClick={handClose}>
-//             <Link
-//               className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-//               href="/contact"
-//             >
-//               Contact Us
-//             </Link>
-//           </li>
-//           <li onClick={handClose}>
-//             <Link
-//               className="text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-//               href="/auth/login"
-//             >
-//               Log In
-//             </Link>
-//           </li>
-
-//           <div className="">
-//             <button className=" bg-orange10 rounded-xl h-12 w-[169px] ">
-//               <Link href="/auth/signup">SignUp</Link>
-//             </button>
-//           </div>
-
-//           <div className="flex justify-center items-center">
-//             <DarkModeSwitch />
-//           </div>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// }

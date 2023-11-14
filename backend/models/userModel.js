@@ -22,9 +22,11 @@ const userSchema = new Schema({
   },
   role: {
     type: String,
-    enum: ['user', 'Instructor'],
+    enum: ['user', 'instructor', 'admin'],
     default: 'user'
-  }
+  },
+  courses: [],
+  certificate: []
 });
 
 const User = mongoose.model('User', userSchema);

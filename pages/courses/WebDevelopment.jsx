@@ -1,11 +1,14 @@
+"use client";
+import React from "react";
 import SectionContents from "../../components/layout/SectionContents";
 import Footer from "../../components/layout/Footer";
 import image from "../../assets/images/webImage.png";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
 
-const WebDevelopment = () => {
+export const WebDevelopment = () => {
   // Access the &apos;id&apos; parameter from the route
 
   return (
@@ -15,14 +18,14 @@ const WebDevelopment = () => {
         <p className="text-base font-normal text-[#4F616D]">
           Unlock Your Potential with Kwaratech Academy&apos;s Diverse Range of
           Tech Courses
-        </p>{" "}
+        </p>
         {/* Added a "Back to Courses" button using the Link component */}
         <Link to="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
 
         <div className="pt-14 h-full">
-          <img src={image} alt="no image" />
+          <Image src={image} alt="no image" />
           <div className="flex justify-between px-2 py-[40px] bg-white">
             <div className="space-y-4 w-[439px]">
               <h1 className="font-bold text-[48px]">Web Development </h1>

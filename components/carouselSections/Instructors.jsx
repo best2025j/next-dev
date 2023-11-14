@@ -1,6 +1,9 @@
 // import React from "react";
+"use client";
 
-const Instructors = () => {
+import Image from "next/image";
+
+export const Instructors = () => {
   const staffData = [
     {
       name: "  Ayobami OLUDELE ",
@@ -40,7 +43,9 @@ const Instructors = () => {
     <div className="w-full h-full py-10 flex flex-col items-center mx-auto ">
       <div className=" inline-flex flex-col items-start max-w-[1200px]">
         <div className="w-[294px] md:w-[535px] space-y-5">
-          <h1 className="md:text-5xl text-2xl font-bold">Meet Our Instructors</h1>
+          <h1 className="md:text-5xl text-2xl font-bold">
+            Meet Our Instructors
+          </h1>
           <p className="text-md">
             Our expert instructors are industry leaders with a wealth of
             knowledge and experience. They&apos;re dedicated to helping you
@@ -52,7 +57,7 @@ const Instructors = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full">
             {staffData.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
-                <img src={item.image} alt="" />
+                <Image src={item.image} alt="" />
 
                 <div className="space-y-2">
                   <h1 className="text-sky-500 dark:text-sky-400">
@@ -70,5 +75,3 @@ const Instructors = () => {
     </div>
   );
 };
-
-export default Instructors;

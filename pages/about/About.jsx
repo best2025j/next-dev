@@ -1,10 +1,13 @@
-// import React from "react";
+"use client";
+import React from "react";
+
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Footer from "../../components/layout/Footer";
 import SectionContents from "../../components/layout/SectionContents";
+import Image from "next/image";
 
-const About = () => {
+export const About = () => {
   return (
     <>
       <div className="py-28 px-[60px]">
@@ -21,11 +24,11 @@ const About = () => {
           </div>
 
           <div className="flex flex-col gap-[38px]">
-            <img src="/booksLab.png" alt="pix" />
+            <Image src="/booksLab.png" alt="pix" />
 
             <div className="flex py-4 space-x-6 ">
-              <img src="/schoolBoy.png" alt="pix 1" />
-              <img src="/adult.png" alt="pix 2" />
+              <Image src="/schoolBoy.png" alt="pix 1" />
+              <Image src="/adult.png" alt="pix 2" />
             </div>
           </div>
         </div>
@@ -38,7 +41,7 @@ const About = () => {
           enthusiasts dedicated to bridging the digital gap.
         </p>
         <div className="pt-[60px]">
-          <img src="/vid.png" alt="pix-4" />
+          <Image src="/vid.png" alt="pix-4" />
         </div>
       </div>
 
@@ -211,7 +214,7 @@ const About = () => {
         </div>
 
         <div>
-          <img src="/KTA2.png" alt="kta" />
+          <Image src="/KTA2.png" alt="kta" />
         </div>
       </div>
 
@@ -229,16 +232,16 @@ const About = () => {
 
         <div className="flex justify-between space-x-4">
           <div>
-            <img src="/vr.png" alt="img1" />
+            <Image src="/vr.png" alt="Image1" />
           </div>
           <div>
-            <img src="/groupPix.png" alt="img2" />
+            <Image src="/groupPix.png" alt="Image2" />
           </div>
           <div>
-            <img src="/smile.png" alt="img3" />
+            <Image src="/smile.png" alt="Image3" />
           </div>
           <div>
-            <img src="ladiesSmile.png" alt="img4" />
+            <Image src="ladiesSmile.png" alt="Image4" />
           </div>
         </div>
 
@@ -265,7 +268,7 @@ const About = () => {
             />
           </div>
           <div>
-            <img src="/ktaSvg.png" alt="" />
+            <Image src="/ktaSvg.png" alt="" />
           </div>
         </div>
       </div>
@@ -275,5 +278,3 @@ const About = () => {
     </>
   );
 };
-
-export default About;

@@ -1,6 +1,7 @@
 // import React from "react";
+"use client";
 
-const ButtonDefault = ({ label, className }) => {
+export const ButtonDefault = ({ label, className }) => {
   return (
     <button
       className={`text-[#00AFF0] font-500 rounded-full px-6 py-3 active:text-[#ebecee] shadow-none capitalize active:scale-100 ${className}`}
@@ -9,5 +10,3 @@ const ButtonDefault = ({ label, className }) => {
     </button>
   );
 };
-
-export default ButtonDefault;

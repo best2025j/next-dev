@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 
-const EssentialICTTrainingSVG = () => {
+export const EssentialICTTrainingSVG = () => {
   return (
     <div>
       <svg
@@ -54,5 +55,3 @@ const EssentialICTTrainingSVG = () => {
     </div>
   );
 };
-
-export default EssentialICTTrainingSVG;

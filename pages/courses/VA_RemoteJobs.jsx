@@ -1,12 +1,14 @@
-// import React from "react";
-import { Link } from "react-router-dom";
+"use client"; 
+import React from "react";
 import SectionContents from "../../components/layout/SectionContents";
 import Footer from "../../components/layout/Footer";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images//vr.png";
+import Link from "next/link";
+import Image from "next/image";
 
-const VA_RemoteJobs = () => {
+export const VA_RemoteJobs = () => {
   // Access the 'id' parameter from the route
 
   return (
@@ -22,7 +24,7 @@ const VA_RemoteJobs = () => {
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
         <div className="pt-14 h-full">
-          <img src={image} alt="no image" />
+          <Image src={image} alt="no image" />
           <div className="flex justify-between px-2 py-[40px] bg-white">
             <div className="space-y-4 w-[439px]">
               <h1 className="font-bold text-[48px]">
@@ -118,4 +120,3 @@ const VA_RemoteJobs = () => {
   );
 };
 
-export default VA_RemoteJobs;

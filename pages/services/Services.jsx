@@ -1,8 +1,9 @@
-// import React from "react";
+"use client";
+import React from "react";
 import Footer from "../../components/layout/Footer";
 import SectionContents from "../../components/layout/SectionContents";
 
-const Services = () => {
+export const Services = () => {
   return (
     <>
       <div className="py-40">
@@ -14,4 +15,3 @@ const Services = () => {
   );
 };
 
-export default Services;

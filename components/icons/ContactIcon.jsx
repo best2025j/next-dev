@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 
-const ContactIcon = () => {
+export const ContactIcon = () => {
   return (
     <div className="text-white pl-1 pt-[2px]">
       <svg
@@ -20,5 +21,3 @@ const ContactIcon = () => {
     </div>
   );
 };
-
-export default ContactIcon;

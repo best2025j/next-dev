@@ -1,6 +1,7 @@
+"tuse client";
 import React from "react";
 
-const SpecializedProgrammesSVG = () => {
+export const SpecializedProgrammesSVG = () => {
   return (
     <div>
       <svg
@@ -22,5 +23,3 @@ const SpecializedProgrammesSVG = () => {
     </div>
   );
 };
-
-export default SpecializedProgrammesSVG;

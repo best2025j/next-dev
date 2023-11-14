@@ -1,6 +1,7 @@
+"use client"; 
 import React from "react";
 
-const CoWorkingSpacesSVG = () => {
+export const CoWorkingSpacesSVG = () => {
   return (
     <div>
       <svg
@@ -23,4 +24,3 @@ const CoWorkingSpacesSVG = () => {
   );
 };
 
-export default CoWorkingSpacesSVG;

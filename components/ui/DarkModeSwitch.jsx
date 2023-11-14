@@ -1,31 +1,30 @@
-import  { useState } from "react"; 
+import { useState } from "react";
 import light_mode from "../../assets/svgs/Lightmode.svg";
 import dark_mode from "../../assets/svgs/Darkmode.svg";
+import Image from "next/image";
 
 const DarkModeSwitch = () => {
-  const [themeToggle, setThemeToggle] = useState(
-    localStorage.getItem("color-theme") || "dark"
-  );
-
-  const toggleTheme = () => {
-    setThemeToggle((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
-  };
+  const { theme, setTheme } = useTheme();
 
   return (
     <div>
-      {themeToggle === "dark" ? (
-        <img
+      {theme == "dark" ? (
+        <Image
           src={light_mode}
           alt="dark-mode"
-          className="w-10 h-10 cursor-pointer"
-          onClick={toggleTheme}
+          width={38}
+          height={38}
+          className="cursor-pointer"
+          onClick={() => setTheme("light")}
         />
       ) : (
-        <img
+        <Image
           src={dark_mode}
           alt="dark-mode"
-          className="w-10 h-10 cursor-pointer"
-          onClick={toggleTheme}
+          width={38}
+          height={38}
+          className="cursor-pointer"
+          onClick={() => setTheme("dark")}
         />
       )}
     </div>

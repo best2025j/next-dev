@@ -1,6 +1,7 @@
 // import React from "react";
+"use client";
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <div className="pt-56 md:py-0 w-full md:h-screen h-[16rem] sm:px-[64px] px-[36px] flex flex-col justify-center text-center mx-auto items-center">
       <div className="md:max-w-[852px] space-y-2">
@@ -20,5 +21,3 @@ const Hero = () => {
     </div>
   );
 };
-
-export default Hero;

@@ -1,27 +1,29 @@
+"use client";
+
 import { useState } from "react";
 import image from "../../assets/images/kwaraTech.jpg";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import ButtonWhite from "../Buttons/ButtonWhite";
-import { Link, NavLink, useLocation } from "react-router-dom";
 import ButtonDefault from "../Buttons/ButtonDefault";
-// import DarkModeSwitch from "../ui/DarkModeSwitch";
+import Image from "next/image";
+import DarkModeSwitch from "../ui/DarkModeSwitch";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
-const Header = () => {
+export const Header = () => {
   const [nav, setNav] = useState(false);
   // Function to handle menu icon click
-
   const handClick = () => setNav(!nav);
   const handleClose = () => setNav(!nav);
 
-  const location = useLocation();
-  
-  const isActiveLink = (path) => {
-    return location.pathname === path;
-  };
+  // router
+  const router = useRouter();
+  const { pathName } = router;
+  console.log(pathName);
 
   const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
   // Added 'active-link' class
-  const activeLink = inactiveLink + " text-[#00AFF0]"; 
+  const activeLink = inactiveLink + " text-[#00AFF0]";
 
   return (
     <div
@@ -33,7 +35,7 @@ const Header = () => {
     >
       <div className="px-2 py-6 flex w-full justify-between items-center h-full 2xl:px-16">
         <Link href="#">
-          <img
+          <Image
             src={image}
             // quality={100}
             alt="/"
@@ -45,37 +47,54 @@ const Header = () => {
 
         {/* desktop view Navigation links */}
         <ul className="hidden md:flex capitalize space-x-6">
-          <li className={isActiveLink("/") ? activeLink : inactiveLink}>
-            <NavLink exact="true" to="/">
+          <li className={pathName.includes("/") ? activeLink : inactiveLink}>
+            <Link exact="true" to="/">
               Home
-            </NavLink>
+            </Link>
           </li>
-          <li className={isActiveLink("/courses") ? activeLink : inactiveLink}>
-            <NavLink to="/courses">Courses</NavLink>
+          <li
+            className={
+              pathName.includes("/courses") ? activeLink : inactiveLink
+            }
+          >
+            <Link to="/courses">Courses</Link>
           </li>
-          <li className={isActiveLink("/services") ? activeLink : inactiveLink}>
-            <NavLink to="/services">Services</NavLink>
+          <li
+            className={
+              pathName.includes("/services") ? activeLink : inactiveLink
+            }
+          >
+            <Link to="/services">Services</Link>
           </li>
-          <li className={isActiveLink("/about") ? activeLink : inactiveLink}>
-            <NavLink to="/about">About</NavLink>
+          <li
+            className={pathName.includes("/about") ? activeLink : inactiveLink}
+          >
+            <Link to="/about">About</Link>
           </li>
-          <li className={isActiveLink("/blog") ? activeLink : inactiveLink}>
-            <NavLink to="/blog">Blog</NavLink>
+          <li
+            className={pathName.includes("/blog") ? activeLink : inactiveLink}
+          >
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
 
         {/* FORM BUTTON*/}
 
         <div className="hidden md:flex items-center justify-center ">
-          <div className="">
+          {/* <div className="">
             <ButtonDefault label="Login" className={"text-[#00AFF0]"} />
           </div>
-
           <div className="">
             <ButtonWhite label="Sign up" className={""} />
+          </div> */}
+          <div className="hidden lg:flex items-center justify-center space-y-2 ">
+            <div className="">
+              <ButtonWhite onClick={handleOrderClick} label="Get started" />
+            </div>
+            <div className="">
+              <DarkModeSwitch />
+            </div>
           </div>
-
-          <div className="">{/* <DarkModeSwitch /> */}</div>
         </div>
 
         <div onClick={handClick} className="md:hidden cursor-pointer">
@@ -104,7 +123,7 @@ const Header = () => {
           <div className="">
             <div className="flex w-full items-center justify-between ">
               <Link href="/">
-                <img
+                <Image
                   src={image}
                   alt="/"
                   width="110px"
@@ -129,38 +148,42 @@ const Header = () => {
             <div className="flex flex-col pt-3 ">
               <ul className="font-500">
                 <li
-                  className={isActiveLink("/") ? activeLink : inactiveLink}
+                  className={pathName.includes("/") ? activeLink : inactiveLink}
                   onClick={handleClose}
                 >
-                  <NavLink to="/">Home</NavLink>
+                  <Link to="/">Home</Link>
                 </li>
                 <li
                   className={
-                    isActiveLink("/courses") ? activeLink : inactiveLink
+                    pathName.includes("/courses") ? activeLink : inactiveLink
                   }
                   onClick={handleClose}
                 >
-                  <NavLink to="/courses">Courses</NavLink>
+                  <Link to="/courses">Courses</Link>
                 </li>
                 <li
                   className={
-                    isActiveLink("/services") ? activeLink : inactiveLink
+                    pathName.includes("/services") ? activeLink : inactiveLink
                   }
                   onClick={handleClose}
                 >
-                  <NavLink to="/services">Services</NavLink>
+                  <Link to="/services">Services</Link>
                 </li>
                 <li
-                  className={isActiveLink("/about") ? activeLink : inactiveLink}
+                  className={
+                    pathName.includes("/about") ? activeLink : inactiveLink
+                  }
                   onClick={handleClose}
                 >
-                  <NavLink to="/about">About</NavLink>
+                  <Link to="/about">About</Link>
                 </li>
                 <li
-                  className={isActiveLink("/blog") ? activeLink : inactiveLink}
+                  className={
+                    pathName.includes("/blog") ? activeLink : inactiveLink
+                  }
                   onClick={handleClose}
                 >
-                  <NavLink to="/blog">Blog</NavLink>
+                  <Link to="/blog">Blog</Link>
                 </li>
               </ul>
 

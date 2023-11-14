@@ -1,8 +1,9 @@
+"use client";
 import React from "react";
 import Footer from "../../components/layout/Footer";
 import SectionContents from "../../components/layout/SectionContents";
 
-const Blog = () => {
+export const Blog = () => {
   return (
     <>
       <div className="py-40">
@@ -14,4 +15,3 @@ const Blog = () => {
   );
 };
 
-export default Blog;

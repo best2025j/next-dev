@@ -1,11 +1,13 @@
-// import React from "react";
+"use client";
+import React from "react";
 import Footer from "../../components/layout/Footer";
 import SectionContents from "../../components/layout/SectionContents";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
 
-const Courses = () => {
+export const Courses = () => {
   const courseData = [
     {
       id: 1,
@@ -147,7 +149,7 @@ const Courses = () => {
               </h1>
 
               <div className="md:w-[931px] w-[340px] bg-white p-4 rounded-3xl mx-auto">
-                <img
+                <Image
                   src={item.image}
                   className="md:w-auto md:h-auto hidden md:flex"
                   alt="NO IMAGE FOT THIS COURSE"
@@ -156,7 +158,7 @@ const Courses = () => {
                   }
                 />
 
-                <img
+                <Image
                   src={item.mbImage}
                   className="md:w-auto md:h-auto md:hidden flex"
                   alt="NO IMAGE FOT THIS COURSE"
@@ -227,9 +229,6 @@ const Courses = () => {
   );
 };
 
-export default Courses;
-
-// const Courses = () => {
 //   const courseData = [
 //     {
 //       id: 1,
@@ -361,7 +360,7 @@ export default Courses;
 //               </h1>
 
 //               <div className="w-[931px] bg-white p-4 rounded-3xl">
-//                 <img
+//                 <Image
 //                   src={item.image}
 //                   alt="NO IMAGE FOT THIS COURSE"
 //                   onError={() =>

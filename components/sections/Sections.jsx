@@ -1,9 +1,10 @@
 // import React from "react";
+"use client";
 import CoWorkingSpacesSVG from "../icons/CoWorkingSpacesSVG";
 import EssentialICTTrainingSVG from "../icons/EssentialICTTrainingSVG";
 import SpecializedProgrammesSVG from "../icons/SpecializedProgrammesSVG";
 
-const Sections = () => {
+export const Sections = () => {
   // SVG components
   const data = [
     {
@@ -30,7 +31,6 @@ const Sections = () => {
     <div className="py-20 bg-[#ffffff] px-14">
       <div className="space-y-[16px]">
         <h1 className="md:text-5xl font-bold text-[24px]">
-          {" "}
           What we have to offer
         </h1>
         <p className="text-lg font-normal text-[#4F616D] w-[294px] md:w-[480px]">
@@ -57,5 +57,3 @@ const Sections = () => {
     </div>
   );
 };
-
-export default Sections;

@@ -1,12 +1,13 @@
 // import React from "react";
+import Image from "next/image";
 import ButtonWhite from "../Buttons/ButtonWhite";
 import ContactIcon from "../icons/ContactIcon";
 
-const ContactUs = () => {
+export const ContactUs = () => {
   return (
     <div className="md:flex w-full h-full bg-white py-20 px-4">
       <div className="flex-1 h-full w-full">
-        <img
+        <Image
           src="/Image for Contact Us.png"
           alt="image"
           className="rounded-t-[50px] md:rounded-l-[240px] shrink-0 w-[360px] h-[355px] md:h-[595px] md:w-full"
@@ -42,5 +43,3 @@ const ContactUs = () => {
     </div>
   );
 };
-
-export default ContactUs;

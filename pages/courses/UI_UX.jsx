@@ -1,12 +1,14 @@
-// import React from "react";
-import { Link } from "react-router-dom";
+"use client";
+import React from "react";
 import SectionContents from "../../components/layout/SectionContents";
 import Footer from "../../components/layout/Footer";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images//ui_ux.png";
+import Link from "next/link";
+import Image from "next/image";
 
-const UI_UX = () => {
+export const UI_UX = () => {
   // Access the &apos;id&apos; parameter from the route
 
   return (
@@ -24,7 +26,7 @@ const UI_UX = () => {
         </Link>
 
         <div className="pt-14 h-full">
-          <img src={image} alt="no image" />
+          <Image src={image} alt="no image" />
           <div className="flex justify-between px-2 py-[40px] bg-white">
             <div className="space-y-4 w-[439px]">
               <h1 className="font-bold text-[48px]">UI/UX Design </h1>
@@ -117,4 +119,3 @@ const UI_UX = () => {
   );
 };
 
-export default UI_UX;

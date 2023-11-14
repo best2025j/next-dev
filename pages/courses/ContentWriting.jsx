@@ -1,9 +1,10 @@
-// import React from "react";
+"use client";
+import React from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../../components/layout/Footer";
 import SectionContents from "../../components/layout/SectionContents";
 
-const ContentWriting = () => {
+export const ContentWriting = () => {
   const { name } = useParams();
   // Access the 'id' parameter from the route
 
@@ -16,4 +17,3 @@ const ContentWriting = () => {
   );
 };
 
-export default ContentWriting;

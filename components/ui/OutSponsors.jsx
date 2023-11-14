@@ -1,6 +1,9 @@
 // import React from "react";
+"use client";
 
-const OutSponsors = () => {
+import Image from "next/image";
+
+export const OutSponsors = () => {
   const staffData = [
     "/unescoUnited.png",
     "/kwaralLog.png",
@@ -18,7 +21,7 @@ const OutSponsors = () => {
               key={index}
               className="flex justify-center items-center rounded-3xl p-2 sm:flex h-full w-auto flex-col"
             >
-              <img
+              <Image
                 className="h-14 w-14 md:h-full md:w-full"
                 src={image}
                 alt={`Image ${index + 5}`}
@@ -27,10 +30,6 @@ const OutSponsors = () => {
           ))}
         </div>
       </div>
-
-   
     </section>
   );
 };
-
-export default OutSponsors;

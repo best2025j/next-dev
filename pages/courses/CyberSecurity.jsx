@@ -1,12 +1,14 @@
-// import React from "react";
-import { Link } from "react-router-dom";
+"use client";
+import React from "react";
 import SectionContents from "../../components/layout/SectionContents";
 import Footer from "../../components/layout/Footer";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images//cyber.png";
+import Link from "next/link";
+import Image from "next/image";
 
-const CyberSecurity = () => {
+export const CyberSecurity = () => {
   // Access the 'id' parameter from the route
 
   return (
@@ -24,7 +26,7 @@ const CyberSecurity = () => {
         </Link>
 
         <div className="pt-14 h-full">
-          <img src={image} alt="no image" />
+          <Image src={image} alt="no image" />
           <div className="flex justify-between px-2 py-[40px] bg-white">
             <div className="space-y-4 w-[439px]">
               <h1 className="font-bold text-[48px]">Cybersecurity </h1>
@@ -117,4 +119,3 @@ const CyberSecurity = () => {
   );
 };
 
-export default CyberSecurity;

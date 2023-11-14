@@ -7,8 +7,8 @@ import ButtonWhite from "../Buttons/ButtonWhite";
 import ButtonDefault from "../Buttons/ButtonDefault";
 import Image from "next/image";
 import DarkModeSwitch from "../ui/DarkModeSwitch";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { usepathname } from "next/navigation";
 
 export const Header = () => {
   const [nav, setNav] = useState(false);
@@ -17,9 +17,8 @@ export const Header = () => {
   const handleClose = () => setNav(!nav);
 
   // router
-  const router = useRouter();
-  const { pathName } = router;
-  console.log(pathName);
+  const pathname = usepathname();
+  console.log(pathname);
 
   const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
   // Added 'active-link' class
@@ -47,32 +46,32 @@ export const Header = () => {
 
         {/* desktop view Navigation links */}
         <ul className="hidden md:flex capitalize space-x-6">
-          <li className={pathName.includes("/") ? activeLink : inactiveLink}>
+          <li className={pathname.includes("/") ? activeLink : inactiveLink}>
             <Link exact="true" to="/">
               Home
             </Link>
           </li>
           <li
             className={
-              pathName.includes("/courses") ? activeLink : inactiveLink
+              pathname.includes("/courses") ? activeLink : inactiveLink
             }
           >
             <Link to="/courses">Courses</Link>
           </li>
           <li
             className={
-              pathName.includes("/services") ? activeLink : inactiveLink
+              pathname.includes("/services") ? activeLink : inactiveLink
             }
           >
             <Link to="/services">Services</Link>
           </li>
           <li
-            className={pathName.includes("/about") ? activeLink : inactiveLink}
+            className={pathname.includes("/about") ? activeLink : inactiveLink}
           >
             <Link to="/about">About</Link>
           </li>
           <li
-            className={pathName.includes("/blog") ? activeLink : inactiveLink}
+            className={pathname.includes("/blog") ? activeLink : inactiveLink}
           >
             <Link to="/blog">Blog</Link>
           </li>
@@ -148,14 +147,14 @@ export const Header = () => {
             <div className="flex flex-col pt-3 ">
               <ul className="font-500">
                 <li
-                  className={pathName.includes("/") ? activeLink : inactiveLink}
+                  className={pathname.includes("/") ? activeLink : inactiveLink}
                   onClick={handleClose}
                 >
                   <Link to="/">Home</Link>
                 </li>
                 <li
                   className={
-                    pathName.includes("/courses") ? activeLink : inactiveLink
+                    pathname.includes("/courses") ? activeLink : inactiveLink
                   }
                   onClick={handleClose}
                 >
@@ -163,7 +162,7 @@ export const Header = () => {
                 </li>
                 <li
                   className={
-                    pathName.includes("/services") ? activeLink : inactiveLink
+                    pathname.includes("/services") ? activeLink : inactiveLink
                   }
                   onClick={handleClose}
                 >
@@ -171,7 +170,7 @@ export const Header = () => {
                 </li>
                 <li
                   className={
-                    pathName.includes("/about") ? activeLink : inactiveLink
+                    pathname.includes("/about") ? activeLink : inactiveLink
                   }
                   onClick={handleClose}
                 >
@@ -179,7 +178,7 @@ export const Header = () => {
                 </li>
                 <li
                   className={
-                    pathName.includes("/blog") ? activeLink : inactiveLink
+                    pathname.includes("/blog") ? activeLink : inactiveLink
                   }
                   onClick={handleClose}
                 >

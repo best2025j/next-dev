@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import React from "react";
 import { ButtonWhite } from "@/components/Buttons/ButtonWhite";
 import { ViewAllCourseIcon } from "@/components/icons/ViewAllCourseIcon";
@@ -8,7 +8,7 @@ import image from "../../assets/images//vr.png";
 import Link from "next/link";
 import Image from "next/image";
 
-export const VA_RemoteJobs = () => {
+export default function VA_RemoteJobs() {
   // Access the 'id' parameter from the route
 
   return (
@@ -41,8 +41,6 @@ export const VA_RemoteJobs = () => {
             </div>
           </div>
         </div>
-
-
         <div className="flex flex-col space-y-2 pt-[48px]">
           <div className="flex justify-between">
             <h1 className="text-[#00AFF0] font-bold text-[30px]">
@@ -118,5 +116,4 @@ export const VA_RemoteJobs = () => {
       <Footer />
     </>
   );
-};
-
+}

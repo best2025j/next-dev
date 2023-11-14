@@ -8,7 +8,7 @@ import image from "../../assets/images/webImage.png";
 import Link from "next/link";
 import Image from "next/image";
 
-export const WebDevelopment = () => {
+export default function WebDevelopment() {
   // Access the &apos;id&apos; parameter from the route
 
   return (
@@ -170,6 +170,4 @@ export const WebDevelopment = () => {
       <Footer />
     </>
   );
-};
-
-export default WebDevelopment;
+}

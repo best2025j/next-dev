@@ -8,7 +8,7 @@ import image from "../../assets/images//dataScience.png";
 import Link from "next/link";
 import Image from "next/image";
 
-export const DataAnalytics = () => {
+export default function DataAnalytics() {
   // Access the 'id' parameter from the route
 
   return (
@@ -18,13 +18,11 @@ export const DataAnalytics = () => {
         <p className="text-base font-normal text-[#4F616D]">
           Unlock Your Potential with Kwaratech Academy&apos;s Diverse Range of
           Tech Courses
-        </p>y 
-
-        {/* Added a "Back to Courses" button using the Link component */}
+        </p>
+        y{/* Added a "Back to Courses" button using the Link component */}
         <Link to="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
-
         <div className="pt-14 h-full">
           <Image src={image} alt="no image" />
           <div className="flex justify-between px-2 py-[40px] bg-white">
@@ -42,7 +40,6 @@ export const DataAnalytics = () => {
             </div>
           </div>
         </div>
-
         <div className="flex flex-col space-y-2 pt-[48px]">
           <div className="flex justify-between">
             <h1 className="text-[#00AFF0] font-bold text-[30px]">
@@ -118,5 +115,4 @@ export const DataAnalytics = () => {
       <Footer />
     </>
   );
-};
-
+}

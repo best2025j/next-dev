@@ -8,7 +8,7 @@ import image from "../../assets/images//cyber.png";
 import Link from "next/link";
 import Image from "next/image";
 
-export const DigitalMarketing = () => {
+export default function DigitalMarketing() {
   // Access the 'id' parameter from the route
 
   return (
@@ -114,4 +114,4 @@ export const DigitalMarketing = () => {
       <Footer />
     </>
   );
-};
+}

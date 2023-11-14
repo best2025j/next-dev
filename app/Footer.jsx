@@ -8,7 +8,7 @@ import Twitter from "../../assets/svgs/Twitterlogo.svg";
 import whatsapp from "../../assets/svgs/whatsapp.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { ButtonWhite } from "../Buttons/ButtonWhite";
 import { ViewAllCourseIcon } from "../icons/ViewAllCourseIcon";
 
@@ -20,9 +20,8 @@ export const Footer = () => {
   const handleClose = () => setNav(!nav);
 
   // router
-  const router = useRouter();
-  const { pathName } = router;
-  console.log(pathName);
+  const pathname = usePathname();
+  console.log(pathname);
 
   const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
   const activeLink = inactiveLink + " text-[#00AFF0]"; // Added 'active-link' class
@@ -144,4 +143,3 @@ export const Footer = () => {
     </div>
   );
 };
-

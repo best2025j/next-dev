@@ -8,7 +8,7 @@ import { ViewAllCourseIcon } from "@/components/icons/ViewAllCourseIcon";
 import SectionContents from "@/components/layout/SectionContents";
 import { Footer } from "@/components/layout/Footer";
 
-export const DesignAnimation = () => {
+export default function DesignAnimation() {
   // Access the &apos;id&apos; parameter from the route
 
   return (
@@ -279,4 +279,4 @@ export const DesignAnimation = () => {
       <Footer />
     </>
   );
-};
+}

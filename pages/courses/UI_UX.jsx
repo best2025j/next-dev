@@ -8,7 +8,7 @@ import image from "../../assets/images//ui_ux.png";
 import Link from "next/link";
 import Image from "next/image";
 
-export const UI_UX = () => {
+export default function UI_UX() {
   // Access the &apos;id&apos; parameter from the route
 
   return (
@@ -117,4 +117,4 @@ export const UI_UX = () => {
       <Footer />
     </>
   );
-};
+}

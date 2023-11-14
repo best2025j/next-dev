@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
-
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Footer from "../../components/layout/Footer";
 import SectionContents from "../../components/layout/SectionContents";
 import Image from "next/image";
 
-export const About = () => {
+export default function About() {
   return (
     <>
       <div className="py-28 px-[60px]">
@@ -277,4 +276,4 @@ export const About = () => {
       <Footer />
     </>
   );
-};
+}

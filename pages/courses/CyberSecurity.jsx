@@ -8,7 +8,7 @@ import image from "../../assets/images//cyber.png";
 import Link from "next/link";
 import Image from "next/image";
 
-export const CyberSecurity = () => {
+export default function CyberSecurity () {
   // Access the 'id' parameter from the route
 
   return (

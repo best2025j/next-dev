@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "../../components/layout/Footer";
 import SectionContents from "../../components/layout/SectionContents";
 
-export const Services = () => {
+export default function Services() {
   return (
     <>
       <div className="py-40">
@@ -13,5 +13,4 @@ export const Services = () => {
       <Footer />
     </>
   );
-};
-
+}

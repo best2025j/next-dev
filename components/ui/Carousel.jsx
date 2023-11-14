@@ -32,9 +32,10 @@ export const Carousel = () => {
               <Image
                 className="h-48 w-96 md:h-full md:w-full"
                 src={image}
-                width="auto"
-                height="auto"
-                alt={`Image ${index + 5}`}
+                alt="Description"
+                width={100}
+                height={50}
+                // alt={`Image ${index + 5}`}
               />
             </div>
           ))}

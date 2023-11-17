@@ -1,7 +1,9 @@
-export default function Home() {
+import React from "react";
+import Nav from "@/components/Nav";
+
+export default function page() {
   return (
     <>
-      <h1>hello gt</h1>
       <Nav />
     </>
   );

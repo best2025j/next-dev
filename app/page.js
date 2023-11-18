@@ -1,6 +1,10 @@
 import Nav from "../components/shared/Nav";
+import React from "react";
+// import Nav from "@/components/Nav";
 
-export default function Home() {
+
+
+export default function page() {
   return (
     <>
       <Nav />

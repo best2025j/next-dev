@@ -1,5 +1,12 @@
-import React from "react";
+// _app.js or _app.tsx
+import { ThemeProvider } from "next-themes";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <ThemeProvider attribute="class">
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
+
+export default MyApp;

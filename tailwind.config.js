@@ -9,6 +9,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
+  darkMode: "class",
+
   theme: {
     extend: {
       backgroundImage: {
@@ -18,6 +21,6 @@ module.exports = {
       },
     },
   },
-  
+
   plugins: [],
 };

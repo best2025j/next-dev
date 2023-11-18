@@ -5,8 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { usePathname } from "next/navigation";
-import DarkModeSwitch from "../components/ui/DarkModeSwitch";
-import image from "../assets/images/kwaraTech.jpg";
+import DarkModeSwitch from "../ui//DarkModeSwitch";
+import image from "../../assets/images/kwaraTech.jpg";
 import ButtonWhite from "@/components/buttons/ButtonWhite";
 
 // Navigation component
@@ -29,11 +29,11 @@ export default function Nav() {
 
   return (
     <div
-      className={`${
+      className={
         nav
-          ? "bg-white dark:bg-black"
-          : "dark:bg-black border-b border-white shadow shadow-slate-400"
-      } h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]`}
+          ? "bg-white dark:bg-black h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
+          : "dark:bg-black border-b border-white shadow shadow-slate-400 bg-white h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
+      }
     >
       <div className="px-2 py-6 flex w-full justify-between items-center h-full 2xl:px-16">
         <Link href="/">

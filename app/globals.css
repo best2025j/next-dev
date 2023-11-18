@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -48,6 +46,6 @@ body {
 
 @layer base {
   body {
-    @apply dark:bg-black bg-[#FBFCFF] font-sans w-full;
+    @apply dark:bg-black bg-[#FBFCFF] dark:text-white font-sans w-full;
   }
 }

@@ -1,8 +1,10 @@
+import Nav from "../components/shared/Nav";
+
 export default function Home() {
   return (
     <>
-      <h1>hello gt</h1>
       <Nav />
+      <h1>hello gt</h1>
     </>
   );
 }

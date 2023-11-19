@@ -85,11 +85,16 @@ export default function Nav() {
           </Link>
         </ul>
 
-        {/* Form and Dark Mode Switch */}
-        <div className="hidden md:flex items-center justify-center space-x-4">
-          <ButtonWhite label="Register" className="text-[#00AFF0]" />
-          <DarkModeSwitch />
+        <div className="hidden md:flex items-center justify-center">
+          <div className="">
+            <ButtonWhite label="Register" className="text-[#00AFF0]" />
+          </div>
+          <div className="pt-2">
+            <DarkModeSwitch />
+          </div>
         </div>
+
+        {/* Form and Dark Mode Switch */}
 
         {/* Mobile Menu Icon */}
         <div onClick={handleToggleNav} className="md:hidden cursor-pointer">

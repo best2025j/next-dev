@@ -7,22 +7,27 @@ import DarkModeSvg from "../../assets/svgs/Darkmode.svg";
 export default function DarkModeSwitch() {
   const { theme, setTheme } = useTheme();
 
-  const switchTheme = () => {
-    setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
-  };
-
-  console.log("Current theme:", theme);
-
   return (
     <div>
-      <Image
-        src={theme === "dark" ? LightModeSvg : DarkModeSvg}
-        alt={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-        width={38}
-        height={38} 
-        className="cursor-pointer"
-        onClick={switchTheme}
-      />
+      {theme == "dark" ? (
+        <Image
+          src={LightModeSvg}
+          alt="dark-mode"
+          width={38}
+          height={38}
+          className="cursor-pointer"
+          onClick={() => setTheme("light")}
+        />
+      ) : (
+        <Image
+          src={DarkModeSvg}
+          alt="dark-mode"
+          width={38}
+          height={38}
+          className="cursor-pointer"
+          onClick={() => setTheme("dark")}
+        />
+      )}
     </div>
   );
 }

@@ -13,8 +13,8 @@ export default function DarkModeSwitch() {
         <Image
           src={LightModeSvg}
           alt="dark-mode"
-          width={38}
-          height={38}
+          width={34}
+          height={34}
           className="cursor-pointer"
           onClick={() => setTheme("light")}
         />
@@ -22,8 +22,8 @@ export default function DarkModeSwitch() {
         <Image
           src={DarkModeSvg}
           alt="dark-mode"
-          width={38}
-          height={38}
+          width={34}
+          height={34}
           className="cursor-pointer"
           onClick={() => setTheme("dark")}
         />

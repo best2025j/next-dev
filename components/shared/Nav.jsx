@@ -25,8 +25,8 @@ export default function Nav() {
   const handleCloseNav = () => setNav(false);
 
   // CSS classes for active and inactive links
-  const inactiveLink =
-    "pl-2 font-bold text-sm hover:text-black dark:hover:text-blue-500  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300";
+  const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
+
   const activeLink = `${inactiveLink} text-[#00AFF0]`;
 
   return (
@@ -85,11 +85,11 @@ export default function Nav() {
           </Link>
         </ul>
 
-        <div className="hidden md:flex items-center justify-center">
+        <div className="hidden md:flex items-center justify-center space-x-1">
           <div className="">
             <ButtonWhite label="Register" className="text-[#00AFF0]" />
           </div>
-          <div className="pt-2">
+          <div className="">
             <DarkModeSwitch />
           </div>
         </div>
@@ -184,7 +184,7 @@ export default function Nav() {
               </ul>
 
               <div className="flex justify-center items-center h-40 w-full">
-                {/* <DarkModeSwitch /> */}
+                <DarkModeSwitch />
               </div>
             </div>
 

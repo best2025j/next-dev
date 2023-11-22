@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import ButtonWhite from "../Buttons/ButtonWhite";
 import ContactIcon from "../icons/ContactIcon";
+import ButtonWhite from "../buttons/ButtonWhite";
 
 const ContactUs = () => {
   return (
@@ -10,6 +10,8 @@ const ContactUs = () => {
         <Image
           src="/Image for Contact Us.png"
           alt="image"
+          width="100%"
+          height="100%"
           className="rounded-t-[50px] md:rounded-l-[240px] shrink-0 w-full h-[355px] md:h-[595px] md:w-full"
         />
       </div>

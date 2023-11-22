@@ -1,7 +1,7 @@
 import React from "react";
 import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
-import ButtonWhite from "../../components/Buttons/ButtonWhite";
+import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images/uifull.png";
 import { Link } from "react-router-dom";

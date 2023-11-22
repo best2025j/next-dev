@@ -1,6 +1,6 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import ButtonWhite from "../../components/Buttons/ButtonWhite";
+import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Footer from "../../components/shared/Footer";
 import SectionContents from "../../components/ui/SectionContents";

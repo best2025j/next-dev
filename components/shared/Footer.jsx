@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import images from "../../assets/images/KTA. logo.png";
-import ButtonWhite from "../Buttons/ButtonWhite";
+import ButtonWhite from "../buttons/ButtonWhite";
 import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";

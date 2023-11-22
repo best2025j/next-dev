@@ -42,9 +42,9 @@ export default function Nav() {
           <Image
             src="/kw.png"
             quality={100}
-            alt="/"
+            alt="logo-pix"
             width="110px"
-            height="128px"
+            // height="128px"
             className="cursor-pointer"
           />
         </Link>

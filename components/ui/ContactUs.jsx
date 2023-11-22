@@ -5,7 +5,7 @@ import ButtonWhite from "../buttons/ButtonWhite";
 
 const ContactUs = () => {
   return (
-    <div className="md:flex w-full h-full bg-white py-20 px-4">
+    <div className="md:flex w-full h-full bg-white dark:bg-black py-20 px-4">
       <div className="flex-1 h-full w-full">
         <Image
           src="/Image for Contact Us.png"

@@ -23,6 +23,8 @@ const OutSponsors = () => {
               <Image
                 className="h-14 w-14 md:h-full md:w-full"
                 src={image}
+                width={500}
+                height={500}
                 alt={`Image ${index + 5}`}
               />
             </div>
@@ -32,16 +34,22 @@ const OutSponsors = () => {
         <div className="flex md:hidden flex-col w-full items-center justify-center">
           <div className="grid justify-center grid-cols-3 gap-10">
             <Image
+              width={500}
+              height={500}
               className="h-14 w-14 md:h-full md:w-full"
               src="/unescoUnited.png"
               alt=""
             />
             <Image
+              width={500}
+              height={500}
               className="h-14 w-14 md:h-full md:w-full"
               src="/kwaralLog.png"
               alt=""
             />{" "}
             <Image
+              width={500}
+              height={500}
               className="h-14 w-14 md:h-full md:w-full"
               src="/ntda.png"
               alt=""
@@ -50,12 +58,16 @@ const OutSponsors = () => {
 
           <div className="grid justify-center grid-cols-2 gap-10">
             <Image
+              width={500}
+              height={500}
               className="h-14 w-14 md:h-full md:w-full"
               src="/eFyg1QEJ 1.png"
               alt=""
             />
 
             <Image
+              width={500}
+              height={500}
               className="h-14 w-14 md:h-full md:w-full"
               src="/XqUYhl60 1.png"
               alt=""

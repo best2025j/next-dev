@@ -1,20 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import ButtonWhite from "../Buttons/ButtonWhite";
 import ContactIcon from "../icons/ContactIcon";
+import ButtonWhite from "../buttons/ButtonWhite";
 
 const ContactUs = () => {
   return (
-    <div className="md:flex w-full h-full bg-white py-20 px-4">
+    <div className="md:flex w-full h-full bg-white dark:bg-black py-20 px-4">
       <div className="flex-1 h-full w-full">
         <Image
           src="/Image for Contact Us.png"
           alt="image"
-          className="rounded-t-[50px] md:rounded-l-[240px] shrink-0 w-full h-[355px] md:h-[595px] md:w-full"
+          width={500}
+          height={500}
+          className="rounded-t-[50px] md:rounded-none md:rounded-l-[240px] shrink-0 w-full h-[355px] md:h-[595px] md:w-full"
         />
       </div>
 
-      <div className="flex-1 bg-[#001E2D] md:w-full w-full h-[355px] md:h-[595px] rounded-b-[50px] md:rounded-r-[240px]">
+      <div className="flex-1 bg-[#001E2D] md:w-full w-full h-[355px] md:h-[595px] rounded-b-[50px] md:rounded-none md:rounded-r-[240px]">
         <div className="flex flex-col mx-auto h-full w-full items-center justify-center">
           <div className="text-[#fff] space-y-[16px]">
             <h1 className="md:text-6xl text-2xl font-bold">Reach Out to Us</h1>

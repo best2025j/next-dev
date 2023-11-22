@@ -1,12 +1,11 @@
-// import React from "react";
-import { Link } from "react-router-dom";
-import ButtonWhite from "../../components/Buttons/ButtonWhite";
-import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
-import Footer from "../../components/shared/Footer";
-import SectionContents from "../../components/layout/SectionContents";
+import React from "react";
+import Link from "next/link";
 import Image from "next/image";
+import ButtonWhite from "../components/buttons/ButtonWhite";
+import ViewAllCourseIcon from "../components/icons/ViewAllCourseIcon";
+import SectionContents from "@/components/ui/SectionContents";
 
-const About = () => {
+export default function About() {
   return (
     <>
       <div className="py-28 md:px-[60px] w-full h-full">
@@ -23,18 +22,28 @@ const About = () => {
           </div>
 
           <div className="flex flex-col md:gap-[38px] pt-10 p-2">
-            <Image src="/booksLab.png" alt="pix" className="w-full h-full" />
+            <Image
+              width={500}
+              height={500}
+              src="/booksLab.png"
+              alt="pix"
+              className="w-full h-full"
+            />
 
             <div className="flex py-4 space-x-2 ">
               <Image
                 className="w-[180px] h-[100px] md:w-auto md:h-auto"
                 src="/schoolBoy.png"
+                width={500}
+                height={500}
                 alt="pix 1"
               />
               <Image
                 className="w-[180px] h-[100px] md:w-auto md:h-auto"
                 src="/adult.png"
                 alt="pix 2"
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -43,12 +52,14 @@ const About = () => {
 
       <div className="space-y-4 flex flex-col justify-center items-center mx-auto text-center md:px-[112px] px-4">
         <h1 className="font-bold text-[24px] md:text-[48px] ">Who We Are</h1>
-        <p className="w-[286px] md:w-[430px] text-xs md:text-md font-normal">
+
+        <p className="w-[286px] md:w-[430px] text-xs md:text-lg font-normal">
           We are a passionate team of educators, innovators, and tech
           enthusiasts dedicated to bridging the digital gap.
         </p>
-        <div className="md:pt-[60px]">
-          <Image src="/vid.png" alt="pix-4" />
+
+        <div className="md:py-[60px]">
+          <Image width={1000} height={1000} src="/vid.png" alt="pix-4" />
         </div>
       </div>
 
@@ -235,7 +246,7 @@ const About = () => {
         </div>
 
         <div className="hidden md:block">
-          <Image src="/KTA2.png" alt="kta" />
+          <Image width={500} height={500} src="/KTA2.png" alt="kta" />
         </div>
       </div>
 
@@ -253,16 +264,21 @@ const About = () => {
 
         <div className="flex justify-between space-x-4">
           <div>
-            <Image src="/vr.png" alt="Image1" />
+            <Image width={500} height={500} src="/vr.png" alt="Image1" />
           </div>
           <div>
-            <Image src="/groupPix.png" alt="Image2" />
+            <Image width={500} height={500} src="/groupPix.png" alt="Image2" />
           </div>
           <div>
-            <Image src="/smile.png" alt="Image3" />
+            <Image width={500} height={500} src="/smile.png" alt="Image3" />
           </div>
           <div>
-            <Image src="ladiesSmile.png" alt="Image4" />
+            <Image
+              width={500}
+              height={500}
+              src="/ladiesSmile.png"
+              alt="Image4"
+            />
           </div>
         </div>
 
@@ -280,7 +296,7 @@ const About = () => {
             </p>
 
             <div className="py-6 w-[288px] md:w-full">
-              <Link to={`/courses`}>
+              <Link href="/courses/Courses">
                 <ButtonWhite
                   className={
                     // "flex items-center w-full md:text-base text-sm justify-center"
@@ -295,14 +311,17 @@ const About = () => {
               </Link>
             </div>
           </div>
-          <Image src="/ktaSvg.png" alt="" className="w-auto h-auto " />
+          <Image
+            width={500}
+            height={500}
+            src="/ktaSvg.png"
+            alt=""
+            className="w-auto h-auto "
+          />
         </div>
       </div>
 
       <SectionContents />
-      <Footer />
     </>
   );
-};
-
-export default About;
+}

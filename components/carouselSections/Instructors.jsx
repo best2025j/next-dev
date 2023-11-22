@@ -57,10 +57,10 @@ const Instructors = () => {
         </div>
 
         <div className="md:py-28">
-          <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full">
-            {visibleImages.map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full">
+            {staffData.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
-                <Image src={item.image} alt="" />
+                <Image src={item.image} alt="" width={500} height={500} />
 
                 <div className="space-y-2">
                   <h1 className="text-sky-500 dark:text-sky-400">
@@ -77,7 +77,7 @@ const Instructors = () => {
           <div className="md:hidden flex h-full w-full gap-4">
             {visibleImages.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
-                <Image src={item.image} alt="" />
+                <Image src={item.image} alt="" width={500} height={500} />
 
                 <div className="space-y-2">
                   <h1 className="text-sky-500 dark:text-sky-400 text-sm">

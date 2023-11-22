@@ -1,8 +1,8 @@
 import React from "react";
 import Footer from "../../components/shared/Footer";
-import SectionContents from "../../components/layout/SectionContents";
+import SectionContents from "../../components/ui/SectionContents";
 
-const Blog = () => {
+export default function Blog() {
   return (
     <>
       <div className="py-40">
@@ -12,6 +12,4 @@ const Blog = () => {
       <Footer />
     </>
   );
-};
-
-export default Blog;
+}

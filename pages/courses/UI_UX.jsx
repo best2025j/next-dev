@@ -1,13 +1,13 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import SectionContents from "../../components/layout/SectionContents";
+import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
-import ButtonWhite from "../../components/Buttons/ButtonWhite";
+import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images//ui_ux.png";
 import Image from "next/image";
 
-const UI_UX = () => {
+export default function UI_UX() {
   // Access the &apos;id&apos; parameter from the route
 
   return (
@@ -121,6 +121,4 @@ const UI_UX = () => {
       <Footer />
     </>
   );
-};
-
-export default UI_UX;
+}

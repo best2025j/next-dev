@@ -1,14 +1,14 @@
-import SectionContents from "../../components/layout/SectionContents";
+import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
 import image from "../../assets/images/webImage.png";
-import ButtonWhite from "../../components/Buttons/ButtonWhite";
+import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
-import { Link } from "react-router-dom";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-const WebDevelopment = () => {
-  // Access the &apos;id&apos; parameter from the route
-
+export default function WebDevelopment() {
+  const router = useRouter;
   return (
     <>
       <div className="md:py-40 md:px-[80px] py-20 px-[16px]">
@@ -19,7 +19,7 @@ const WebDevelopment = () => {
         </p>
 
         {/* Added a "Back to Courses" button using the Link component */}
-        <Link to="/courses">
+        <Link href="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
 
@@ -179,6 +179,4 @@ const WebDevelopment = () => {
       <Footer />
     </>
   );
-};
-
-export default WebDevelopment;
+}

@@ -25,8 +25,8 @@ export default function Nav() {
   const handleCloseNav = () => setNav(false);
 
   // CSS classes for active and inactive links
-  const inactiveLink =
-    "pl-2 font-bold text-sm hover:text-black dark:hover:text-blue-500  active:text-blue-800 focus:outline-none focus:ring focus:ring-violet-300";
+  const inactiveLink = "hover:text-blue-500 active:text-blue-800 ";
+
   const activeLink = `${inactiveLink} text-[#00AFF0]`;
 
   return (
@@ -41,25 +41,25 @@ export default function Nav() {
         <Link href="/">
           <Image
             src="/kw.png"
+            alt="logo-pix"
+            width={110} // Set to the desired width in pixels
+            height={110} // Set to the desired height in pixels
             quality={100}
-            alt="/"
-            width="110px"
-            height="128px"
             className="cursor-pointer"
           />
         </Link>
 
         <ul className="hidden md:flex capitalize space-x-6">
           <Link
-            className={asPath.includes("/") ? activeLink : inactiveLink}
+            className={asPath === "/" ? activeLink : inactiveLink}
             href={"/"}
           >
             home
           </Link>
 
           <Link
-            className={asPath.includes("/course") ? activeLink : inactiveLink}
-            href={"/course"}
+            className={asPath.includes("/courses") ? activeLink : inactiveLink}
+            href={"/courses/Courses"}
           >
             course
           </Link>
@@ -72,8 +72,8 @@ export default function Nav() {
           </Link>
 
           <Link
-            className={asPath.includes("/about") ? activeLink : inactiveLink}
-            href={"/about"}
+            className={asPath.includes("/About") ? activeLink : inactiveLink}
+            href={"/About"}
           >
             about
           </Link>
@@ -85,11 +85,17 @@ export default function Nav() {
           </Link>
         </ul>
 
-        {/* Form and Dark Mode Switch */}
-        <div className="hidden md:flex items-center justify-center space-x-4">
-          <ButtonWhite label="Register" className="text-[#00AFF0]" />
-          <DarkModeSwitch />
+        <div className="hidden md:flex items-center justify-center space-x-1">
+          <div className="">
+            <ButtonWhite label="Get Started" className="" />
+          </div>
+          
+          <div className="">
+            <DarkModeSwitch />
+          </div>
         </div>
+
+        {/* Form and Dark Mode Switch */}
 
         {/* Mobile Menu Icon */}
         <div onClick={handleToggleNav} className="md:hidden cursor-pointer">
@@ -122,8 +128,8 @@ export default function Nav() {
                   src="/kw.png"
                   quality={100}
                   alt="/"
-                  width="100%"
-                  height="100%"
+                  width={110} // Set to the desired width in pixels
+                  height={110} // Set to the desired height in pixels
                   className=" cursor-pointer"
                 />
               </Link>
@@ -179,7 +185,7 @@ export default function Nav() {
               </ul>
 
               <div className="flex justify-center items-center h-40 w-full">
-                {/* <DarkModeSwitch /> */}
+                <DarkModeSwitch />
               </div>
             </div>
 

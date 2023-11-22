@@ -3,6 +3,7 @@ import Nav from "@/components/shared/Nav";
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import { useRouter } from "next/router";
+import Footer from "@/components/shared/Footer";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -16,7 +17,7 @@ function MyApp({ Component, pageProps }) {
       {noNav.includes(asPath) ? null : <Nav />}
       <Component {...pageProps} />
       {/* no footer on both signin and signup page... */}
-      {/* {noFooter.includes(asPath) ? null : <Footer />} */}
+      {noFooter.includes(asPath) ? null : <Footer />}
     </ThemeProvider>
   );
 }

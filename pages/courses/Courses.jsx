@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/shared/Footer";
 import SectionContents from "../../components/ui/SectionContents";
 import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
@@ -146,7 +145,7 @@ const Courses = () => {
                 0{item.number}
               </h1>
 
-              <div className="md:w-[931px] w-full bg-white p-4 rounded-3xl mx-auto">
+              <div className="md:w-[931px] w-full bg-white dark:bg-slate-900 p-4 rounded-3xl mx-auto">
                 <Image
                   src={item.image}
                   className="md:w-auto md:h-auto hidden md:flex"
@@ -226,7 +225,6 @@ const Courses = () => {
         </div>
       </div>
       <SectionContents />
-      <Footer />
     </>
   );
 };

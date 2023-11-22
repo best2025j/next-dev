@@ -3,12 +3,12 @@ import Footer from "../../components/shared/Footer";
 import image from "../../assets/images/webImage.png";
 import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
-import { Link } from "react-router-dom";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function WebDevelopment() {
-  // Access the &apos;id&apos; parameter from the route
-
+  const router = useRouter;
   return (
     <>
       <div className="md:py-40 md:px-[80px] py-20 px-[16px]">
@@ -19,7 +19,7 @@ export default function WebDevelopment() {
         </p>
 
         {/* Added a "Back to Courses" button using the Link component */}
-        <Link to="/courses">
+        <Link href="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
 

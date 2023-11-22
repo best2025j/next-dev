@@ -73,7 +73,7 @@ export default function Nav() {
 
           <Link
             className={asPath.includes("/about") ? activeLink : inactiveLink}
-            href={"/about"}
+            href={"/About"}
           >
             about
           </Link>

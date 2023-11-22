@@ -6,11 +6,10 @@ import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Courses() {
+const Courses = () => {
   const courseData = [
     {
-      id: 1,
-      name: "web-development",
+      id: "WebDevelopment",
       number: 1,
       image: "/webDev.png",
       mbImage: "/webImage.png",
@@ -152,8 +151,8 @@ export default function Courses() {
                   src={item.image}
                   className="md:w-auto md:h-auto hidden md:flex"
                   alt="NO IMAGE FOT THIS COURSE"
-                  width={100}
-                  height={100}
+                  width={1000}
+                  height={1000}
                   onError={() =>
                     console.error("Image failed to load for:", item.image)
                   }
@@ -163,8 +162,8 @@ export default function Courses() {
                   src={item.mbImage}
                   className="md:w-auto w-full md:h-auto md:hidden flex"
                   alt="NO IMAGE FOT THIS COURSE"
-                  width={100}
-                  height={100}
+                  width={1000}
+                  height={1000}
                   onError={() =>
                     console.error("Image failed to load for:", item.mbImage)
                   }
@@ -208,8 +207,7 @@ export default function Courses() {
                 </div>
 
                 <div className="py-6 flex items-center justify-center ">
-                  {/* Use Link for navigation */}
-                  <Link href={`/courses/${item.name}`}>
+                  <Link href="/courses/Courses/${item.id}">
                     <ButtonWhite
                       className={
                         "flex items-center text-xs md:text-base text-center justify-center"
@@ -231,4 +229,6 @@ export default function Courses() {
       <Footer />
     </>
   );
-}
+};
+
+export default Courses;

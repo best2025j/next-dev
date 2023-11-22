@@ -1,10 +1,10 @@
 import React from "react";
 import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
-import { Link } from "react-router-dom";
 import image1 from "../../assets/images/KTA. logo (1).png";
 import image2 from "../../assets/images/KTA. logo(2).png";
 import Image from "next/image";
 import ButtonWhite from "../buttons/ButtonWhite";
+import Link from "next/link";
 
 const SectionContents = () => {
   return (
@@ -16,7 +16,7 @@ const SectionContents = () => {
         </h1>
 
         <div className="md:py-6 flex items-center justify-center ">
-          <Link to="/courses">
+          <Link href="/courses">
             {/* Use Link for navigation */}
             <ButtonWhite
               className={

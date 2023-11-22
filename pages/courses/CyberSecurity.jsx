@@ -1,15 +1,14 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import SectionContents from "../../components/layout/SectionContents";
+import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images//cyber.png";
 import Image from "next/image";
 
-const CyberSecurity = () => {
+export default function CyberSecurity() {
   // Access the 'id' parameter from the route
-
   return (
     <>
       <div className="md:py-40 md:px-[80px] py-20 px-[16px]">
@@ -122,6 +121,4 @@ const CyberSecurity = () => {
       <Footer />
     </>
   );
-};
-
-export default CyberSecurity;
+}

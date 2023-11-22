@@ -1,13 +1,13 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import SectionContents from "../../components/layout/SectionContents";
+import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
 import image from "../../assets/images/dataScience.png";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
 
-const DataAnalytics = () => {
+export default function DataAnalytics() {
   // Access the 'id' parameter from the route
 
   return (
@@ -122,6 +122,4 @@ const DataAnalytics = () => {
       <Footer />
     </>
   );
-};
-
-export default DataAnalytics;
+}

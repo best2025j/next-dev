@@ -1,13 +1,13 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import SectionContents from "../../components/layout/SectionContents";
+import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images//vr.png";
 import Image from "next/image";
 
-const VA_RemoteJobs = () => {
+export default function VA_RemoteJobs() {
   // Access the 'id' parameter from the route
 
   return (
@@ -118,6 +118,4 @@ const VA_RemoteJobs = () => {
       <Footer />
     </>
   );
-};
-
-export default VA_RemoteJobs;
+}

@@ -1,4 +1,4 @@
-import SectionContents from "../../components/layout/SectionContents";
+import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
 import image from "../../assets/images/webImage.png";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
@@ -6,7 +6,7 @@ import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import { Link } from "react-router-dom";
 import Image from "next/image";
 
-const WebDevelopment = () => {
+export default function WebDevelopment() {
   // Access the &apos;id&apos; parameter from the route
 
   return (
@@ -179,6 +179,4 @@ const WebDevelopment = () => {
       <Footer />
     </>
   );
-};
-
-export default WebDevelopment;
+}

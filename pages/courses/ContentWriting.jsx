@@ -1,4 +1,4 @@
-import SectionContents from "../../components/layout/SectionContents";
+import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
 import image from "../../assets/images/contentpix.png";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
@@ -6,7 +6,7 @@ import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import { Link } from "react-router-dom";
 import Image from "next/image";
 
-const ContentWriting = () => {
+export default function ContentWriting() {
   // Access the 'id' parameter from the route
 
   return (
@@ -179,6 +179,4 @@ const ContentWriting = () => {
       <Footer />
     </>
   );
-};
-
-export default ContentWriting;
+}

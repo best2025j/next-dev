@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Footer from "../../components/shared/Footer";
-import SectionContents from "../../components/layout/SectionContents";
+import SectionContents from "../../components/ui/SectionContents";
 import Image from "next/image";
 
-const About = () => {
+export default function About() {
   return (
     <>
       <div className="py-28 md:px-[60px] w-full h-full">
@@ -303,6 +303,4 @@ const About = () => {
       <Footer />
     </>
   );
-};
-
-export default About;
+}

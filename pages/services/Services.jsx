@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Footer from "../../components/shared/Footer";
-import SectionContents from "../../components/layout/SectionContents";
+import SectionContents from "../../components/ui/SectionContents";
 import Image from "next/image";
 
-const Services = () => {
+export default function Services() {
   return (
     <>
       <div className="py-24 md:py-40 flex flex-col h-full w-full">
@@ -429,6 +429,4 @@ const Services = () => {
       <Footer />
     </>
   );
-};
-
-export default Services;
+}

@@ -1,10 +1,11 @@
 // import React from "react";
 import { Link } from "react-router-dom";
 import SectionContents from "../../components/layout/SectionContents";
-import Footer from "../../components/layout/Footer";
+import Footer from "../../components/shared/Footer";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images//vr.png";
+import Image from "next/image";
 
 const VA_RemoteJobs = () => {
   // Access the 'id' parameter from the route
@@ -22,7 +23,7 @@ const VA_RemoteJobs = () => {
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
         <div className="pt-14 h-full">
-          <img src={image} alt="no image" />
+          <Image src={image} alt="no image" />
           <div className="flex justify-between px-2 md:py-[40px] bg-white items-start py-6">
             <div className="space-y-4 w-[439px]">
               <h1 className="font-bold text-[24px] md:text-[48px]">

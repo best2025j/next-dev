@@ -2,8 +2,9 @@
 import { Link } from "react-router-dom";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
-import Footer from "../../components/layout/Footer";
+import Footer from "../../components/shared/Footer";
 import SectionContents from "../../components/layout/SectionContents";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -22,15 +23,15 @@ const About = () => {
           </div>
 
           <div className="flex flex-col md:gap-[38px] pt-10 p-2">
-            <img src="/booksLab.png" alt="pix" className="w-full h-full" />
+            <Image src="/booksLab.png" alt="pix" className="w-full h-full" />
 
             <div className="flex py-4 space-x-2 ">
-              <img
+              <Image
                 className="w-[180px] h-[100px] md:w-auto md:h-auto"
                 src="/schoolBoy.png"
                 alt="pix 1"
               />
-              <img
+              <Image
                 className="w-[180px] h-[100px] md:w-auto md:h-auto"
                 src="/adult.png"
                 alt="pix 2"
@@ -47,7 +48,7 @@ const About = () => {
           enthusiasts dedicated to bridging the digital gap.
         </p>
         <div className="md:pt-[60px]">
-          <img src="/vid.png" alt="pix-4" />
+          <Image src="/vid.png" alt="pix-4" />
         </div>
       </div>
 
@@ -234,7 +235,7 @@ const About = () => {
         </div>
 
         <div className="hidden md:block">
-          <img src="/KTA2.png" alt="kta" />
+          <Image src="/KTA2.png" alt="kta" />
         </div>
       </div>
 
@@ -252,16 +253,16 @@ const About = () => {
 
         <div className="flex justify-between space-x-4">
           <div>
-            <img src="/vr.png" alt="img1" />
+            <Image src="/vr.png" alt="Image1" />
           </div>
           <div>
-            <img src="/groupPix.png" alt="img2" />
+            <Image src="/groupPix.png" alt="Image2" />
           </div>
           <div>
-            <img src="/smile.png" alt="img3" />
+            <Image src="/smile.png" alt="Image3" />
           </div>
           <div>
-            <img src="ladiesSmile.png" alt="img4" />
+            <Image src="ladiesSmile.png" alt="Image4" />
           </div>
         </div>
 
@@ -294,7 +295,7 @@ const About = () => {
               </Link>
             </div>
           </div>
-          <img src="/ktaSvg.png" alt="" className="w-auto h-auto " />
+          <Image src="/ktaSvg.png" alt="" className="w-auto h-auto " />
         </div>
       </div>
 

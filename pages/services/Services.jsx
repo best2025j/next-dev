@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
-import Footer from "../../components/layout/Footer";
+import Footer from "../../components/shared/Footer";
 import SectionContents from "../../components/layout/SectionContents";
+import Image from "next/image";
 
 const Services = () => {
   return (
     <>
       <div className="py-24 md:py-40 flex flex-col h-full w-full">
         <div className=" flex flex-col-reverse md:flex-row justify-between mx-auto items-center w-full h-full">
-        <div className="flex items-center justify-center mx-auto"></div>
+          <div className="flex items-center justify-center mx-auto"></div>
           <div className="flex flex-col space-y-2 py-6 md:py-0">
             <h1 className="text-[24px] md:text-[48px] font-bold">
               What we offer
@@ -52,7 +53,7 @@ const Services = () => {
               </span>
             </div>
 
-            <img
+            <Image
               src="/girlpix.png"
               alt=""
               className="w-[193px] h-[286px] md:h-auto md:w-auto"
@@ -266,7 +267,7 @@ const Services = () => {
                   collaborate easily with others.
                 </p>
               </div>
-              <img
+              <Image
                 src="/booksLab.png"
                 alt="book pix"
                 className="w-[320px] h-[185px] md:w-auto md:h-auto"
@@ -275,7 +276,7 @@ const Services = () => {
           </div>
 
           <div className="md:flex hidden">
-            <img src="/KTA2.png" alt="no water mark" />
+            <Image src="/KTA2.png" alt="no water mark" />
           </div>
         </div>
 
@@ -294,7 +295,7 @@ const Services = () => {
           <div className="flex gap-[32px] flex-col py-20 space-y-4">
             <div className="flex md:gap-[32px]  space-y-5 md:space-y-0 flex-col md:flex-row">
               <div className="flex flex-col justify-center md:gap-[30px] mx-auto self-stretch">
-                <img
+                <Image
                   src="/schoolboy2.png"
                   alt="pix 1"
                   className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
@@ -313,7 +314,7 @@ const Services = () => {
               </div>
 
               <div className="flex flex-col justify-center md:gap-[30px] self-stretch mx-auto">
-                <img
+                <Image
                   src="/ladysmile.png"
                   alt="pix 1"
                   className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
@@ -334,7 +335,7 @@ const Services = () => {
 
             <div className="flex gap-[32px] flex-col md:flex-row">
               <div className="flex flex-col justify-center md:gap-[30px] self-stretch mx-auto">
-                <img
+                <Image
                   src="/copper2.png"
                   alt="pix 1"
                   className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
@@ -353,7 +354,7 @@ const Services = () => {
               </div>
 
               <div className="flex flex-col justify-center md:gap-[30px] self-stretch mx-auto">
-                <img
+                <Image
                   src="/schoolboy2.png"
                   alt="pix 1"
                   className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
@@ -415,7 +416,7 @@ const Services = () => {
               </div>
             </div>
 
-            <img
+            <Image
               src="/ktaSvg.png"
               alt="kta-image"
               className="md:h-auto md:w-auto w-[90%] h-[189px] hidden md:flex"

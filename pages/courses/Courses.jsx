@@ -1,5 +1,5 @@
-// import React from "react";
-import Footer from "../../components/layout/Footer";
+import React from "react";
+import Footer from "../../components/shared/Footer";
 import SectionContents from "../../components/layout/SectionContents";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";

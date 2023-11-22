@@ -1,4 +1,6 @@
-// import React from "react";
+import React from "react";
+
+import Image from "next/image";
 
 const OutSponsors = () => {
   const staffData = [
@@ -18,7 +20,7 @@ const OutSponsors = () => {
               key={index}
               className="flex justify-center items-center rounded-3xl p-2 sm:flex h-full w-auto flex-col"
             >
-              <img
+              <Image
                 className="h-14 w-14 md:h-full md:w-full"
                 src={image}
                 alt={`Image ${index + 5}`}
@@ -29,17 +31,17 @@ const OutSponsors = () => {
 
         <div className="flex md:hidden flex-col w-full items-center justify-center">
           <div className="grid justify-center grid-cols-3 gap-10">
-            <img
+            <Image
               className="h-14 w-14 md:h-full md:w-full"
               src="/unescoUnited.png"
               alt=""
             />
-            <img
+            <Image
               className="h-14 w-14 md:h-full md:w-full"
               src="/kwaralLog.png"
               alt=""
             />{" "}
-            <img
+            <Image
               className="h-14 w-14 md:h-full md:w-full"
               src="/ntda.png"
               alt=""
@@ -47,13 +49,13 @@ const OutSponsors = () => {
           </div>
 
           <div className="grid justify-center grid-cols-2 gap-10">
-            <img
+            <Image
               className="h-14 w-14 md:h-full md:w-full"
               src="/eFyg1QEJ 1.png"
               alt=""
             />
 
-            <img
+            <Image
               className="h-14 w-14 md:h-full md:w-full"
               src="/XqUYhl60 1.png"
               alt=""

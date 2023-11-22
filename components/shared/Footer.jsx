@@ -8,6 +8,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import ig from "../../assets/svgs/ig.svg";
 import Twitter from "../../assets/svgs/Twitterlogo.svg";
 import whatsapp from "../../assets/svgs/whatsapp.svg";
+import Image from "next/image";
 
 const Footer = () => {
   const [nav, setNav] = useState(false);
@@ -29,7 +30,7 @@ const Footer = () => {
       <div className="w-[90%] mx-auto space-y-6">
         <div className="flex justify-between items-center">
           <div className="md:flex hidden">
-            <img src={images} alt="" />
+            <Image src={images} alt="" />
           </div>
 
           <div className="md:w-[456px]">
@@ -61,7 +62,7 @@ const Footer = () => {
 
           <div className="flex space-x-5 justify-end items-center sm:w-[360px] pt-4 text-2xl cursor-pointer">
             <Link to="https://instagram.com/kwaratechacademy?igshid=MzRlODBiNWFlZA==">
-              <img
+              <Image
                 alt="no image"
                 className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
                 width={30}
@@ -71,7 +72,7 @@ const Footer = () => {
             </Link>
 
             <Link to="https://twitter.com/kwaratech?s=21&t=sYf7NFdQaYs03psUDuFqhQ">
-              <img
+              <Image
                 alt="no image"
                 className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
                 width={30}
@@ -81,7 +82,7 @@ const Footer = () => {
             </Link>
 
             <Link to="https://wa.me/07011198112">
-              <img
+              <Image
                 alt="no image"
                 className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
                 width={30}

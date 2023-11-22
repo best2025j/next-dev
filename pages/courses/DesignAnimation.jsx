@@ -1,10 +1,11 @@
-// import React from "react";
+import React from "react";
 import SectionContents from "../../components/layout/SectionContents";
-import Footer from "../../components/layout/Footer";
+import Footer from "../../components/shared/Footer";
 import ButtonWhite from "../../components/Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images/uifull.png";
 import { Link } from "react-router-dom";
+import Image from "next/image";
 
 const DesignAnimation = () => {
   // Access the &apos;id&apos; parameter from the route
@@ -23,7 +24,7 @@ const DesignAnimation = () => {
         </Link>
 
         <div className="pt-14 h-full w-full">
-          <img src={image} alt="no image" />
+          <Image src={image} alt="no image" />
           <div className="flex justify-between px-2 md:py-[40px] bg-white items-start py-6">
             <div className="space-y-4 w-[439px]">
               <h1 className="font-bold text-[24px] md:text-[48px]">

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Carousel = () => {
   const staffData = [
     "/Rectangle 3.png",
@@ -25,7 +27,7 @@ const Carousel = () => {
               key={index}
               className="justify-center items-center hover:bg-slate-100 rounded-3xl p-2 sm:flex  dark:bg-slate-800 flex-col"
             >
-              <img
+              <Image
                 className="h-48 w-96 md:h-full md:w-full"
                 src={image}
                 alt={`Image ${index + 5}`}
@@ -40,7 +42,7 @@ const Carousel = () => {
               key={index + startIndex} // Adjust the key to account for the subset
               className="justify-center items-center hover:bg-slate-100 rounded-3xl md:p-2 sm:flex dark:bg-slate-800 flex-col"
             >
-              <img
+              <Image
                 className="h-48 w-96 md:h-full md:w-full"
                 src={image}
                 alt={`Image ${index + startIndex + 1}`} // Adjust the alt text

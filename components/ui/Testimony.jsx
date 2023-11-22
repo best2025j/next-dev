@@ -1,4 +1,6 @@
-// import React from "react";
+import React from "react";
+
+import Image from "next/image";
 
 const Testimony = () => {
   return (
@@ -9,7 +11,7 @@ const Testimony = () => {
         </h1>
         <div className=" md:flex space-y-4 justify-between items-center py-10 gap-10">
           <div className="bg-[#4F616D] rounded-[60px] h-full w-full p-10 space-y-3 text-justify">
-            <img src="/semi.png" alt="" />
+            <Image src="/semi.png" alt="" />
             <h1 className="md:text-lg text-sm">
               I started my tech journey with Kwaratech Academy&apos;s essential
               ICT training. The beginner-friendly approach made complex concepts
@@ -21,7 +23,7 @@ const Testimony = () => {
           </div>
 
           <div className="bg-[#4F616D]  rounded-[60px] h-full w-full p-10 self-stretch space-y-3 text-justify">
-            <img src="/semi.png" alt="" />
+            <Image src="/semi.png" alt="" />
             <h1 className="md:text-lg text-sm">
               &quot;I can&apos;t thank Kwaratech Academy enough for their
               top-notch tech courses. As a web developer, I needed to upskill in

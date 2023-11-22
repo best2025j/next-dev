@@ -2,7 +2,8 @@ import { useState } from "react";
 import "animate.css";
 import ButtonWhite from "../Buttons/ButtonWhite";
 import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
 
 const CarouselCards = () => {
   const staffData = [
@@ -54,7 +55,7 @@ const CarouselCards = () => {
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 <div className="image-container">
-                  <img
+                  <Image
                     src={item.thumbnail}
                     alt=""
                     className="md:h-full w-full h-96"
@@ -63,7 +64,7 @@ const CarouselCards = () => {
 
                 {hoveredIndex === index && (
                   <div className="absolute animate__animated animate__zoomIn delay-120 ease-in-out duration-100 inset-y-20 flex justify-center items-center h-full w-[500px]">
-                    <img
+                    <Image
                       src={item.fullImage}
                       alt=""
                       className="md:h-full h-96 w-full"
@@ -75,7 +76,7 @@ const CarouselCards = () => {
           </div>
 
           <div className="pr-6 hidden md:flex">
-            <img src="/KTA.png" alt="" />
+            <Image src="/KTA.png" alt="" />
           </div>
         </div>
 
@@ -84,31 +85,31 @@ const CarouselCards = () => {
             <h1 className="text-[24px] font-bold">
               01. Introduction to HTML and CSS
             </h1>
-            <img src="/frontend-full.png" alt="" />
+            <Image src="/frontend-full.png" alt="" />
           </div>
 
           <div className="space-y-3">
             <h1 className="text-[24px] font-bold">02. python and java</h1>
-            <img src="/backend-full.png" alt="" />
+            <Image src="/backend-full.png" alt="" />
           </div>
 
           <div className="space-y-3">
             <h1 className="text-[24px] font-bold">03. Design </h1>
-            <img src="/design-full.png" alt="" />
+            <Image src="/design-full.png" alt="" />
           </div>
           
           <div className="space-y-3">
             <h1 className="text-[24px] font-bold capitalize">
               04. Data Analysis
             </h1>
-            <img src="/dataScience-full.png" alt="" />
+            <Image src="/dataScience-full.png" alt="" />
           </div>
         </div>
       </div>
 
       <div className="py-6 flex items-center justify-center ">
-        <Link to={`/courses`}>
-          {/* Use Link for navigation */}
+        <Link href={`/courses`}>
+          {/* Use kLink for navigation */}
           <ButtonWhite
             className={"flex items-center text-base text-center justify-center"}
             label={

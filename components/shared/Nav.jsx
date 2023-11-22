@@ -41,17 +41,17 @@ export default function Nav() {
         <Link href="/">
           <Image
             src="/kw.png"
-            quality={100}
             alt="logo-pix"
-            width="110px"
-            // height="128px"
+            width={110} // Set to the desired width in pixels
+            height={110} // Set to the desired height in pixels
+            quality={100}
             className="cursor-pointer"
           />
         </Link>
 
         <ul className="hidden md:flex capitalize space-x-6">
           <Link
-            className={asPath.includes("/") ? activeLink : inactiveLink}
+            className={asPath === "/" ? activeLink : inactiveLink}
             href={"/"}
           >
             home
@@ -127,8 +127,8 @@ export default function Nav() {
                   src="/kw.png"
                   quality={100}
                   alt="/"
-                  width="100%"
-                  height="100%"
+                  width={110} // Set to the desired width in pixels
+                  height={110} // Set to the desired height in pixels
                   className=" cursor-pointer"
                 />
               </Link>

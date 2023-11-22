@@ -3,8 +3,8 @@ import Footer from "../../components/shared/Footer";
 import SectionContents from "../../components/ui/SectionContents";
 import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
-import { Link } from "react-router-dom";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Courses() {
   const courseData = [
@@ -26,7 +26,7 @@ export default function Courses() {
       id: 2,
       name: "design-animation",
       number: 2,
-      mbImage: "uifull.png",
+      mbImage: "/uifull.png",
       image: "/Designs.png",
       course: "Design/ Animation",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -40,7 +40,7 @@ export default function Courses() {
       id: 3,
       name: "ui-ux",
       number: 3,
-      mbImage: "ui_ux.png",
+      mbImage: "/ui_ux.png",
       image: "/UI.png",
       course: "UI/UX Design",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -54,7 +54,7 @@ export default function Courses() {
       id: 4,
       name: "data-analytics",
       number: 4,
-      mbImage: "dataScience.png",
+      mbImage: "/dataScience.png",
       image: "/DataSciences.png",
       course: "Data & Analytics",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -68,7 +68,7 @@ export default function Courses() {
       id: 5,
       name: "cyber-security",
       number: 5,
-      mbImage: "cyber.png",
+      mbImage: "/cyber.png",
       image: "/CyberSecuritys.png",
       course: "Cybersecurity",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -82,7 +82,7 @@ export default function Courses() {
       id: 6,
       name: "va-remote-jobs",
       number: 6,
-      mbImage: "vrpix.png",
+      mbImage: "/vrpix.png",
       image: "/VirtualRemoteJob.png",
       course: "Virtual Assistance and Remote Jobs",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -96,7 +96,7 @@ export default function Courses() {
       id: 7,
       name: "digital-marketing",
       number: 7,
-      mbImage: "digitalpix.png",
+      mbImage: "/digitalpix.png",
       image: "/DMarketting.png",
       course: "Digital Marketing",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -110,7 +110,7 @@ export default function Courses() {
       id: 8,
       name: "content-writing",
       number: 8,
-      mbImage: "contentpix.png",
+      mbImage: "/contentpix.png",
       image: "/CopyWritting.png",
       course: "Content Writing",
       info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
@@ -152,6 +152,8 @@ export default function Courses() {
                   src={item.image}
                   className="md:w-auto md:h-auto hidden md:flex"
                   alt="NO IMAGE FOT THIS COURSE"
+                  width={100}
+                  height={100}
                   onError={() =>
                     console.error("Image failed to load for:", item.image)
                   }
@@ -161,6 +163,8 @@ export default function Courses() {
                   src={item.mbImage}
                   className="md:w-auto w-full md:h-auto md:hidden flex"
                   alt="NO IMAGE FOT THIS COURSE"
+                  width={100}
+                  height={100}
                   onError={() =>
                     console.error("Image failed to load for:", item.mbImage)
                   }
@@ -205,7 +209,7 @@ export default function Courses() {
 
                 <div className="py-6 flex items-center justify-center ">
                   {/* Use Link for navigation */}
-                  <Link to={`/courses/${item.name}`}>
+                  <Link href={`/courses/${item.name}`}>
                     <ButtonWhite
                       className={
                         "flex items-center text-xs md:text-base text-center justify-center"

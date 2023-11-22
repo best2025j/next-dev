@@ -59,7 +59,7 @@ export default function Nav() {
 
           <Link
             className={asPath.includes("/course") ? activeLink : inactiveLink}
-            href={"/course"}
+            href={"/courses/Courses"}
           >
             course
           </Link>
@@ -87,8 +87,9 @@ export default function Nav() {
 
         <div className="hidden md:flex items-center justify-center space-x-1">
           <div className="">
-            <ButtonWhite label="Register" className="text-[#00AFF0]" />
+            <ButtonWhite label="Get Started" className="" />
           </div>
+          
           <div className="">
             <DarkModeSwitch />
           </div>

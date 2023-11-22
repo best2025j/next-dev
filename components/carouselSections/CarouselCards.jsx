@@ -58,8 +58,8 @@ const CarouselCards = () => {
                   <Image
                     src={item.thumbnail}
                     alt=""
-                    width="100%"
-                    height="100%"
+                    width={500}
+                    height={500}
                     className="md:h-full w-full h-96"
                   />
                 </div>
@@ -69,8 +69,8 @@ const CarouselCards = () => {
                     <Image
                       src={item.fullImage}
                       alt=""
-                      width="100%"
-                      height="100%"
+                      width={500}
+                      height={500}
                       className="md:h-full h-96 w-full"
                     />
                   </div>
@@ -80,7 +80,7 @@ const CarouselCards = () => {
           </div>
 
           <div className="pr-6 hidden md:flex">
-            <Image src="/KTA.png" alt="" width="100%" height="100%" />
+            <Image src="/KTA.png" alt="" width={500} height={500} />
           </div>
         </div>
 
@@ -89,17 +89,17 @@ const CarouselCards = () => {
             <h1 className="text-[24px] font-bold">
               01. Introduction to HTML and CSS
             </h1>
-            <Image width="100%" height="100%" src="/frontend-full.png" alt="" />
+            <Image width={500} height={500} src="/frontend-full.png" alt="" />
           </div>
 
           <div className="space-y-3">
             <h1 className="text-[24px] font-bold">02. python and java</h1>
-            <Image width="100%" height="100%" src="/backend-full.png" alt="" />
+            <Image width={500} height={500} src="/backend-full.png" alt="" />
           </div>
 
           <div className="space-y-3">
             <h1 className="text-[24px] font-bold">03. Design </h1>
-            <Image width="100%" height="100%" src="/design-full.png" alt="" />
+            <Image width={500} height={500} src="/design-full.png" alt="" />
           </div>
 
           <div className="space-y-3">
@@ -107,8 +107,8 @@ const CarouselCards = () => {
               04. Data Analysis
             </h1>
             <Image
-              width="100%"
-              height="100%"
+              width={500}
+              height={500}
               src="/dataScience-full.png"
               alt=""
             />

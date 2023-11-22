@@ -30,6 +30,8 @@ const Carousel = () => {
               <Image
                 className="h-48 w-96 md:h-full md:w-full"
                 src={image}
+                width={500}
+                height={500}
                 alt={`Image ${index + 5}`}
               />
             </div>
@@ -45,6 +47,8 @@ const Carousel = () => {
               <Image
                 className="h-48 w-96 md:h-full md:w-full"
                 src={image}
+                width={500}
+                height={500}
                 alt={`Image ${index + startIndex + 1}`} // Adjust the alt text
               />
             </div>
@@ -58,4 +62,3 @@ const Carousel = () => {
 };
 
 export default Carousel;
-

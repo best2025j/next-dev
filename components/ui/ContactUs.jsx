@@ -10,13 +10,13 @@ const ContactUs = () => {
         <Image
           src="/Image for Contact Us.png"
           alt="image"
-          width="100%"
-          height="100%"
-          className="rounded-t-[50px] md:rounded-l-[240px] shrink-0 w-full h-[355px] md:h-[595px] md:w-full"
+          width={500}
+          height={500}
+          className="rounded-t-[50px] md:rounded-none md:rounded-l-[240px] shrink-0 w-full h-[355px] md:h-[595px] md:w-full"
         />
       </div>
 
-      <div className="flex-1 bg-[#001E2D] md:w-full w-full h-[355px] md:h-[595px] rounded-b-[50px] md:rounded-r-[240px]">
+      <div className="flex-1 bg-[#001E2D] md:w-full w-full h-[355px] md:h-[595px] rounded-b-[50px] md:rounded-none md:rounded-r-[240px]">
         <div className="flex flex-col mx-auto h-full w-full items-center justify-center">
           <div className="text-[#fff] space-y-[16px]">
             <h1 className="md:text-6xl text-2xl font-bold">Reach Out to Us</h1>

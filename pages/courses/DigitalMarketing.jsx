@@ -5,6 +5,7 @@ import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images/cyber.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DigitalMarketing() {
   // Access the 'id' parameter from the route
@@ -17,7 +18,7 @@ export default function DigitalMarketing() {
           Unlock Your Potential with Kwara-tech Academy&apos;s Diverse Range of
           Tech Courses
         </p>
-        {/* Added a "Back to Courses" button using the Link component */}
+
         <Link href="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>

@@ -42,7 +42,7 @@ const Sections = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-6">
         {data.map((item, index) => (
           <div
-            className="relative bg-[#FBFCFF] dark:bg-slate-800 py-[56px] rounded-3xl md:px-[24px] space-y-2"
+            className="relative bg-[#FBFCFF] dark:bg-slate-800 py-[56px] rounded-3xl md:px-[24px] space-y-2 p-4"
             key={index}
           >
             <div>{item.svg}</div>

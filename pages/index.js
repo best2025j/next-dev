@@ -16,7 +16,7 @@ export default function Home() {
       <Head>
         <title>kwaratech Academy</title>
         <meta name="description" content="Kwara tech academy" />
-        <link rel="icon" href="/kwaraTech.jpg" />
+        <link rel="icon" href="/kw.png" />
       </Head>
       <Nav />
       <Hero />

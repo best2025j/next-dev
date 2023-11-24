@@ -24,7 +24,7 @@ const Hero = () => {
   }, []); // Ensure the dependency array is empty to run the effect only once
 
   return (
-    <div className="md:pt-56 pt-44 md:py-0 w-full md:h-screen h-[16rem] sm:px-[64px] px-[36px] flex flex-col justify-center text-center mx-auto items-center">
+    <div className="md:pt-56 pt-44 md:py-0 w-full md:h-full h-[16rem] sm:px-[64px] px-[36px] flex flex-col justify-center text-center mx-auto items-center">
       <div className="md:max-w-[852px] space-y-2">
         <div className="bg-[#4F616D] rounded-full text-white p-2 w-44 text-center mx-auto ">
           Kwaratech Academy

@@ -59,20 +59,20 @@ export default function Nav() {
 
           <Link
             className={asPath.includes("/courses") ? activeLink : inactiveLink}
-            href={"/courses/Courses"}
+            href={"/Courses"}
           >
             course
           </Link>
 
           <Link
-            className={asPath.includes("/service") ? activeLink : inactiveLink}
-            href={"/service"}
+            className={asPath.includes("/services") ? activeLink : inactiveLink}
+            href={"/Services"}
           >
             service
           </Link>
 
           <Link
-            className={asPath.includes("/About") ? activeLink : inactiveLink}
+            className={asPath.includes("/about") ? activeLink : inactiveLink}
             href={"/About"}
           >
             about
@@ -89,7 +89,7 @@ export default function Nav() {
           <div className="">
             <ButtonWhite label="Get Started" className="" />
           </div>
-          
+
           <div className="">
             <DarkModeSwitch />
           </div>
@@ -127,7 +127,7 @@ export default function Nav() {
                 <Image
                   src="/kw.png"
                   quality={100}
-                  alt="/"
+                  alt="/no pix"
                   width={110} // Set to the desired width in pixels
                   height={110} // Set to the desired height in pixels
                   className=" cursor-pointer"

@@ -1,5 +1,4 @@
-// import React from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
 import ButtonWhite from "../../components/buttons/ButtonWhite";
@@ -17,9 +16,9 @@ export default function DigitalMarketing() {
         <p className="text-sm md:text-base font-normal text-[#4F616D]">
           Unlock Your Potential with Kwara-tech Academy&apos;s Diverse Range of
           Tech Courses
-        </p>{" "}
+        </p>
         {/* Added a "Back to Courses" button using the Link component */}
-        <Link to="/courses">
+        <Link href="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
         <div className="pt-14 h-full">

@@ -4,8 +4,8 @@ import Footer from "../../components/shared/Footer";
 import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images/uifull.png";
-import { Link } from "react-router-dom";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DesignAnimation() {
   // Access the &apos;id&apos; parameter from the route
@@ -19,7 +19,7 @@ export default function DesignAnimation() {
           Tech Courses
         </p>
         {/* Added a "Back to Courses" button using the Link component */}
-        <Link to="/courses">
+        <Link href="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
 

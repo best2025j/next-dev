@@ -17,9 +17,9 @@ export default function VA_RemoteJobs() {
         <p className="text-sm md:text-base font-normal text-[#4F616D]">
           Unlock Your Potential with Kwaratech Academy&apos;s Diverse Range of
           Tech Courses
-        </p>{" "}
+        </p>
         {/* Added a "Back to Courses" button using the Link component */}
-        <Link to="/courses">
+        <Link href="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
         <div className="pt-14 h-full">

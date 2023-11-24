@@ -58,6 +58,7 @@ export default function Services() {
               height={500}
               src="/girlpix.png"
               alt=""
+              quality={100}
               className="w-[193px] h-[286px] md:h-auto md:w-auto"
             />
           </div>

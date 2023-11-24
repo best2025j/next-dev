@@ -8,28 +8,26 @@ import ButtonWhite from "../buttons/ButtonWhite";
 const CarouselCards = () => {
   const staffData = [
     {
-      thumbnail: "/Courses card for html.png",
-      fullImage: "/frontend-full.png",
+      headings: "Introduction to HTML and CSS",
+      fullImage: "/",
     },
     {
-      thumbnail: "/Courses card for html (1).png",
-      fullImage: "/backend-full.png",
+      headings: "python and java",
+      fullImage: "/",
     },
     {
-      thumbnail: "/Courses card for html (2).png",
-      fullImage: "/design-full.png",
+      headings: "Design",
+      fullImage: "/",
     },
     {
-      thumbnail: "/Courses card for html (3).png",
-      fullImage: "/dataScience-full.png",
+      headings: "Data Analysis",
+      fullImage: "/",
     },
   ];
 
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
   return (
     <div className="w-full h-full">
-      <div className=" px-4 md:ml-32 py-32 space-y-[110px]">
+      <div className=" px-4 md:ml-12 py-32 space-y-[110px]">
         <div className="h-full w-full space-y-3">
           <h1 className="sm:text-5xl text-xl font-bold">Explore our courses</h1>
           <div className="md:max-w-[480px]">
@@ -43,44 +41,62 @@ const CarouselCards = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex justify-between gap-6 items-start py-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-6">
-            {staffData.map((item, index) => (
-              <div
-                className={`relative transform ${
-                  hoveredIndex === index ? "hovered" : ""
-                }`}
-                key={index}
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-              >
-                <div className="image-container">
-                  <Image
-                    src={item.thumbnail}
-                    alt=""
-                    width={500}
-                    height={500}
-                    className="md:h-full w-full h-96"
-                  />
-                </div>
-
-                {hoveredIndex === index && (
-                  <div className="absolute animate__animated animate__zoomIn delay-120 ease-in-out duration-100 inset-y-20 flex justify-center items-center h-full w-[500px]">
-                    <Image
-                      src={item.fullImage}
-                      alt=""
-                      width={500}
-                      height={500}
-                      className="md:h-full h-96 w-full"
-                    />
-                  </div>
-                )}
+        <div className="md:flex hidden">
+          <div className="">
+            <div className="flex flex-col md:flex-row mx-auto w-full h-full md:space-y-0 space-y-4 md:space-x-4 space-x-0">
+              <div>
+                <Image
+                  width={500}
+                  height={500}
+                  src="/frontend-full.png"
+                  alt=""
+                  quality={100}
+                  className="w-[193px] h-[286px] md:h-auto md:w-auto"
+                />
+              </div>{" "}
+              <div>
+                <Image
+                  width={500}
+                  height={500}
+                  src="/backend-full.png"
+                  alt=""
+                  quality={100}
+                  className="w-[193px] h-[286px] md:h-auto md:w-auto"
+                />
               </div>
-            ))}
+            </div>
+            <div className="flex flex-col md:flex-row mx-auto w-full h-full md:space-y-0 space-y-4 md:space-x-4 space-x-0">
+              <div>
+                <Image
+                  width={500}
+                  height={500}
+                  src="/design-full.png"
+                  alt=""
+                  quality={100}
+                  className="w-[193px] h-[286px] md:h-auto md:w-auto"
+                />
+              </div>{" "}
+              <div>
+                <Image
+                  width={500}
+                  height={500}
+                  src="/dataScience-full.png"
+                  alt=""
+                  quality={100}
+                  className="w-[193px] h-[286px] md:h-auto md:w-auto"
+                />
+              </div>
+            </div>
           </div>
 
-          <div className="pr-6 hidden md:flex">
-            <Image src="/KTA.png" alt="" width={500} height={500} />
+          <div className="hidden md:flex">
+            <Image
+              src="/KTA.png"
+              alt=""
+              width={500}
+              height={500}
+              className=""
+            />
           </div>
         </div>
 

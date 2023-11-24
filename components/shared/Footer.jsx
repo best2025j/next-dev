@@ -58,7 +58,13 @@ const Footer = () => {
 
         <div className="flex-col px-2 py-4 m-auto justify-between items-center sm:flex-row border-b flex text-center text-gray-500">
           <h3 className="hidden md:flex">
-            We also write here at KTA check out our blogs.
+            We also write here at KTA check out our 
+            <Link
+              href="https://medium.com/@kwaratechacad"
+              className="text-white capitalize underline pl-1"
+            >
+              blogs
+            </Link>
           </h3>
 
           <div className="flex space-x-5 justify-end items-center sm:w-[360px] pt-4 text-2xl cursor-pointer">

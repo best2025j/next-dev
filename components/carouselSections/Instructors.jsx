@@ -4,34 +4,35 @@ import Image from "next/image";
 const Instructors = () => {
   const staffData = [
     {
-      name: "  Ayobami OLUDELE ",
-      position: "CEO",
-      image: "/Frame 23.png",
+      name: "  Audu Godstime ",
+      position: "Front-end Developer",
+      image: "/Frame 23 (6).png",
     },
     {
-      name: "Ibrahim.O.OYEBANJI (FIDR,MIPAN)",
-      position: "Executive director",
-      image: "/Frame 23 (1).png",
+      name: "Precious Ajayi",
+      position: "Backend Developer",
+      image: "/Frame 23 (7).png",
     },
     {
-      name: "Mrs Orolu",
-      position: "Chief Accountant",
-      image: "/Frame 23 (2).png",
+      name: "Odekunle Joseph",
+      position: "UI/UX Designer",
+      image: "/Frame 23 (8).png",
     },
     {
-      name: "Miss Aishat",
-      position: "Executive director",
-      image: "/Frame 23 (3).png",
+      name: "James Moses Sambo",
+      position: "HRM, CRM & CSE",
+      image: "/Frame 23 (10).png",
     },
     {
-      name: "Gt",
-      position: "Software Engineer",
-      image: "/Frame 23 (4).png",
+      name: "Orolu Bisi Morenike",
+      position: "Data Analysis",
+      image: "/Frame 23 (9).png",
     },
+
     {
       name: "OGUNDIRAN Moshood Adeniyi",
       position: " Digital Marketing Instructor",
-      image: "/Frame 23 (5).png",
+      image: "/Frame 23 (12).png",
     },
   ];
 
@@ -81,10 +82,10 @@ const Instructors = () => {
 
                 <div className="space-y-2">
                   <h1 className="text-sky-500 dark:text-sky-400 text-sm">
-                    {item.name}
+                    {item.position}
                   </h1>
                   <h1 className="text-slate-700 dark:text-slate-500 text-sm">
-                    {item.position}
+                    {item.name}
                   </h1>
                 </div>
               </div>

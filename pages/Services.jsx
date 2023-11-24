@@ -40,7 +40,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="bg-[#00AFF0] md:w-[692px] w-full md:h-[612.9px] rounded-t-[480px] flex justify-between items-center mx-auto relative">
+          <div className="bg-[#00AFF0] dark:bg-slate-900 md:w-[692px] w-full md:h-[612.9px] rounded-t-[480px] flex justify-between items-center mx-auto relative">
             <div className=" relative md:left-[60px] w-[134px] md:w-full left-10">
               <h1 className="md:text-[48px] text-[24px] font-bold text-white">
                 Best Graduating Student

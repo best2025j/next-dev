@@ -7,12 +7,12 @@ html {
 }
 
 /* Add this CSS to your stylesheet */
-.relative {
+/* .relative {
   transition: transform 0.3s ease-in-out;
 }
 
 .relative.hovered {
-  transform: translateX(-50px); /* Adjust the translation value as needed */
+  transform: translateX(-50px); 
 }
 
 .image-container {
@@ -22,7 +22,7 @@ html {
 .container {
   display: inline-block;
   cursor: pointer;
-}
+} */
 
 @font-face {
   font-family: "SF Pro Display Regular";

@@ -58,27 +58,27 @@ export default function Nav() {
           </Link>
 
           <Link
-            className={asPath.includes("/courses") ? activeLink : inactiveLink}
-            href={"/Courses"}
+            className={asPath.includes("/Course") ? activeLink : inactiveLink}
+            href={"/Course"}
           >
             course
           </Link>
 
           <Link
-            className={asPath.includes("/services") ? activeLink : inactiveLink}
+            className={asPath.includes("/Services") ? activeLink : inactiveLink}
             href={"/Services"}
           >
-            service
+            services
           </Link>
 
           <Link
-            className={asPath.includes("/about") ? activeLink : inactiveLink}
+            className={asPath.includes("/About") ? activeLink : inactiveLink}
             href={"/About"}
           >
             about
           </Link>
           <Link
-            className={asPath.includes("/blog") ? activeLink : inactiveLink}
+            className={asPath.includes("/Blog") ? activeLink : inactiveLink}
             href={"/blog"}
           >
             blog

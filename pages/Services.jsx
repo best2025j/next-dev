@@ -77,7 +77,6 @@ export default function Services() {
             </div>
 
             <div className="py-6 space-y-6">
-          
               <div className="flex flex-col md:flex-row mx-auto w-full h-full md:space-y-0 space-y-4 md:space-x-4 space-x-0">
                 <div className="flex justify-center px-2 md:px-0 items-center bg-[#FBFCFF] dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
                   <div className="flex flex-col space-y-3">
@@ -290,7 +289,7 @@ export default function Services() {
             <Image
               width={500}
               height={500}
-              src="/KTA2.png"
+              src="/KTA.png"
               alt="no water mark"
             />
           </div>

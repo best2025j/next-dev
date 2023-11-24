@@ -4,8 +4,14 @@ import ButtonWhite from "../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-const Courses = () => {
+export default function Course() {
+  const router = useRouter();
+  const { id } = router.query;
+  const courseId = parseInt(id);
+
+  // Fetch course data based on the id (You can replace this with your data fetching logic)
   const courseData = [
     {
       id: "WebDevelopment",
@@ -21,8 +27,7 @@ const Courses = () => {
     },
 
     {
-      id: 2,
-      name: "design-animation",
+      id: "design-animation",
       number: 2,
       mbImage: "/uifull.png",
       image: "/Designs.png",
@@ -35,8 +40,7 @@ const Courses = () => {
     },
 
     {
-      id: 3,
-      name: "ui-ux",
+      id: "ui-ux",
       number: 3,
       mbImage: "/ui_ux.png",
       image: "/UI.png",
@@ -49,8 +53,7 @@ const Courses = () => {
     },
 
     {
-      id: 4,
-      name: "data-analytics",
+      id: "data-analytics",
       number: 4,
       mbImage: "/dataScience.png",
       image: "/DataSciences.png",
@@ -63,8 +66,7 @@ const Courses = () => {
     },
 
     {
-      id: 5,
-      name: "cyber-security",
+      id: "cyber-security",
       number: 5,
       mbImage: "/cyber.png",
       image: "/CyberSecuritys.png",
@@ -77,8 +79,7 @@ const Courses = () => {
     },
 
     {
-      id: 6,
-      name: "va-remote-jobs",
+      id: "va-remote-jobs",
       number: 6,
       mbImage: "/vrpix.png",
       image: "/VirtualRemoteJob.png",
@@ -91,8 +92,7 @@ const Courses = () => {
     },
 
     {
-      id: 7,
-      name: "digital-marketing",
+      id: "digital-marketing",
       number: 7,
       mbImage: "/digitalpix.png",
       image: "/DMarketting.png",
@@ -105,8 +105,7 @@ const Courses = () => {
     },
 
     {
-      id: 8,
-      name: "content-writing",
+      id: "content-writing",
       number: 8,
       mbImage: "/contentpix.png",
       image: "/CopyWritting.png",
@@ -119,12 +118,23 @@ const Courses = () => {
     },
   ];
 
+  // Find the course in courseData that matches the id from the route parameters
+  const courses = courseData.map((item) => item.id === courseId);
+  // Check if the course is not found (optional)
+  if (!courses) {
+    return (
+      <p className=" flex items-center justify-center h-[300px] w-full mx-auto text-3xl font-bold text-blue-200">
+        Course not found !!!
+      </p>
+    );
+  }
+
   return (
     <>
       <div className="py-40">
         <div className="space-y-3 px-6">
           <h1 className="text-5xl md:text-5xl text-[24px] font-bold">
-            Courses
+            Courses {courses.id}
           </h1>
           <p className="md:text-lg text-sm font-thin">
             Unlock Your Potential with Kwaratech Academy&apos;s Diverse Range of
@@ -206,7 +216,7 @@ const Courses = () => {
                 </div>
 
                 <div className="py-6 flex items-center justify-center ">
-                  <Link href="/Courses/${item.id}">
+                  <Link href="/courses/[id]" as={`/courses/${item.id}`}>
                     <ButtonWhite
                       className={
                         "flex items-center text-xs md:text-base text-center justify-center"
@@ -227,6 +237,4 @@ const Courses = () => {
       <SectionContents />
     </>
   );
-};
-
-export default Courses;
+}

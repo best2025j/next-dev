@@ -57,7 +57,7 @@ const Instructors = () => {
           </p>
         </div>
 
-        <div className="md:py-28">
+        <div className="md:py-28 md:flex hidden">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full">
             {staffData.map((item, index) => (
               <div key={index} className="py-6 space-y-2">

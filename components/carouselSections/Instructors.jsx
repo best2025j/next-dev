@@ -57,8 +57,8 @@ const Instructors = () => {
           </p>
         </div>
 
-        <div className="md:py-28 md:flex hidden">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full">
+        <div className="md:py-28">
+          <div className="md:grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full hidden">
             {staffData.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
                 <Image src={item.image} alt="" width={500} height={500} />
@@ -75,7 +75,7 @@ const Instructors = () => {
             ))}
           </div>
 
-          <div className="md:hidden flex h-full w-full gap-4">
+          <div className="flex md:hidden flex-row h-full w-full gap-4">
             {visibleImages.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
                 <Image src={item.image} alt="" width={500} height={500} />

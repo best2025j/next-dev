@@ -41,66 +41,62 @@ const CarouselCards = () => {
           </div>
         </div>
 
-        <div className="md:flex hidden">
-          <div className="">
-            <div className="flex flex-col md:flex-row mx-auto w-full h-full md:space-y-0 space-y-4 md:space-x-4 space-x-0">
-              <div>
-                <Image
-                  width={500}
-                  height={500}
-                  src="/frontend-full.png"
-                  alt=""
-                  quality={100}
-                  className="w-[193px] h-[286px] md:h-auto md:w-auto"
-                />
-              </div>{" "}
-              <div>
-                <Image
-                  width={500}
-                  height={500}
-                  src="/backend-full.png"
-                  alt=""
-                  quality={100}
-                  className="w-[193px] h-[286px] md:h-auto md:w-auto"
-                />
-              </div>
+        <div className="md:flex hidden flex-col relative">
+          <div className="flex flex-col gap-10">
+            <div className="flex space-x-6">
+              <Image
+                width={500}
+                height={500}
+                src="/frontend-full.png"
+                alt=""
+                quality={100}
+                className="w-[193px] h-[286px] md:h-auto md:w-auto"
+              />
+              <Image
+                width={500}
+                height={500}
+                src="/backend-full.png"
+                alt=""
+                quality={100}
+                className="w-[193px] h-[286px] md:h-auto md:w-auto"
+              />
             </div>
-            <div className="flex flex-col md:flex-row mx-auto w-full h-full md:space-y-0 space-y-4 md:space-x-4 space-x-0">
-              <div>
-                <Image
-                  width={500}
-                  height={500}
-                  src="/design-full.png"
-                  alt=""
-                  quality={100}
-                  className="w-[193px] h-[286px] md:h-auto md:w-auto"
-                />
-              </div>{" "}
-              <div>
-                <Image
-                  width={500}
-                  height={500}
-                  src="/dataScience-full.png"
-                  alt=""
-                  quality={100}
-                  className="w-[193px] h-[286px] md:h-auto md:w-auto"
-                />
-              </div>
+
+            <div className="flex space-x-6 ">
+              <Image
+                width={500}
+                height={500}
+                src="/design-full.png"
+                alt=""
+                quality={100}
+                className="w-[193px] h-[286px] md:h-auto md:w-auto"
+              />
+              <Image
+                width={500}
+                height={500}
+                src="/dataScience-full.png"
+                alt=""
+                quality={100}
+                className="w-[193px] h-[286px] md:h-auto md:w-auto"
+              />
             </div>
           </div>
 
-          <div className="hidden md:flex">
+          <div className="hidden absolute top-0 justify-end items-end">
             <Image
               src="/KTA.png"
               alt=""
-              width={500}
-              height={500}
+              quality={100}
+              width={400}
+              height={400}
               className=""
             />
           </div>
         </div>
 
-        <div className="md:hidden block space-y-14">
+        {/* for mobile */}
+
+        <div className="md:hidden block space-y-14 ">
           <div className="space-y-3">
             <h1 className="text-[24px] font-bold">
               01. Introduction to HTML and CSS

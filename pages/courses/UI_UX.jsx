@@ -5,6 +5,7 @@ import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images//ui_ux.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function UI_UX() {
   // Access the &apos;id&apos; parameter from the route

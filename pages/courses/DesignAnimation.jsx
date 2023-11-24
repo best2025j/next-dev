@@ -5,7 +5,7 @@ import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images/uifull.png";
 import Image from "next/image";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function DesignAnimation() {
   // Access the &apos;id&apos; parameter from the route

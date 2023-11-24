@@ -1,11 +1,11 @@
-// import React from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
 import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import image from "../../assets/images//vr.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function VA_RemoteJobs() {
   // Access the 'id' parameter from the route

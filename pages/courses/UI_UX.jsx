@@ -1,5 +1,4 @@
-// import React from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
 import ButtonWhite from "../../components/buttons/ButtonWhite";
@@ -20,7 +19,7 @@ export default function UI_UX() {
         </p>
 
         {/* Added a "Back to Courses" button using the Link component */}
-        <Link to="/courses">
+        <Link href="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
 

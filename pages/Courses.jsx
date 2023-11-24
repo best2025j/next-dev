@@ -1,7 +1,7 @@
 import React from "react";
-import SectionContents from "../../components/ui/SectionContents";
-import ButtonWhite from "../../components/buttons/ButtonWhite";
-import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
+import SectionContents from "../components/ui/SectionContents";
+import ButtonWhite from "../components/buttons/ButtonWhite";
+import ViewAllCourseIcon from "../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -206,7 +206,7 @@ const Courses = () => {
                 </div>
 
                 <div className="py-6 flex items-center justify-center ">
-                  <Link href="/courses/Courses/${item.id}">
+                  <Link href="/Courses/${item.id}">
                     <ButtonWhite
                       className={
                         "flex items-center text-xs md:text-base text-center justify-center"

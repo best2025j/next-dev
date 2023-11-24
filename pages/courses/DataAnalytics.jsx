@@ -1,11 +1,11 @@
-// import React from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
 import image from "../../assets/images/dataScience.png";
 import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DataAnalytics() {
   // Access the 'id' parameter from the route
@@ -20,7 +20,7 @@ export default function DataAnalytics() {
         </p>
 
         {/* Added a "Back to Courses" button using the Link component */}
-        <Link to="/courses">
+        <Link href="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
 

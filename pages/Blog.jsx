@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../../components/shared/Footer";
-import SectionContents from "../../components/ui/SectionContents";
+import Footer from "../components/shared/Footer";
+import SectionContents from "../components/ui/SectionContents";
 
 export default function Blog() {
   return (

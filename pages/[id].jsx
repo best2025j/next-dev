@@ -27,7 +27,7 @@ export default function Course() {
     },
 
     {
-      id: "design-animation",
+      id: "DesignAnimation",
       number: 2,
       mbImage: "/uifull.png",
       image: "/Designs.png",

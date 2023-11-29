@@ -25,7 +25,7 @@ export default function DesignAnimation() {
 
         <div className="pt-14 h-full w-full">
           <Image src={image} alt="no image" />
-          <div className="flex justify-between px-2 md:py-[40px] bg-white items-start py-6">
+          <div className="flex justify-between px-2 md:py-[40px] items-start py-6">
             <div className="space-y-4 w-[439px]">
               <h1 className="font-bold text-[24px] md:text-[48px]">
                 Design/ Animation{" "}

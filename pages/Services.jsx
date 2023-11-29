@@ -15,7 +15,7 @@ export default function Services() {
               What we offer
             </h1>
 
-            <p className=" md:w-[420px] w-[319px] text-xs md:text-[18px]">
+            <p className=" md:w-[439px] w-[319px]">
               At Kwaratech Academy, we provide a range of services designed to
               empower individuals with the skills needed for success in the
               digital age. We&apos;re not just another tech education provider;
@@ -69,7 +69,7 @@ export default function Services() {
               <h1 className="text-[24px] md:text-[42px] font-bold">
                 Tech Skill Programs
               </h1>
-              <p className=" md:text-[18px] text-xs w-[319px] font-normal">
+              <p className=" w-[384px] ">
                 At Kwaratech, your success is our priority. As you embark on
                 your learning journey with us, we focus on ensuring specific key
                 areas and takeaways for your growth and development
@@ -112,8 +112,9 @@ export default function Services() {
                         />
                       </svg>
                     </span>
+
                     <h1 className="md:text-[36px] text-[24px]">Experience</h1>
-                    <p className=" md:w-[321px] w-[319px] text-xs md:text-[18px]">
+                    <p className=" md:w-[321px] w-[319px]">
                       Applying theories to practical projects, we ensure you
                       have a deep understanding of concepts through application
                     </p>
@@ -147,7 +148,7 @@ export default function Services() {
                     <h1 className="md:text-[36px] text-[24px]">
                       Collaboration
                     </h1>
-                    <p className=" md:w-[321px] w-[319px] text-xs md:text-[18px]">
+                    <p className=" md:w-[321px] w-[319px]">
                       Gain insights from peers with different perspectives,
                       enhancing your problem-solving and communication skills
                     </p>
@@ -189,7 +190,7 @@ export default function Services() {
                     </span>
 
                     <h1 className="md:text-[36px] text-[24px]">Mentorship</h1>
-                    <p className=" md:w-[321px] w-[319px] text-xs md:text-[18px]">
+                    <p className=" md:w-[321px] w-[319px]">
                       Get access lifetime guidance, career advice, and insights,
                       empowering you to navigate the tech landscape
                     </p>
@@ -235,7 +236,7 @@ export default function Services() {
                     <h1 className="md:text-[36px] text-[24px]">
                       Certifications
                     </h1>
-                    <p className=" md:w-[321px] w-[319px] text-xs md:text-[18px]">
+                    <p className=" md:w-[321px] w-[319px]">
                       These credentials validate your proficiency and
                       competency, opening doors to diverse career opportunities
                       and advancements
@@ -266,7 +267,7 @@ export default function Services() {
                 <h1 className="md:text-[42px] text-[24px] font-bold">
                   Co-working space
                 </h1>
-                <p className=" md:w-[512px] w-[319px] text-xs md:text-[16px] font-normal">
+                <p className=" md:w-[526px] md:text-[18px] w-[319px] ">
                   Our co-working space is designed to make your work easier. We
                   make sure you have constant power, so your work doesn’t get
                   interrupted. You can pick a pricing plan that suits you best.
@@ -325,7 +326,7 @@ export default function Services() {
                   <h className="text-[24px] md:text-[36px] font-bold">
                     Tech2School
                   </h>
-                  <p className=" text-xs w-[319px] md:text-[16px] md:w-[439px]">
+                  <p className=" w-[319px] md:w-[439px]">
                     We train junior and secondary school students during school
                     hours on creating websites, writing blogs, making
                     animations, and more.
@@ -347,7 +348,7 @@ export default function Services() {
                   <h className="text-[24px] md:text-[36px] font-bold">
                     Tech4Women
                   </h>
-                  <p className=" text-xs w-[319px] md:text-[16px] md:w-[439px]">
+                  <p className=" w-[319px] md:w-[439px]">
                     Empowering women with skills like digital marketing and data
                     analysis to thrive in their entrepreneurial endeavors and
                     grow in any field of their choosing.
@@ -371,7 +372,7 @@ export default function Services() {
                   <h className="md:text-[36px] text-[24px] font-bold">
                     Tech4Kopa
                   </h>
-                  <p className=" text-xs w-[319px] md:text-[16px] md:w-[439px]">
+                  <p className=" w-[319px] md:w-[439px]">
                     Through our specialized Tech4kopa initiative, we ensure corp
                     members gain a comprehensive understanding of essential tech
                     proficiencies.
@@ -393,7 +394,7 @@ export default function Services() {
                   <h className="md:text-[36px] text-[24px] font-bold">
                     Summer Experience
                   </h>
-                  <p className=" md:text-[16px] text-xs w-[319px] md:w-[439px]">
+                  <p className="w-[319px] md:w-[439px]">
                     Fun and educational tech activities for kids during holidays
                     to learn programming, Excel, animation, public speaking, and
                     video editing.
@@ -424,7 +425,7 @@ export default function Services() {
               <h1 className="md:text-[40px] text-[24px] font-bold">
                 Internship Opportunities
               </h1>
-              <p className=" md:w-[439px] w-[319px] text-xs md:text-[16px]">
+              <p className=" md:w-[439px] w-[319px] md:text-[18px]">
                 Join our team as an intern or explore our internship programs to
                 gain practical experience and kickstart your tech career.
               </p>

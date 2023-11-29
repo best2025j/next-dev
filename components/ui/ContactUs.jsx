@@ -12,7 +12,7 @@ const ContactUs = () => {
           alt="image"
           width={500}
           height={500}
-          className="rounded-t-[50px] md:rounded-none md:rounded-l-[240px] shrink-0 w-full h-[355px] md:h-[595px] md:w-full"
+          className="rounded-t-[50px] md:rounded-none md:rounded-l-[240px] shrink-0 w-full h-[355px] md:h-[595px] md:w-[78]0px"
         />
       </div>
 

@@ -40,7 +40,7 @@ export default function Course() {
     },
 
     {
-      id: "ui-ux",
+      id: "UI-UX",
       number: 3,
       mbImage: "/ui_ux.png",
       image: "/UI.png",
@@ -53,7 +53,7 @@ export default function Course() {
     },
 
     {
-      id: "data-analytics",
+      id: "DataAnalytics",
       number: 4,
       mbImage: "/dataScience.png",
       image: "/DataSciences.png",
@@ -66,7 +66,7 @@ export default function Course() {
     },
 
     {
-      id: "cyber-security",
+      id: "CyberSecurity",
       number: 5,
       mbImage: "/cyber.png",
       image: "/CyberSecuritys.png",
@@ -79,7 +79,7 @@ export default function Course() {
     },
 
     {
-      id: "va-remote-jobs",
+      id: "VA-RemoteJobs",
       number: 6,
       mbImage: "/vrpix.png",
       image: "/VirtualRemoteJob.png",
@@ -92,7 +92,7 @@ export default function Course() {
     },
 
     {
-      id: "digital-marketing",
+      id: "DigitalMarketing",
       number: 7,
       mbImage: "/digitalpix.png",
       image: "/DMarketting.png",
@@ -105,7 +105,7 @@ export default function Course() {
     },
 
     {
-      id: "content-writing",
+      id: "ContentWriting",
       number: 8,
       mbImage: "/contentpix.png",
       image: "/CopyWritting.png",
@@ -145,9 +145,11 @@ export default function Course() {
         <div className="grid md:gap-6 gap-2 grid-cols-1">
           {courseData.map((item, index) => (
             <div
-              className={`flex justify-around md:py-20 py-10 ${
-                (index % 2 === 0 && "flex md:flex-row flex-col") ||
-                (index % 2 !== 0 && "md:flex-row-reverse w-full flex flex-col")
+              className={`flex justify-around md:py-20 py-10 items-start h-full mx-auto ${
+                (index % 2 === 0 &&
+                  "flex md:flex-row flex-col items-start h-full mx-auto ") ||
+                (index % 2 !== 0 &&
+                  "md:flex-row-reverse flex flex-col items-start h-full mx-auto ")
               }`}
               key={item.id}
             >
@@ -158,10 +160,10 @@ export default function Course() {
               <div className="md:w-[931px] w-full bg-white dark:bg-slate-900 p-4 rounded-3xl mx-auto">
                 <Image
                   src={item.image}
-                  className="md:w-auto md:h-auto hidden md:flex"
+                  className="md:w-full md:h-[269px] hidden md:flex"
                   alt="NO IMAGE FOT THIS COURSE"
-                  width={1000}
-                  height={1000}
+                  width={500}
+                  height={500}
                   onError={() =>
                     console.error("Image failed to load for:", item.image)
                   }

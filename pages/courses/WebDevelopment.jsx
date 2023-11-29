@@ -23,7 +23,7 @@ export default function WebDevelopment() {
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
 
-        <div className="h-full w-full bg-slate-900 rounded-2xl p-4">
+        <div className="h-full w-full rounded-2xl p-4">
           <Image src={image} alt="no image" />
           <div className="flex justify-between px-2 md:py-[40px] items-start py-6">
             <div className="space-y-4 w-[439px]">

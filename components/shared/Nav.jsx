@@ -40,10 +40,10 @@ export default function Nav() {
       <div className="px-2 py-6 flex w-full justify-between items-center h-full 2xl:px-16">
         <Link href="/">
           <Image
-            src="/kw.png"
+            src="/kwaraTech.png"
             alt="logo-pix"
-            width={110} // Set to the desired width in pixels
-            height={110} // Set to the desired height in pixels
+            width={120} // Set to the desired width in pixels
+            height={120} // Set to the desired height in pixels
             quality={100}
             className="cursor-pointer"
           />
@@ -79,7 +79,7 @@ export default function Nav() {
           </Link>
           <Link
             className={asPath.includes("/Blog") ? activeLink : inactiveLink}
-            href={"/blog"}
+            href="https://medium.com/@kwaratechacad"
           >
             blog
           </Link>
@@ -117,19 +117,19 @@ export default function Nav() {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[72%] sm:w-[60%] h-full bg-white dark:bg-black border-r rounded-r-3xl p-5 ease-in duration-700"
-              : "fixed left-[-100%] h-full top-0 p-5 ease-out duration-700 bg-white"
+              ? " fixed left-0 top-0 w-[72%] md:w-[60%] h-full bg-white dark:bg-black border-r rounded-r-3xl p-5 ease-in duration-700"
+              : "fixed left-[-100%] h-full top-0 p-5 ease-out duration-700 bg-white "
           }
         >
           <div className="">
             <div className="flex w-full h-full items-center justify-between ">
               <Link href="/">
                 <Image
-                  src="/kw.png"
+                  src="/kwaraTech.png"
                   quality={100}
                   alt="/no pix"
-                  width={110} // Set to the desired width in pixels
-                  height={110} // Set to the desired height in pixels
+                  width={120} // Set to the desired width in pixels
+                  height={70} // Set to the desired height in pixels
                   className=" cursor-pointer"
                 />
               </Link>
@@ -142,7 +142,7 @@ export default function Nav() {
               </div>
             </div>
 
-            <div className="flex flex-col ">
+            <div className="flex flex-col pt-4 md:px-0">
               <ul className="font-500">
                 <li
                   className={asPath === "/" ? activeLink : inactiveLink}
@@ -180,7 +180,7 @@ export default function Nav() {
                   }
                   onClick={handleCloseNav}
                 >
-                  <Link href="/blog">Blog</Link>
+                  <Link href="https://medium.com/@kwaratechacad">Blog</Link>
                 </li>
               </ul>
 

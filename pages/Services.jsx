@@ -15,7 +15,8 @@ export default function Services() {
             <h1 className="text-[24px] md:text-[48px] font-bold">
               What we offer
             </h1>
-            <p className="text-[#4F616D] md:w-[420px] w-[319px] text-xs md:text-[16px]">
+
+            <p className="text-[#4F616D] md:w-[420px] w-[319px] text-xs md:text-[18px]">
               At Kwaratech Academy, we provide a range of services designed to
               empower individuals with the skills needed for success in the
               digital age. We&apos;re not just another tech education provider;
@@ -24,7 +25,6 @@ export default function Services() {
             </p>
 
             <div className="py-6 flex items-center ">
-              {/* Use Link for navigation */}
               <Link href="/course">
                 <ButtonWhite
                   className={
@@ -59,7 +59,7 @@ export default function Services() {
               src="/girlpix.png"
               alt=""
               quality={100}
-              className="w-[193px] h-[286px] md:h-auto md:w-auto"
+              className="w-[193px] h-[286px] md:h-full md:w-full"
             />
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function Services() {
               <h1 className="text-[24px] md:text-[42px] font-bold">
                 Tech Skill Programs
               </h1>
-              <p className="text-[#4F616D] ms:text-[16px] text-xs w-[319px] font-normal">
+              <p className="text-[#4F616D] md:text-[18px] text-xs w-[319px] font-normal">
                 At Kwaratech, your success is our priority. As you embark on
                 your learning journey with us, we focus on ensuring specific key
                 areas and takeaways for your growth and development
@@ -114,7 +114,7 @@ export default function Services() {
                       </svg>
                     </span>
                     <h1 className="md:text-[36px] text-[24px]">Experience</h1>
-                    <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[16px]">
+                    <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[18px]">
                       Applying theories to practical projects, we ensure you
                       have a deep understanding of concepts through application
                     </p>
@@ -148,7 +148,7 @@ export default function Services() {
                     <h1 className="md:text-[36px] text-[24px]">
                       Collaboration
                     </h1>
-                    <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[16px]">
+                    <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[18px]">
                       Gain insights from peers with different perspectives,
                       enhancing your problem-solving and communication skills
                     </p>
@@ -190,7 +190,7 @@ export default function Services() {
                     </span>
 
                     <h1 className="md:text-[36px] text-[24px]">Mentorship</h1>
-                    <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[16px]">
+                    <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[18px]">
                       Get access lifetime guidance, career advice, and insights,
                       empowering you to navigate the tech landscape
                     </p>
@@ -236,7 +236,7 @@ export default function Services() {
                     <h1 className="md:text-[36px] text-[24px]">
                       Certifications
                     </h1>
-                    <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[16px]">
+                    <p className="text-[#4F616D] md:w-[321px] w-[319px] text-xs md:text-[18px]">
                       These credentials validate your proficiency and
                       competency, opening doors to diverse career opportunities
                       and advancements
@@ -281,7 +281,8 @@ export default function Services() {
                 height={500}
                 src="/booksLab.png"
                 alt="book pix"
-                className="w-[320px] h-[185px] md:w-auto md:h-auto"
+                quality={100}
+                className="w-[320px] h-[185px] md:w-full md:h-full"
               />
             </div>
           </div>
@@ -292,6 +293,7 @@ export default function Services() {
               height={500}
               src="/KTA.png"
               alt="no water mark"
+              quality={100}
             />
           </div>
         </div>
@@ -316,6 +318,7 @@ export default function Services() {
                   height={500}
                   src="/schoolboy2.png"
                   alt="pix 1"
+                  quality={100}
                   className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
                 />
 
@@ -336,6 +339,7 @@ export default function Services() {
                   width={500}
                   height={500}
                   src="/ladysmile.png"
+                  quality={100}
                   alt="pix 1"
                   className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
                 />
@@ -358,6 +362,7 @@ export default function Services() {
                 <Image
                   width={500}
                   height={500}
+                  quality={100}
                   src="/copper2.png"
                   alt="pix 1"
                   className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
@@ -379,6 +384,7 @@ export default function Services() {
                 <Image
                   width={500}
                   height={500}
+                  quality={100}
                   src="/schoolboy2.png"
                   alt="pix 1"
                   className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
@@ -414,7 +420,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="pt-[243px] flex justify-between items-center space-y-10 flex-col md:flex-row">
+          <div className="pt-[243px] flex justify-between gap-32 items-center space-y-10 flex-col md:flex-row">
             <div className="">
               <h1 className="md:text-[40px] text-[24px] font-bold">
                 Internship Opportunities
@@ -440,13 +446,16 @@ export default function Services() {
               </div>
             </div>
 
-            <Image
-              width={500}
-              height={500}
-              src="/ktaSvg.png"
-              alt="kta-image"
-              className="md:h-auto md:w-auto w-[90%] h-[189px] hidden md:flex"
-            />
+            <div className="w-full h-full ">
+              <Image
+                width={500}
+                height={500}
+                src="/ktaSvg.png"
+                alt="kta-image"
+                quality={100}
+                className="md:h-full md:w-full w-[90%] h-[189px] hidden md:flex"
+              />
+            </div>
           </div>
         </div>
       </div>

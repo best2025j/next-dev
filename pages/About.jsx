@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <div className="py-28 md:px-[60px] w-full h-full">
-        <div className="flex flex-col md:flex-row items-center justify-center h-full w-full mx-auto ">
+        <div className="flex flex-col md:flex-row items-center justify-around h-full w-full mx-auto ">
           <div className="md:py-40 space-y-[20px] ">
             <h1 className="font-bold text-[24px] md:text-[48px]">About Us</h1>
             <p className="md:w-[439px] w-[326px] text-[12px] md:text-[16px]">
@@ -27,19 +27,19 @@ export default function About() {
               height={500}
               src="/booksLab.png"
               alt="pix"
-              className="w-full h-full"
+              className="w-[700px] h-full"
             />
 
             <div className="flex py-4 space-x-2 ">
               <Image
-                className="w-[180px] h-[100px] md:w-auto md:h-auto"
+                className="w-[180px] h-[100px] md:w-full md:h-full"
                 src="/schoolBoy.png"
                 width={500}
                 height={500}
                 alt="pix 1"
               />
               <Image
-                className="w-[180px] h-[100px] md:w-auto md:h-auto"
+                className="w-[180px] h-[100px] md:w-full md:h-full"
                 src="/adult.png"
                 alt="pix 2"
                 width={500}
@@ -57,10 +57,16 @@ export default function About() {
           We are a passionate team of educators, innovators, and tech
           enthusiasts dedicated to bridging the digital gap.
         </p>
+      </div>
 
-        <div className="md:py-[60px]">
-          <Image width={1000} height={1000} src="/vid.png" alt="pix-4" />
-        </div>
+      <div className="md:py-[60px] md:px-[112px] flex items-center justify-center py-4 px-4">
+        <Image
+          width={500}
+          height={500}
+          className="md:w-full md:h-full"
+          src="/vid.png"
+          alt="pix-4"
+        />
       </div>
 
       <div className="flex justify-between md:pl-[112px]">
@@ -71,7 +77,7 @@ export default function About() {
 
           <div className="flex flex-col md:gap-44 gap-10 text-start px-6 py-12">
             <div className="flex flex-col md:flex-row md:space-x-10 space-y-12 md:space-y-0 md:gap-0">
-              <div className="space-y-3">
+              <div className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]">
                 <div>
                   <svg
                     width="56"
@@ -101,7 +107,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]">
                 <div>
                   <svg
                     width="56"
@@ -144,7 +150,7 @@ export default function About() {
             </div>
 
             <div className="flex flex-col md:flex-row md:space-x-10 space-y-12 md:space-y-0 ">
-              <div className="space-y-3">
+              <div className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]">
                 <div>
                   <svg
                     width="56"
@@ -186,7 +192,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]">
                 <div>
                   <svg
                     width="56"
@@ -282,7 +288,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center md:py-40 py-20 md:gap-10">
+        <div className="flex flex-col md:flex-row justify-bet items-center md:py-40 py-20 md:gap-32">
           <div className="md:w-[439px] w-[326px]">
             <h1 className="font-bold text-[24px] md:text-[48px]">
               Begin your career
@@ -311,13 +317,16 @@ export default function About() {
               </Link>
             </div>
           </div>
-          <Image
-            width={500}
-            height={500}
-            src="/ktaSvg.png"
-            alt=""
-            className="w-auto h-auto "
-          />
+
+          <div className="w-full h-full ">
+            <Image
+              width={500}
+              height={500}
+              src="/ktaSvg.png"
+              alt=""
+              className="w-full h-full "
+            />
+          </div>
         </div>
       </div>
 

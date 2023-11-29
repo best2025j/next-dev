@@ -50,7 +50,7 @@ const Instructors = () => {
           <h1 className="md:text-5xl text-2xl font-bold">
             Meet Our Instructors
           </h1>
-          <p className="text-md w-[294px]">
+          <p className="md:text-[18px] w-[294px]">
             Our expert instructors are industry leaders with a wealth of
             knowledge and experience. They&apos;re dedicated to helping you
             succeed.

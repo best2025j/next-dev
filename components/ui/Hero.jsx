@@ -31,8 +31,8 @@ const Hero = () => {
         </div>
 
         <h1 className="font-bold md:text-6xl text-lg">
-          Your Journey to a
-          <span className="text-[#00AFF0] bg-[#C6E7FF] md:px-6 px-4 py-1 rounded-full animate-fade-in">
+          Your journey to a
+          <span className="text-[#00AFF0] bg-[#C6E7FF] dark:bg-slate-900 md:px-6 px-4 py-1 rounded-full animate-fade-in">
             {text}
           </span>
           <br />

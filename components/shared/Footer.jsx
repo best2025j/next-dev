@@ -110,7 +110,7 @@ const Footer = () => {
 
         <div className="md:flex space-y-4 justify-between">
           <h6 className="text-center">© 2023 KTA. All rights reserved.</h6>
-          <ul className="md:flex hidden space-x-4 md:space-x-16 text-sm">
+          <ul className="md:flex hidden space-x-4 md:space-x-10 text-sm">
             <li
               onClick={handleClose}
               className={asPath.includes("/") ? activeLink : inactiveLink}

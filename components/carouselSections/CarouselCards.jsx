@@ -41,8 +41,8 @@ const CarouselCards = () => {
           </div>
         </div>
 
-        <div className="md:flex hidden flex-col relative">
-          <div className="flex flex-col gap-10">
+        <div className="md:flex hidden flex-col md:flex-row">
+          <div className="flex flex-col gap-10 pt-40">
             <div className="flex space-x-6">
               <Image
                 width={500}
@@ -50,7 +50,7 @@ const CarouselCards = () => {
                 src="/frontend-full.png"
                 alt=""
                 quality={100}
-                className="w-[193px] h-[286px] md:h-auto md:w-auto"
+                className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
               />
               <Image
                 width={500}
@@ -58,18 +58,18 @@ const CarouselCards = () => {
                 src="/backend-full.png"
                 alt=""
                 quality={100}
-                className="w-[193px] h-[286px] md:h-auto md:w-auto"
+                className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
               />
             </div>
 
-            <div className="flex space-x-6 ">
+            <div className="flex space-x-6 md:pt-[162px]">
               <Image
                 width={500}
                 height={500}
                 src="/design-full.png"
                 alt=""
                 quality={100}
-                className="w-[193px] h-[286px] md:h-auto md:w-auto"
+                className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
               />
               <Image
                 width={500}
@@ -77,12 +77,12 @@ const CarouselCards = () => {
                 src="/dataScience-full.png"
                 alt=""
                 quality={100}
-                className="w-[193px] h-[286px] md:h-auto md:w-auto"
+                className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
               />
             </div>
           </div>
 
-          <div className="hidden absolute top-0 justify-end items-end">
+          <div className=" justify-end items-end">
             <Image
               src="/KTA.png"
               alt=""

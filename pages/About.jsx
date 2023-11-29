@@ -27,7 +27,7 @@ export default function About() {
               height={500}
               src="/booksLab.png"
               alt="pix"
-              className="w-[700px] h-full"
+              className="w-full md:w-[700px] h-full"
             />
 
             <div className="flex py-4 space-x-2 ">
@@ -256,7 +256,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="md:py-[64px] md:px-[112px] space-y-6 px-4">
+      <div className="md:py-[6px]  md:px-[112px] space-y-6 px-4">
         <div className="md:w-[439px] w-[326px]">
           <h1 className="font-bold text-[24px] md:text-[36px]">Our Vision</h1>
           <p className="text-xs md:text-lg">

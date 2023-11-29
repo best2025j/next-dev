@@ -8,9 +8,9 @@ import Link from "next/link";
 
 const SectionContents = () => {
   return (
-    <div className="bg-[#C6E7FF] dark:bg-slate-900 w-full h-full flex justify-between items-center relative">
+    <div className="bg-[#C6E7FF] dark:bg-slate-900 w-full h-full hidden md:flex justify-between items-center relative">
       <Image
-        className="w-20 h-24 md:w-full md:h-full"
+        className="w-20 h-24 md:w-[600px] md:h-[500px]"
         src={image1}
         alt=""
         width={500}
@@ -40,7 +40,7 @@ const SectionContents = () => {
       </div>
 
       <Image
-        className="w-20 h-24 md:w-full md:h-full"
+        className="w-20 h-24 md:w-[600px] md:h-[500px]"
         src={image2}
         alt=""
         width={500}

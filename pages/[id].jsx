@@ -132,7 +132,6 @@ export default function Course() {
 
   return (
     <>
-    <ScrollAnimation></ScrollAnimation>
       <div className="py-40">
         <div className="space-y-3 px-6">
           <h1 className="text-5xl md:text-5xl text-[24px] font-bold">

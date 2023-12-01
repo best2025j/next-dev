@@ -27,9 +27,9 @@ const CarouselCards = () => {
 
   return (
     <div className="w-full h-full">
-      <div className=" px-4 md:ml-12 py-32 space-y-[110px]">
+      <div className=" px-4 md:pl-[64px] py-32 space-y-[110px]">
         <div className="h-full w-full space-y-3">
-          <h1 className="sm:text-5xl text-xl font-bold">Explore our courses</h1>
+          <h1 className="md:text-5xl text-xl font-bold">Explore our courses</h1>
           <div className="md:max-w-[480px]">
             <p className="text-[#4F616D] md:text-base text-xs">
               At KTA, we offer a diverse range of tech courses that cater to
@@ -41,55 +41,77 @@ const CarouselCards = () => {
           </div>
         </div>
 
-        <div className="md:flex hidden flex-col md:flex-row">
-          <div className="flex flex-col gap-10 pt-40">
+        <div className="md:flex justify-between hidden flex-col md:flex-row ">
+          <div className="flex flex-col gap-10 pt-40 relative left-0 right-0">
             <div className="flex space-x-6 ">
-              <Image
-                width={500}
-                height={500}
-                src="/frontend-full.png"
-                alt=""
-                quality={100}
-                className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
-              />
-              <Image
-                width={500}
-                height={500}
-                src="/backend-full.png"
-                alt=""
-                quality={100}
-                className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
-              />
+              <div className="flex flex-col space-y-20">
+                <h1 className="font-bold text-[48px] md:w-[401px]">
+                  01. Introduction to HTML and CSS
+                </h1>
+                <Image
+                  width={500}
+                  height={500}
+                  src="/frontend-full.png"
+                  alt=""
+                  quality={100}
+                  className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
+                />
+              </div>
+
+              <div className="flex flex-col space-y-20">
+                <h1 className="font-bold text-[48px] md:w-[401px]">
+                  02. Python and Java
+                </h1>
+                <Image
+                  width={500}
+                  height={500}
+                  src="/backend-full.png"
+                  alt=""
+                  quality={100}
+                  className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
+                />
+              </div>
             </div>
 
-            <div className="flex space-x-6 md:pt-[162px]">
-              <Image
-                width={500}
-                height={500}
-                src="/design-full.png"
-                alt=""
-                quality={100}
-                className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
-              />
-              <Image
-                width={500}
-                height={500}
-                src="/dataScience-full.png"
-                alt=""
-                quality={100}
-                className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
-              />
+            <div className="flex space-x-6 md:pt-[164px]">
+              <div className="flex flex-col space-y-20">
+                <h1 className="font-bold text-[48px] md:w-[401px]">
+                  03. Design
+                </h1>
+                <Image
+                  width={500}
+                  height={500}
+                  src="/design-full.png"
+                  alt=""
+                  quality={100}
+                  className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
+                />
+              </div>
+
+              <div className="flex flex-col space-y-20">
+                <h1 className="font-bold text-[48px] md:w-[401px]">
+                  04.Data Analysis{" "}
+                </h1>
+                <Image
+                  width={500}
+                  height={500}
+                  src="/dataScience-full.png"
+                  alt=""
+                  quality={100}
+                  className="w-[193px] h-[286px] md:h-[580px] md:w-[580px]"
+                />
+              </div>
             </div>
           </div>
 
-          <div className=" justify-end items-end">
+          <div className="absolute left-0 flex justify-end items-end right-0">
             <Image
               src="/KTA.png"
               alt=""
               quality={100}
-              width={400}
-              height={400}
-              className=""
+              width={500}
+              height={500}
+              className="w-72 h-full"
             />
           </div>
         </div>

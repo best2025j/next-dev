@@ -64,8 +64,8 @@ export default function Services() {
         </div>
 
         <div className="flex justify-between items-start py-[120.1px]">
-          <div className="flex flex-col ">
-            <div className="space-y-3 md:pl-[56px] pl-[28px]">
+          <div className="flex flex-col md:pl-[56px] pl-0">
+            <div className="space-y-3">
               <h1 className="text-[24px] md:text-[42px] font-bold">
                 Tech Skill Programs
               </h1>

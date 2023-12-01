@@ -7,6 +7,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import DarkModeSwitch from "../ui//DarkModeSwitch";
 import ButtonWhite from "@/components/buttons/ButtonWhite";
 import { useRouter } from "next/router";
+import { motion, AnimatePresence } from "framer-motion";
 
 // Navigation component
 export default function Nav() {
@@ -50,39 +51,62 @@ export default function Nav() {
         </Link>
 
         <ul className="hidden md:flex capitalize space-x-6">
-          <Link
-            className={asPath === "/" ? activeLink : inactiveLink}
-            href={"/"}
-          >
-            home
-          </Link>
-
-          <Link
-            className={asPath.includes("/Course") ? activeLink : inactiveLink}
-            href={"/Course"}
-          >
-            course
-          </Link>
-
-          <Link
-            className={asPath.includes("/Services") ? activeLink : inactiveLink}
-            href={"/Services"}
-          >
-            services
-          </Link>
-
-          <Link
-            className={asPath.includes("/About") ? activeLink : inactiveLink}
-            href={"/About"}
-          >
-            about
-          </Link>
-          <Link
-            className={asPath.includes("/Blog") ? activeLink : inactiveLink}
-            href="https://medium.com/@kwaratechacad"
-          >
-            blog
-          </Link>
+          <li>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <Link
+                className={asPath === "/" ? activeLink : inactiveLink}
+                href={"/"}
+              >
+                home
+              </Link>
+            </motion.div>
+          </li>
+          <li>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <Link
+                className={
+                  asPath.includes("/Course") ? activeLink : inactiveLink
+                }
+                href={"/Course"}
+              >
+                course
+              </Link>
+            </motion.div>
+          </li>{" "}
+          <li>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <Link
+                className={
+                  asPath.includes("/Services") ? activeLink : inactiveLink
+                }
+                href={"/Services"}
+              >
+                services
+              </Link>
+            </motion.div>
+          </li>{" "}
+          <li>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <Link
+                className={
+                  asPath.includes("/About") ? activeLink : inactiveLink
+                }
+                href={"/About"}
+              >
+                about
+              </Link>
+            </motion.div>
+          </li>{" "}
+          <li>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <Link
+                className={asPath.includes("/Blog") ? activeLink : inactiveLink}
+                href="https://medium.com/@kwaratechacad"
+              >
+                blog
+              </Link>
+            </motion.div>
+          </li>
         </ul>
 
         <div className="hidden md:flex items-center justify-center space-x-1">

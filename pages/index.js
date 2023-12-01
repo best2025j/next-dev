@@ -7,6 +7,7 @@ import Carousel from "@/components/ui/Carousel";
 import ContactUs from "@/components/ui/ContactUs";
 import Hero from "@/components/ui/Hero";
 import OutSponsors from "@/components/ui/OutSponsors";
+import ScrollAnimation from "@/components/ui/ScrollAnimation";
 import Testimony from "@/components/ui/Testimony";
 import Head from "next/head";
 

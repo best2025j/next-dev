@@ -29,10 +29,16 @@ const Footer = () => {
   return (
     <div className="bg-[#001E2D] dark:bg-black md:py-16 py-6 text-white w-full md:h-full">
       <div className="w-[90%] mx-auto space-y-6">
-        <div className="flex justify-between md:flex-row flex-col-reverse">
+        <div className="flex justify-between md:flex-row flex-col-reverse items-center">
           <div className="flex-col px-2 py-4 flex text-white mx-auto">
             <div className="md:flex hidden">
-              <Image src={images} alt="" width={500} height={500} />
+              <Image
+                src={images}
+                alt=""
+                width={500}
+                height={500}
+                className="w-[50%] h-full"
+              />
             </div>
 
             <div className="flex gap-[48px] flex-col md:flex-row">
@@ -109,7 +115,7 @@ const Footer = () => {
                 </span>
               </div>
 
-              <div className="flex space-x-3 items-center md:w-[360px] pt-4 text-2xl cursor-pointer">
+              <div className="flex space-x-4 items-center md:w-[360px] pt-4 text-2xl cursor-pointer">
                 <Link href="https://instagram.com/kwaratechacademy?igshid=MzRlODBiNWFlZA==">
                   <svg
                     width="24"
@@ -149,16 +155,6 @@ const Footer = () => {
                 </Link>
 
                 <Link href="https://wa.me/07011198112">
-                  <Image
-                    alt="no image"
-                    className="cursor-pointer hover:scale-110 ease-in duration-300 rounded-full"
-                    width={30}
-                    height={30}
-                    src={whatsapp}
-                  />
-                </Link>
-
-                <Link href="#">
                   <svg
                     width="24"
                     height="24"
@@ -172,6 +168,7 @@ const Footer = () => {
                     />
                   </svg>
                 </Link>
+
 
                 <Link href="https://www.facebook.com/kwaratechacademy?mibextid=LQQJ4d">
                   <svg

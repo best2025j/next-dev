@@ -289,11 +289,11 @@ export default function About() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-bet items-center md:py-40 py-20 md:gap-32">
-          <div className="md:w-[439px] w-[326px]">
+          <div className="space-y-5">
             <h1 className="font-bold text-[24px] md:text-[48px]">
               Begin your career
             </h1>
-            <p className="text-xs md:text-[16px]">
+            <p className="md:w-[439px] w-[326px] text-[18px]">
               Whether you&apos;re a student taking your first steps into the
               tech world or a professional seeking to upskill, Kwaratech Academy
               is here to guide you. We invite you to be a part of our vibrant
@@ -301,7 +301,7 @@ export default function About() {
               shaped.
             </p>
 
-            <div className="py-6 w-[288px] md:w-full">
+            <div className="pt-8 w-[288px] md:w-full">
               <Link href="/courses/Courses">
                 <ButtonWhite
                   className={
@@ -324,7 +324,7 @@ export default function About() {
               height={500}
               src="/ktaSvg.png"
               alt=""
-              className="w-full h-full "
+              className="w-[527.226px] h-[323.309px] hidden md:flex"
             />
           </div>
         </div>

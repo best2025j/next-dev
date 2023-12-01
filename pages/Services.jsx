@@ -44,10 +44,10 @@ export default function Services() {
               <h1 className="md:text-[48px] text-[24px] font-bold text-white">
                 Best Graduating Student
               </h1>
-              <h6 className="md:text-[36px] text-[16px] font-bold pt-[16px] md:pt-0">
+              <h6 className="md:text-[36px] text-[16px] font-bold pt-[16px] md:pt-0 dark:text-black">
                 Hannah Adeniyi
               </h6>
-              <span className="md:text-[18px] text-xs">
+              <span className="md:text-[18px] text-xs text-[#C6E7FF]">
                 Front-end Development.
               </span>
             </div>
@@ -63,22 +63,22 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="flex justify-between items-start md:pt-[120px] pt-[60px]">
-          <div className="flex flex-col md:pl-[56px] pl-[28px]">
-            <div className="">
+        <div className="flex justify-between items-start py-[120.1px]">
+          <div className="flex flex-col ">
+            <div className="space-y-3 md:pl-[56px] pl-[28px]">
               <h1 className="text-[24px] md:text-[42px] font-bold">
                 Tech Skill Programs
               </h1>
-              <p className=" w-[384px] ">
+              <p className=" md:w-[384px]">
                 At Kwaratech, your success is our priority. As you embark on
                 your learning journey with us, we focus on ensuring specific key
                 areas and takeaways for your growth and development
               </p>
             </div>
 
-            <div className="py-6 space-y-6">
-              <div className="flex flex-col md:flex-row mx-auto w-full h-full md:space-y-0 space-y-4 md:space-x-4 space-x-0">
-                <div className="flex justify-center px-2 md:px-0 items-center bg-[#FBFCFF] dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
+            <div className="py-12 space-y-6 px-4 ">
+              <div className="flex flex-col md:flex-row mx-auto w-full h-full md:space-y-0 space-y-4 md:space-x-4 space-x-0 ">
+                <div className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
                   <div className="flex flex-col space-y-3">
                     <span>
                       <svg
@@ -113,7 +113,9 @@ export default function Services() {
                       </svg>
                     </span>
 
-                    <h1 className="md:text-[36px] text-[24px]">Experience</h1>
+                    <h1 className="md:text-[36px] text-[24px] text-[#001E2D] font-bold dark:text-white">
+                      Experience
+                    </h1>
                     <p className=" md:w-[321px] w-[319px]">
                       Applying theories to practical projects, we ensure you
                       have a deep understanding of concepts through application
@@ -121,7 +123,7 @@ export default function Services() {
                   </div>
                 </div>
 
-                <div className="flex justify-center px-2 md:px-0 items-center bg-[#FBFCFF] dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
+                <div className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
                   <div className="flex flex-col space-y-3">
                     <svg
                       width="56"
@@ -145,7 +147,7 @@ export default function Services() {
                       />
                     </svg>
 
-                    <h1 className="md:text-[36px] text-[24px]">
+                    <h1 className="md:text-[36px] text-[24px] text-[#001E2D] font-bold dark:text-white">
                       Collaboration
                     </h1>
                     <p className=" md:w-[321px] w-[319px]">
@@ -156,8 +158,8 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row w-full h-full mx-auto md:space-y-0 space-y-4 md:space-x-4 space-x-0">
-                <div className="flex justify-center px-2 md:px-0 items-center bg-[#FBFCFF] dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
+              <div className="flex py-6 flex-col md:flex-row w-full h-full mx-auto md:space-y-0 space-y-4 md:space-x-4 space-x-0">
+                <div className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
                   <div className="flex flex-col space-y-3">
                     <span>
                       {" "}
@@ -189,7 +191,9 @@ export default function Services() {
                       </svg>
                     </span>
 
-                    <h1 className="md:text-[36px] text-[24px]">Mentorship</h1>
+                    <h1 className="md:text-[36px] text-[24px] text-[#001E2D] font-bold dark:text-white">
+                      Mentorship
+                    </h1>
                     <p className=" md:w-[321px] w-[319px]">
                       Get access lifetime guidance, career advice, and insights,
                       empowering you to navigate the tech landscape
@@ -197,7 +201,7 @@ export default function Services() {
                   </div>
                 </div>
 
-                <div className="flex justify-center px-2 md:px-0 items-center bg-[#FBFCFF] dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
+                <div className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
                   <div className="flex flex-col space-y-3">
                     <svg
                       width="56"
@@ -233,7 +237,7 @@ export default function Services() {
                       />
                     </svg>
 
-                    <h1 className="md:text-[36px] text-[24px]">
+                    <h1 className="md:text-[36px] text-[24px] text-[#001E2D] font-bold dark:text-white">
                       Certifications
                     </h1>
                     <p className=" md:w-[321px] w-[319px]">
@@ -287,7 +291,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="md:flex hidden">
+          <div className="md:flex hidden pl-[153px]">
             <Image
               width={500}
               height={500}
@@ -298,12 +302,12 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center md:w-[90%] w-full h-full mx-auto">
-          <div className="flex flex-col justify-center items-center text-center py-10">
+        <div className="flex flex-col justify-center md:w-[90%] w-full h-full mx-auto pt-[240px]">
+          <div className="flex flex-col justify-center items-center py-10 space-y-5">
             <h1 className="text-[24px] md:text-[42px] font-bold">
               Specialized Programs
             </h1>
-            <p className=" text-xs md:text-[16px] md:max-w-[700px] max-w-[319px]">
+            <p className=" text-center md:w-[700px] w-[319px]">
               Our programs at Kwaratech Academy are made carefully to match
               exactly what you need to learn about technology. We focus on what
               the industry needs right now.
@@ -369,9 +373,7 @@ export default function Services() {
                 />
 
                 <div className="flex justify-center items-center flex-col text-center">
-                  <h className="md:text-[36px] text-[24px] font-bold">
-                    Tech4Kopa
-                  </h>
+                  <h className="text-[36px] font-bold">Tech4Kopa</h>
                   <p className=" w-[319px] md:w-[439px]">
                     Through our specialized Tech4kopa initiative, we ensure corp
                     members gain a comprehensive understanding of essential tech
@@ -385,15 +387,13 @@ export default function Services() {
                   width={500}
                   height={500}
                   quality={100}
-                  src="/schoolboy2.png"
+                  src="/boi.png"
                   alt="pix 1"
                   className="md:h-[202px] w-[320px] h-[135px] md:w-full items-stretch"
                 />
 
                 <div className="flex justify-center items-center flex-col text-center">
-                  <h className="md:text-[36px] text-[24px] font-bold">
-                    Summer Experience
-                  </h>
+                  <h className="text-[36px] font-bold">Summer Experience</h>
                   <p className="w-[319px] md:w-[439px]">
                     Fun and educational tech activities for kids during holidays
                     to learn programming, Excel, animation, public speaking, and
@@ -420,17 +420,17 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="pt-[243px] flex justify-between gap-32 items-center space-y-10 flex-col md:flex-row">
-            <div className="">
+          <div className="md:pt-[243px] flex justify-between gap-32 items-center space-y-10 flex-col md:flex-row">
+            <div className="space-y-5">
               <h1 className="md:text-[40px] text-[24px] font-bold">
                 Internship Opportunities
               </h1>
-              <p className=" md:w-[439px] w-[319px] md:text-[18px]">
+              <p className="md:w-[439px] w-[326px] md:text-[18px]">
                 Join our team as an intern or explore our internship programs to
                 gain practical experience and kickstart your tech career.
               </p>
 
-              <div className="py-6 w-[288px] md:w-full">
+              <div className="pt-8 w-[288px] md:w-full">
                 <Link href="/courses">
                   <ButtonWhite
                     className={
@@ -453,7 +453,7 @@ export default function Services() {
                 src="/ktaSvg.png"
                 alt="kta-image"
                 quality={100}
-                className="md:h-full md:w-full w-[90%] h-[189px] hidden md:flex"
+                className="w-[527.226px] h-[323.309px] hidden md:flex"
               />
             </div>
           </div>

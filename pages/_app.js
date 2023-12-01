@@ -1,10 +1,8 @@
-// import Footer from "../components/layout/Footer";
 import Nav from "@/components/shared/Nav";
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import { useRouter } from "next/router";
 import Footer from "@/components/shared/Footer";
-// import { motion, AnimatePresence } from "framer-motion";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

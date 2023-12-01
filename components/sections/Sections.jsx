@@ -2,6 +2,7 @@
 import CoWorkingSpacesSVG from "../icons/CoWorkingSpacesSVG";
 import EssentialICTTrainingSVG from "../icons/EssentialICTTrainingSVG";
 import SpecializedProgrammesSVG from "../icons/SpecializedProgrammesSVG";
+import ScrollAnimation from "../ui/ScrollAnimation";
 
 const Sections = () => {
   // SVG components
@@ -28,16 +29,16 @@ const Sections = () => {
 
   return (
     <div className="py-20 bg-[#ffffff] dark:bg-black md:px-14 px-4">
-      <div className="space-y-[16px]">
-        <h1 className="md:text-5xl font-bold text-[24px]">
-          What we have to offer
-        </h1>
-        <p className="md:text-lg text-base font-normal text-[#4F616D] w-[294px] md:w-[480px]">
-          At Kwaratech Academy, we&apos;re not just another tech education
-          provider; we&apos;re your partner in unlocking a world of
-          opportunities, and here is why you should choose us...
-        </p>
-      </div>
+        <div className="space-y-[16px] ">
+          <h1 className="md:text-5xl font-bold text-[24px]">
+            What we have to offer
+          </h1>
+          <p className="md:text-lg text-base font-normal text-[#4F616D] w-[294px] md:w-[480px]">
+            At Kwaratech Academy, we&apos;re not just another tech education
+            provider; we&apos;re your partner in unlocking a world of
+            opportunities, and here is why you should choose us...
+          </p>
+        </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-6">
         {data.map((item, index) => (

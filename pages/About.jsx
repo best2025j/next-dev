@@ -4,15 +4,18 @@ import Image from "next/image";
 import ButtonWhite from "../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../components/icons/ViewAllCourseIcon";
 import SectionContents from "@/components/ui/SectionContents";
+import { useRouter } from "next/router";
 
 export default function About() {
+  const router = useRouter;
+
   return (
     <>
       <div className="py-28 md:px-[60px] w-full h-full">
-        <div className="flex flex-col md:flex-row items-center justify-around h-full w-full mx-auto ">
+        <div className="flex flex-col md:flex-row items-center justify-around h-full w-full mx-auto md:gap-[37px]">
           <div className="md:py-40 space-y-[20px] ">
             <h1 className="font-bold text-[24px] md:text-[48px]">About Us</h1>
-            <p className="md:w-[439px] w-[326px] text-[12px] md:text-[16px]">
+            <p className="md:w-[389px] w-[326px] text-[12px] md:text-[16px] font-normal">
               At Kwaratech Academy, we believe that technology has the power to
               transform lives, open doors to opportunities, and unlock the
               potential within every individual. Our journey began with a simple
@@ -53,7 +56,7 @@ export default function About() {
       <div className="space-y-4 flex flex-col justify-center items-center mx-auto text-center md:px-[112px] px-4">
         <h1 className="font-bold text-[24px] md:text-[48px] ">Who We Are</h1>
 
-        <p className="w-[286px] md:w-[430px] text-xs md:text-lg font-normal">
+        <p className="w-[286px] md:w-[481px] md:text-[18px] font-normal">
           We are a passionate team of educators, innovators, and tech
           enthusiasts dedicated to bridging the digital gap.
         </p>

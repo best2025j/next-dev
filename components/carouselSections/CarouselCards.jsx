@@ -43,7 +43,7 @@ const CarouselCards = () => {
 
         <div className="md:flex hidden flex-col md:flex-row">
           <div className="flex flex-col gap-10 pt-40">
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 ">
               <Image
                 width={500}
                 height={500}

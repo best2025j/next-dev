@@ -152,31 +152,31 @@ export default function Nav() {
                 </li>
                 <li
                   className={
-                    asPath.includes("/courses") ? activeLink : inactiveLink
+                    asPath.includes("/Course") ? activeLink : inactiveLink
                   }
                   onClick={handleCloseNav}
                 >
-                  <Link href="/courses">Courses</Link>
+                  <Link href="/Course">Course</Link>
                 </li>
                 <li
                   className={
-                    asPath.includes("/services") ? activeLink : inactiveLink
+                    asPath.includes("/Services") ? activeLink : inactiveLink
                   }
                   onClick={handleCloseNav}
                 >
-                  <Link href="/services">Services</Link>
+                  <Link href="/Services">Services</Link>
                 </li>
                 <li
                   className={
-                    asPath.includes("/about") ? activeLink : inactiveLink
+                    asPath.includes("/About") ? activeLink : inactiveLink
                   }
                   onClick={handleCloseNav}
                 >
-                  <Link href="/about">About</Link>
+                  <Link href="/About">About</Link>
                 </li>
                 <li
                   className={
-                    asPath.includes("/blog") ? activeLink : inactiveLink
+                    asPath.includes("/Blog") ? activeLink : inactiveLink
                   }
                   onClick={handleCloseNav}
                 >

@@ -8,14 +8,14 @@ export default function Services() {
   return (
     <>
       <div className="py-24 md:py-40 flex flex-col h-full w-full">
-        <div className=" flex flex-col-reverse md:flex-row justify-between mx-auto items-center w-full h-full">
+        <div className=" flex flex-col-reverse md:flex-row md:justify-between mx-auto items-center w-full h-full">
           <div className="flex items-center justify-center mx-auto"></div>
           <div className="flex flex-col space-y-2 py-6 md:py-0">
             <h1 className="text-[24px] md:text-[48px] font-bold">
               What we offer
             </h1>
 
-            <p className=" md:w-[439px] w-[319px]">
+            <p className=" md:w-[439px] w-[319px] text-[12px] md:text-[18px]">
               At Kwaratech Academy, we provide a range of services designed to
               empower individuals with the skills needed for success in the
               digital age. We&apos;re not just another tech education provider;
@@ -39,12 +39,12 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="bg-[#00AFF0] md:w-[692px] w-full md:h-[612.9px] rounded-t-[480px] flex justify-between items-center mx-auto relative">
+          <div className="bg-[#00AFF0] h-full md:w-[692px] flex justify-between items-center   md:h-[612.9px] rounded-t-[480px]">
             <div className=" relative md:left-[60px] w-[134px] md:w-full left-10">
               <h1 className="md:text-[48px] text-[24px] font-bold text-white">
                 Best Graduating Student
               </h1>
-              <h6 className="md:text-[36px] text-[16px] font-bold">
+              <h6 className="md:text-[36px] text-[16px] font-bold pt-[16px] md:pt-0">
                 Hannah Adeniyi
               </h6>
               <span className="md:text-[18px] text-xs">

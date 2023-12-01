@@ -27,7 +27,7 @@ const Sections = () => {
   ];
 
   return (
-    <div className="py-20 bg-[#ffffff] dark:bg-black md:px-14 px-10">
+    <div className="py-20 bg-[#ffffff] dark:bg-black md:px-14 px-4">
       <div className="space-y-[16px]">
         <h1 className="md:text-5xl font-bold text-[24px]">
           What we have to offer

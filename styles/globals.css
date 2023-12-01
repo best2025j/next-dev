@@ -48,4 +48,8 @@ body {
   body {
     @apply dark:bg-black bg-[#FBFCFF] dark:text-white font-sans w-full;
   }
+
+  p {
+    @apply text-[#4F616D] dark:text-white
+  }
 }

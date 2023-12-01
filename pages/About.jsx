@@ -5,12 +5,13 @@ import ButtonWhite from "../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../components/icons/ViewAllCourseIcon";
 import SectionContents from "@/components/ui/SectionContents";
 import { useRouter } from "next/router";
+import PageWrapper from "./PageWrapper";
 
 export default function About() {
   const router = useRouter;
 
   return (
-    <>
+    <PageWrapper>
       <div className="py-28 md:px-[60px] w-full h-full">
         <div className="flex flex-col md:flex-row items-center justify-around h-full w-full mx-auto md:gap-[37px]">
           <div className="md:py-40 space-y-[20px] ">
@@ -334,6 +335,6 @@ export default function About() {
       </div>
 
       <SectionContents />
-    </>
+    </PageWrapper>
   );
 }

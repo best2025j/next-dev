@@ -3,10 +3,11 @@ import ButtonWhite from "../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
 import SectionContents from "@/components/ui/SectionContents";
+import PageWrapper from "./PageWrapper";
 
 export default function Services() {
   return (
-    <>
+    <PageWrapper>
       <div className="py-24 md:py-40 flex flex-col h-full w-full">
         <div className=" flex flex-col-reverse md:flex-row md:justify-between mx-auto items-center w-full h-full">
           <div className="flex items-center justify-center mx-auto"></div>
@@ -461,6 +462,6 @@ export default function Services() {
       </div>
 
       <SectionContents />
-    </>
+    </PageWrapper>
   );
 }

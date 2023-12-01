@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
+import PageWrapper from "./PageWrapper";
 
 export default function Course() {
   const router = useRouter();
@@ -131,7 +132,7 @@ export default function Course() {
   }
 
   return (
-    <>
+    <PageWrapper>
       <div className="py-40">
         <div className="space-y-3 px-6">
           <h1 className="text-5xl md:text-5xl text-[24px] font-bold">
@@ -238,6 +239,6 @@ export default function Course() {
         </div>
       </div>
       <SectionContents />
-    </>
+    </PageWrapper>
   );
 }

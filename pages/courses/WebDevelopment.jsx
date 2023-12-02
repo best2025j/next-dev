@@ -6,11 +6,13 @@ import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import PageWrapper from "../PageWrapper";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function WebDevelopment() {
   const router = useRouter;
   return (
-    <>
+    <PageWrapper>
       <div className="md:py-40 md:px-[80px] py-20 px-[16px]">
         <h1 className="md:text-[48px] text-[24px] font-bold">Courses</h1>
         <p className="text-sm md:text-base font-normal text-[#4F616D]">
@@ -46,7 +48,12 @@ export default function WebDevelopment() {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-2 pt-[48px]">
+        <motion.div
+          initial={{ scale: 0.9 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 0.9, delay: 0.4, ease: "easeInOut" }}
+          className="flex flex-col space-y-2 pt-[48px]"
+        >
           <div className="flex justify-between items-center">
             <h1 className="text-[#00AFF0] font-bold text-[24px] md:text-[30px]">
               Front-end Development
@@ -109,8 +116,14 @@ export default function WebDevelopment() {
               }
             />
           </div>
-        </div>
-        <div className="flex flex-col space-y-2 pt-[120px]">
+        </motion.div>
+
+        <motion.div
+          initial={{ scale: 0.9 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 0.9, delay: 0.4, ease: "easeInOut" }}
+          className="flex flex-col space-y-2 pt-[120px]"
+        >
           <div className="flex justify-between items-center">
             <h1 className="text-[#00AFF0] font-bold text-[24px] md:text-[30px]">
               Back-end Development
@@ -172,11 +185,11 @@ export default function WebDevelopment() {
               }
             />
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <SectionContents />
       <Footer />
-    </>
+    </PageWrapper>
   );
 }

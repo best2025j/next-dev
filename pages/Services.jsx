@@ -4,6 +4,7 @@ import ViewAllCourseIcon from "../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
 import SectionContents from "@/components/ui/SectionContents";
 import PageWrapper from "./PageWrapper";
+import { motion } from "framer-motion";
 
 export default function Services() {
   return (
@@ -41,7 +42,16 @@ export default function Services() {
           </div>
 
           <div className="bg-[#00AFF0] h-full md:w-[692px] flex justify-between items-center   md:h-[612.9px] rounded-t-[480px]">
-            <div className=" relative md:left-[60px] w-[134px] md:w-full left-10">
+            <motion.div
+              initial={{
+                x: -200,
+              }}
+              transition={{
+                duration: 1.2,
+              }}
+              whileInView={{ x: 0 }}
+              className=" relative md:left-[60px] w-[144px] md:w-full left-10"
+            >
               <h1 className="md:text-[48px] text-[24px] font-bold text-white">
                 Best Graduating Student
               </h1>
@@ -51,9 +61,16 @@ export default function Services() {
               <span className="md:text-[18px] text-xs text-[#C6E7FF]">
                 Front-end Development.
               </span>
-            </div>
+            </motion.div>
 
-            <Image
+            <motion.img
+              initial={{
+                y: -200,
+              }}
+              transition={{
+                duration: 1.2,
+              }}
+              whileInView={{ y: 0 }}
               width={500}
               height={500}
               src="/girlpix.png"
@@ -65,21 +82,30 @@ export default function Services() {
         </div>
 
         <div className="flex justify-between items-start py-[120.1px]">
-          <div className="flex flex-col md:pl-[56px] pl-0">
+          <div className="flex flex-col md:pl-[56px] pl-0 mx-auto">
             <div className="space-y-3">
               <h1 className="text-[24px] md:text-[42px] font-bold">
                 Tech Skill Programs
               </h1>
-              <p className=" md:w-[384px]">
+              <p className=" md:w-[384px] w-[358px]">
                 At Kwaratech, your success is our priority. As you embark on
                 your learning journey with us, we focus on ensuring specific key
                 areas and takeaways for your growth and development
               </p>
             </div>
 
-            <div className="py-12 space-y-6 px-4 ">
+            <div className="py-12 space-y-6 md:px-4 ">
               <div className="flex flex-col md:flex-row mx-auto w-full h-full md:space-y-0 space-y-4 md:space-x-4 space-x-0 ">
-                <div className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
+                <motion.div
+                  initial={{
+                    x: -200,
+                  }}
+                  transition={{
+                    duration: 1.2,
+                  }}
+                  whileInView={{ x: 0 }}
+                  className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]"
+                >
                   <div className="flex flex-col space-y-3">
                     <span>
                       <svg
@@ -122,9 +148,18 @@ export default function Services() {
                       have a deep understanding of concepts through application
                     </p>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
+                <motion.div
+                  initial={{
+                    y: -200,
+                  }}
+                  transition={{
+                    duration: 1.2,
+                  }}
+                  whileInView={{ y: 0 }}
+                  className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]"
+                >
                   <div className="flex flex-col space-y-3">
                     <svg
                       width="56"
@@ -156,11 +191,20 @@ export default function Services() {
                       enhancing your problem-solving and communication skills
                     </p>
                   </div>
-                </div>
+                </motion.div>
               </div>
 
               <div className="flex py-6 flex-col md:flex-row w-full h-full mx-auto md:space-y-0 space-y-4 md:space-x-4 space-x-0">
-                <div className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
+                <motion.div
+                  initial={{
+                    x: -200,
+                  }}
+                  transition={{
+                    duration: 1.2,
+                  }}
+                  whileInView={{ x: 0 }}
+                  className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]"
+                >
                   <div className="flex flex-col space-y-3">
                     <span>
                       {" "}
@@ -200,9 +244,18 @@ export default function Services() {
                       empowering you to navigate the tech landscape
                     </p>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]">
+                <motion.div
+                  initial={{
+                    y: 200,
+                  }}
+                  transition={{
+                    duration: 1.2,
+                  }}
+                  whileInView={{ y: 0 }}
+                  className="flex justify-center items-center bg-[#FBFCFF] shadow dark:bg-slate-900 rounded-[24px] md:w-[369px] w-full h-[319px]"
+                >
                   <div className="flex flex-col space-y-3">
                     <svg
                       width="56"
@@ -247,7 +300,7 @@ export default function Services() {
                       and advancements
                     </p>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
 
@@ -316,8 +369,17 @@ export default function Services() {
           </div>
 
           <div className="flex gap-[32px] flex-col py-20 space-y-4">
-            <div className="flex md:gap-[32px]  space-y-5 md:space-y-0 flex-col md:flex-row">
-              <div className="flex flex-col justify-center md:gap-[30px] mx-auto self-stretch">
+            <div className="flex md:gap-[32px]  space-y-6 md:space-y-0 flex-col md:flex-row">
+              <motion.div
+                initial={{
+                  x: -200,
+                }}
+                transition={{
+                  duration: 1.2,
+                }}
+                whileInView={{ x: 0 }}
+                className="flex flex-col justify-center md:gap-[30px] space-y-3  self-stretch mx-auto"
+              >
                 <Image
                   width={500}
                   height={500}
@@ -337,9 +399,18 @@ export default function Services() {
                     animations, and more.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex flex-col justify-center md:gap-[30px] self-stretch mx-auto">
+              <motion.div
+                initial={{
+                  y: -200,
+                }}
+                transition={{
+                  duration: 1.2,
+                }}
+                whileInView={{ y: 0 }}
+                className="flex flex-col space-y-3 justify-center md:gap-[30px] self-stretch mx-auto"
+              >
                 <Image
                   width={500}
                   height={500}
@@ -359,11 +430,20 @@ export default function Services() {
                     grow in any field of their choosing.
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             <div className="flex gap-[32px] flex-col md:flex-row">
-              <div className="flex flex-col justify-center md:gap-[30px] self-stretch mx-auto">
+              <motion.div
+                initial={{
+                  x: -200,
+                }}
+                transition={{
+                  duration: 1.2,
+                }}
+                whileInView={{ x: 0 }}
+                className="flex flex-col space-y-3 justify-center md:gap-[30px] self-stretch mx-auto"
+              >
                 <Image
                   width={500}
                   height={500}
@@ -381,9 +461,18 @@ export default function Services() {
                     proficiencies.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex flex-col justify-center md:gap-[30px] self-stretch mx-auto">
+              <motion.div
+                initial={{
+                  y: 200,
+                }}
+                transition={{
+                  duration: 1.2,
+                }}
+                whileInView={{ y: 0 }}
+                className="flex flex-col space-y-3 justify-center md:gap-[30px] self-stretch mx-auto"
+              >
                 <Image
                   width={500}
                   height={500}
@@ -401,7 +490,7 @@ export default function Services() {
                     video editing.
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             <div className="py-6 flex items-center justify-center ">

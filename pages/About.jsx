@@ -6,6 +6,7 @@ import ViewAllCourseIcon from "../components/icons/ViewAllCourseIcon";
 import SectionContents from "@/components/ui/SectionContents";
 import { useRouter } from "next/router";
 import PageWrapper from "./PageWrapper";
+import { motion } from "framer-motion";
 
 export default function About() {
   const router = useRouter;
@@ -16,7 +17,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center justify-around h-full w-full mx-auto md:gap-[37px]">
           <div className="md:py-40 space-y-[20px] ">
             <h1 className="font-bold text-[24px] md:text-[48px]">About Us</h1>
-            <p className="md:w-[389px] w-[326px] text-[12px] md:text-[16px] font-normal">
+            <p className="md:w-[389px] w-[326px]  md:text-[18px] font-normal">
               At Kwaratech Academy, we believe that technology has the power to
               transform lives, open doors to opportunities, and unlock the
               potential within every individual. Our journey began with a simple
@@ -25,8 +26,15 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex flex-col md:gap-[38px] pt-10 p-2">
-            <Image
+          <div className="flex flex-col md:gap-[38px] pt-10 px-4 md:p-2">
+            <motion.img
+              initial={{
+                y: -200,
+              }}
+              transition={{
+                duration: 1.2,
+              }}
+              whileInView={{ y: 0 }}
               width={500}
               height={500}
               src="/booksLab.png"
@@ -35,15 +43,29 @@ export default function About() {
             />
 
             <div className="flex py-4 space-x-2 ">
-              <Image
-                className="w-[180px] h-[100px] md:w-full md:h-full"
+              <motion.img
+                initial={{
+                  x: -200,
+                }}
+                transition={{
+                  duration: 1.2,
+                }}
+                whileInView={{ x: 0 }}
+                className="w-full h-[100px] md:h-full"
                 src="/schoolBoy.png"
                 width={500}
                 height={500}
                 alt="pix 1"
               />
-              <Image
-                className="w-[180px] h-[100px] md:w-full md:h-full"
+              <motion.img
+                initial={{
+                  y: 200,
+                }}
+                transition={{
+                  duration: 1.2,
+                }}
+                whileInView={{ y: 0 }}
+                className="w-full h-[100px] md:h-full"
                 src="/adult.png"
                 alt="pix 2"
                 width={500}
@@ -81,7 +103,16 @@ export default function About() {
 
           <div className="flex flex-col md:gap-44 gap-10 text-start px-6 py-12">
             <div className="flex flex-col md:flex-row md:space-x-10 space-y-12 md:space-y-0 md:gap-0">
-              <div className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]">
+              <motion.div
+                initial={{
+                  x: -200,
+                }}
+                transition={{
+                  duration: 1.2,
+                }}
+                whileInView={{ x: 0 }}
+                className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]"
+              >
                 <div>
                   <svg
                     width="56"
@@ -105,13 +136,22 @@ export default function About() {
                 <h1 className="font-bold text-[24px] md:text-[36px]">
                   Inclusivity
                 </h1>
-                <p className="md:w-[321px] w-[288px] text-[12px] md:text-[18px]">
+                <p className="md:w-[321px]  md:text-[18px]">
                   We welcome learners from all walks of life, irrespective of
                   age, background, or experience.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]">
+              <motion.div
+                initial={{
+                  y: -200,
+                }}
+                transition={{
+                  duration: 1.2,
+                }}
+                whileInView={{ y: 0 }}
+                className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]"
+              >
                 <div>
                   <svg
                     width="56"
@@ -146,15 +186,24 @@ export default function About() {
                 <h1 className="font-bold text-[24px] md:text-[36px]">
                   Quality Education
                 </h1>
-                <p className="md:w-[321px] w-[288px] text-[12px] md:text-[18px]">
+                <p className="md:w-[321px]  md:text-[18px]">
                   We are committed to providing high-quality, industry-relevant
                   tech education.
                 </p>
-              </div>
+              </motion.div>
             </div>
 
             <div className="flex flex-col md:flex-row md:space-x-10 space-y-12 md:space-y-0 ">
-              <div className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]">
+              <motion.div
+                initial={{
+                  y: -200,
+                }}
+                transition={{
+                  duration: 1.2,
+                }}
+                whileInView={{ y: 0 }}
+                className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]"
+              >
                 <div>
                   <svg
                     width="56"
@@ -190,13 +239,22 @@ export default function About() {
                 <h1 className="font-bold text-[24px] md:text-[36px]">
                   Innovation
                 </h1>
-                <p className="md:w-[321px] w-[288px] text-[12px] md:text-[18px]">
+                <p className="md:w-[321px]  md:text-[18px]">
                   We stay at the forefront of technological advancements to
                   offer cutting-edge programs.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]">
+              <motion.div
+                initial={{
+                  y: -200,
+                }}
+                transition={{
+                  duration: 1.2,
+                }}
+                whileInView={{ y: 0 }}
+                className="space-y-3 dark:bg-slate-900 shadow h-72 mx-auto flex flex-col justify-center p-3 rounded-[24px]"
+              >
                 <div>
                   <svg
                     width="56"
@@ -246,11 +304,11 @@ export default function About() {
                 <h1 className="font-bold text-[24px] md:text-[36px]">
                   Community{" "}
                 </h1>
-                <p className="md:w-[321px] w-[288px] text-[12px] md:text-[18px]">
+                <p className="md:w-[321px]  md:text-[18px]">
                   We foster a supportive community where learners can connect,
                   collaborate, and grow together.
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -274,16 +332,59 @@ export default function About() {
 
         <div className="flex justify-between space-x-4">
           <div>
-            <Image width={500} height={500} src="/vr.png" alt="Image1" />
+            <motion.img
+              initial={{
+                y: 200,
+              }}
+              transition={{
+                duration: 1.2,
+              }}
+              whileInView={{ y: 0 }}
+              width={500}
+              height={500}
+              src="/vr.png"
+              alt="Image1"
+            />
           </div>
           <div>
-            <Image width={500} height={500} src="/groupPix.png" alt="Image2" />
+            <motion.img
+              initial={{
+                y: -200,
+              }}
+              transition={{
+                duration: 1.2,
+              }}
+              whileInView={{ y: 0 }}
+              width={500}
+              height={500}
+              src="/groupPix.png"
+              alt="Image2"
+            />
           </div>
           <div>
-            <Image width={500} height={500} src="/smile.png" alt="Image3" />
+            <motion.img
+              initial={{
+                y: 300,
+              }}
+              transition={{
+                duration: 1.2,
+              }}
+              whileInView={{ y: 0 }}
+              width={500}
+              height={500}
+              src="/smile.png"
+              alt="Image3"
+            />
           </div>
           <div>
-            <Image
+            <motion.img
+              initial={{
+                y: -300,
+              }}
+              transition={{
+                duration: 1.2,
+              }}
+              whileInView={{ y: 0 }}
               width={500}
               height={500}
               src="/ladiesSmile.png"

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Testimony = () => {
   return (
@@ -8,8 +9,14 @@ const Testimony = () => {
         <h1 className="text-black dark:text-white text-3xl  md:text-5xl font-bold">
           Testimonials
         </h1>
-        <div className=" md:flex space-y-4 justify-between items-center py-10 gap-10">
-          <div className="bg-[#4F616D] rounded-[60px] h-full w-full p-10 space-y-3 text-justify">
+
+        <motion.div
+          initial={{ scale: 0.9, }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 0.9, delay: 0.4, ease: "easeInOut" }}
+          className=" md:flex space-y-4 justify-between items-center py-10 gap-10"
+        >
+          <div className="bg-[#4F616D] rounded-[60px] h-full w-full p-10 space-y-3 text-justify animate__animated animate__fadeInLeft">
             <Image src="/semi.png" alt="" width={30} height={30} />
             <h1 className="md:text-lg text-sm">
               I started my tech journey with Kwaratech Academy&apos;s essential
@@ -21,7 +28,7 @@ const Testimony = () => {
             <h5 className="flex justify-end py-4">Amina Yusuf</h5>
           </div>
 
-          <div className="bg-[#4F616D]  rounded-[60px] h-full w-full p-10 self-stretch space-y-3 text-justify">
+          <div className="bg-[#4F616D]  rounded-[60px] h-full w-full p-10 self-stretch space-y-3 text-justify animate__animated animate__fadeInDown">
             <Image src="/semi.png" alt="" width={30} height={30} />
             <h1 className="md:text-lg text-sm">
               &quot;I can&apos;t thank Kwaratech Academy enough for their
@@ -33,7 +40,7 @@ const Testimony = () => {
             </h1>
             <h5 className="flex justify-end py-4">Emmanuel Osai</h5>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

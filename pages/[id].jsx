@@ -5,7 +5,7 @@ import ViewAllCourseIcon from "../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import ScrollAnimation from "@/components/ui/ScrollAnimation";
+import { motion} from "framer-motion";
 import PageWrapper from "./PageWrapper";
 
 export default function Course() {
@@ -160,7 +160,10 @@ export default function Course() {
               </h1>
 
               <div className="md:w-[931px] w-full bg-white dark:bg-slate-900 p-4 rounded-3xl mx-auto">
-                <Image
+                <motion.img
+                  initial={{ scale: 0.9 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ duration: 0.9, delay: 0.4, ease: "easeInOut" }}
                   src={item.image}
                   className="md:w-full md:h-[269px] hidden md:flex"
                   alt="NO IMAGE FOT THIS COURSE"
@@ -171,7 +174,10 @@ export default function Course() {
                   }
                 />
 
-                <Image
+                <motion.img
+                  initial={{ scale: 0.9 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ duration: 0.9, delay: 0.4, ease: "easeInOut" }}
                   src={item.mbImage}
                   className="md:w-auto w-full md:h-auto md:hidden flex"
                   alt="NO IMAGE FOT THIS COURSE"

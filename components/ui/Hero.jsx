@@ -30,7 +30,7 @@ const Hero = () => {
           Kwaratech Academy
         </div>
 
-        <h1 className="font-bold md:text-6xl text-lg">
+        <h1 className="font-bold md:text-6xl text-lg animate__animated animate__zoomIn">
           Your journey to a
           <span className="text-[#00AFF0] bg-[#C6E7FF] dark:bg-slate-900 md:px-6 px-4 py-1 rounded-full animate-fade-in">
             {text}

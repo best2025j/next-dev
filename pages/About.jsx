@@ -45,7 +45,7 @@ export default function About() {
             <div className="flex py-4 space-x-2 ">
               <motion.img
                 initial={{
-                  x: -200,
+                  x: 200,
                 }}
                 transition={{
                   duration: 1.2,
@@ -59,10 +59,10 @@ export default function About() {
               />
               <motion.img
                 initial={{
-                  y: 200,
+                  y: -200,
                 }}
                 transition={{
-                  duration: 1.2,
+                  duration: 2.2,
                 }}
                 whileInView={{ y: 0 }}
                 className="w-full h-[100px] md:h-full"

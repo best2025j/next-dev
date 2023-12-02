@@ -9,7 +9,6 @@ import OutSponsors from "@/components/ui/OutSponsors";
 import Testimony from "@/components/ui/Testimony";
 import Head from "next/head";
 import PageWrapper from "./PageWrapper";
-import User from "@/components/ui/ui";
 
 export default function Home() {
   return (
@@ -25,7 +24,6 @@ export default function Home() {
         <Hero />
         <Carousel />
         <OutSponsors />
-        {/* <User /> */}
         <CarouselCards />
         <Sections />
         <ContactUs />

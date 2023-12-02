@@ -8,14 +8,7 @@ const ContactUs = () => {
   return (
     <div className="md:flex w-full h-full bg-white dark:bg-black py-20 px-4">
       <div className="flex-1 h-full w-full relative">
-        <motion.img
-          initial={{
-            translateX: 204,
-          }}
-          transition={{
-            duration: 1.2,
-          }}
-          whileInView={{ translateX: 1 }}
+        <Image
           width={500}
           height={500}
           src="/Rectangle 1.png"
@@ -25,12 +18,12 @@ const ContactUs = () => {
 
         <motion.img
           initial={{
-            scale: -2.4,
+            scaleY: 2.4,
           }}
           transition={{
             duration: 1.2,
           }}
-          whileInView={{ scale: 1 }}
+          whileInView={{ scaleY: 1 }}
           width={500}
           height={500}
           src="/Group 5.png"
@@ -40,17 +33,7 @@ const ContactUs = () => {
       </div>
 
       <div className="flex-1 bg-[#001E2D] md:w-full w-full h-[355px] md:h-[595px] rounded-b-[50px] md:rounded-none md:rounded-r-[240px]">
-        <motion.div
-          initial={{
-            scaleY: 2.4,
-          }}
-          transition={{
-            duration: 1.2,
-          }}
-          // animate={{ scale: 0.99 }}
-          whileInView={{ scaleY: 1 }}
-          className="flex flex-col mx-auto h-full w-full items-center justify-center"
-        >
+        <div className="flex flex-col mx-auto h-full w-full items-center justify-center">
           <div className="text-[#fff] space-y-[16px]">
             <h1 className="md:text-6xl text-2xl font-bold">Reach Out to Us</h1>
             <p className="w-[301px] md:w-[438px] md:`text-lg font-normal">
@@ -72,7 +55,7 @@ const ContactUs = () => {
               />
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

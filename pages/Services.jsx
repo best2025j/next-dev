@@ -10,8 +10,8 @@ export default function Services() {
   return (
     <PageWrapper>
       <div className="py-24 md:py-40 flex flex-col h-full w-full">
-        <div className=" flex flex-col-reverse md:flex-row md:justify-between mx-auto items-center w-full h-full">
-          <div className="flex items-center justify-center mx-auto"></div>
+        <div className=" flex flex-col-reverse md:flex-row md:justify-around mx-auto items-center w-full h-full">
+          {/* <div className="flex items-center justify-center mx-auto"></div> */}
           <div className="flex flex-col space-y-2 py-6 md:py-0">
             <h1 className="text-[24px] md:text-[48px] font-bold">
               What we offer

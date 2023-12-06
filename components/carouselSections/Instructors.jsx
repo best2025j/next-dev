@@ -6,12 +6,12 @@ const Instructors = () => {
     {
       name: "  Audu Godstime ",
       position: "Front-end Developer",
-      image: "/Frame 23 (6).png",
+      image: "/gt1.jpeg",
     },
     {
       name: "Precious Ajayi",
       position: "Backend Developer",
-      image: "/Frame 23 (7).png",
+      image: "/precious.png",
     },
     {
       name: "Odekunle Joseph",

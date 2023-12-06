@@ -6,7 +6,7 @@ const Instructors = () => {
     {
       name: "  Audu Godstime ",
       position: "Front-end Developer",
-      image: "/gt1.jpeg",
+      image: "/Frame 23 (6).png",
     },
     {
       name: "Precious Ajayi",

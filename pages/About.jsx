@@ -13,6 +13,7 @@ export default function About() {
 
   return (
     <PageWrapper>
+      div
       <div className="py-28 md:px-[60px] w-full h-full">
         <div className="flex flex-col md:flex-row items-center justify-around h-full w-full mx-auto md:gap-[37px]">
           <div className="md:py-40 space-y-[20px] ">
@@ -75,7 +76,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       <div className="space-y-4 flex flex-col justify-center items-center mx-auto text-center md:px-[112px] px-4">
         <h1 className="font-bold text-[24px] md:text-[48px] ">Who We Are</h1>
 
@@ -84,7 +84,6 @@ export default function About() {
           enthusiasts dedicated to bridging the digital gap.
         </p>
       </div>
-
       <div className="md:py-[60px] md:px-[112px] flex items-center justify-center py-4 px-4">
         <Image
           width={500}
@@ -94,7 +93,6 @@ export default function About() {
           alt="pix-4"
         />
       </div>
-
       <div className="flex justify-between md:pl-[112px]">
         <div className="md:gap-[48px] inline-flex flex-col md:py-[120px] py-[20px]">
           <h1 className="font-bold text-[24px] md:text-[48px] pl-6">
@@ -317,7 +315,6 @@ export default function About() {
           <Image width={500} height={500} src="/KTA2.png" alt="kta" />
         </div>
       </div>
-
       <div className="md:py-[6px]  md:px-[112px] space-y-6 px-4">
         <div className="md:w-[439px] w-[326px]">
           <h1 className="font-bold text-[24px] md:text-[36px]">Our Vision</h1>
@@ -392,27 +389,24 @@ export default function About() {
             />
           </div>
         </div>
+        
 
-        <div className="flex flex-col md:flex-row justify-bet items-center md:py-40 py-20 md:gap-32">
-          <div className="space-y-5">
+        <div className="flex flex-col md:mx-auto w-full h-full justify-around items-center md:flex-row md:py-40 py-20 md:gap-32">
+          <div className="md:w-[439px] w-[326px] ">
             <h1 className="font-bold text-[24px] md:text-[48px]">
               Begin your career
             </h1>
-            <p className="md:w-[439px] w-[326px] text-[18px]">
+            <p className=" md:w-full text-[18px]">
               Whether you&apos;re a student taking your first steps into the
               tech world or a professional seeking to upskill, Kwaratech Academy
               is here to guide you. We invite you to be a part of our vibrant
               and growing community, where dreams are empowered and futures are
               shaped.
             </p>
-
             <div className="pt-8 w-[288px] md:w-full">
               <Link href="/courses/Courses">
                 <ButtonWhite
-                  className={
-                    // "flex items-center w-full md:text-base text-sm justify-center"
-                    "flex items-center text-sm md:text-base text-center justify-center w-full md:w-[399px]"
-                  }
+                  className="flex items-center text-sm md:text-base text-center justify-center w-full md:w-[399px]"
                   label={
                     <>
                       Get Started <ViewAllCourseIcon />
@@ -423,18 +417,17 @@ export default function About() {
             </div>
           </div>
 
-          <div className="w-full h-full ">
+          <div className="w-full h-full md:w-[527.226px] md:h-[323.309px] hidden md:flex">
             <Image
               width={500}
               height={500}
               src="/ktaSvg.png"
               alt=""
-              className="w-[527.226px] h-[323.309px] hidden md:flex"
+              className="w-full h-full"
             />
           </div>
         </div>
       </div>
-
       <SectionContents />
     </PageWrapper>
   );

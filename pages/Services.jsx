@@ -367,7 +367,6 @@ export default function Services() {
               the industry needs right now.
             </p>
           </div>
-
           <div className="flex gap-[32px] flex-col py-20 space-y-4">
             <div className="flex md:gap-[32px]  space-y-6 md:space-y-0 flex-col md:flex-row">
               <motion.div
@@ -509,9 +508,8 @@ export default function Services() {
               </Link>
             </div>
           </div>
-
-          <div className="md:pt-[243px] flex justify-between gap-32 items-center space-y-10 flex-col md:flex-row">
-            <div className="space-y-5">
+          <div className="flex flex-col md:mx-auto w-full h-full justify-around items-center md:flex-row md:py-40 py-20 md:gap-32">
+            <div className="md:w-[439px] w-[326px] ">
               <h1 className="md:text-[40px] text-[24px] font-bold">
                 Internship Opportunities
               </h1>
@@ -536,14 +534,13 @@ export default function Services() {
               </div>
             </div>
 
-            <div className="w-full h-full ">
+            <div className="w-full h-full md:w-[527.226px] md:h-[323.309px] hidden md:flex">
               <Image
                 width={500}
                 height={500}
                 src="/ktaSvg.png"
-                alt="kta-image"
-                quality={100}
-                className="w-[527.226px] h-[323.309px] hidden md:flex"
+                alt=""
+                className="w-full h-full"
               />
             </div>
           </div>

@@ -27,7 +27,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex flex-col md:gap-[38px] pt-10 px-4 md:p-2">
+          <div className="flex flex-col md:gap-[38px] pt-10 p-2 md:p-2">
             <motion.img
               initial={{
                 y: -200,
@@ -396,7 +396,7 @@ export default function About() {
             <h1 className="font-bold text-[24px] md:text-[48px]">
               Begin your career
             </h1>
-            <p className=" md:w-full text-[18px]">
+            <p className=" md:w-full md:text-[18px]">
               Whether you&apos;re a student taking your first steps into the
               tech world or a professional seeking to upskill, Kwaratech Academy
               is here to guide you. We invite you to be a part of our vibrant

@@ -513,7 +513,7 @@ export default function Services() {
               <h1 className="md:text-[40px] text-[24px] font-bold">
                 Internship Opportunities
               </h1>
-              <p className="md:w-[439px] w-[326px] md:text-[18px]">
+              <p className="md:w-[439px] w-[326px] md:text-[18px] ">
                 Join our team as an intern or explore our internship programs to
                 gain practical experience and kickstart your tech career.
               </p>

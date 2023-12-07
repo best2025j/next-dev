@@ -5,7 +5,7 @@ import ViewAllCourseIcon from "../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import PageWrapper from "./PageWrapper";
 
 export default function Course() {
@@ -47,7 +47,7 @@ export default function Course() {
       mbImage: "/ui_ux.png",
       image: "/UI.png",
       course: "UI/UX Design",
-      info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
+      info: "Create exceptional user experiences and user-friendly interfaces with courses in UI/UX design.",
       captionName: "Duration",
       durationPeriod: "2 months",
       Instructor: "Instructor",
@@ -60,9 +60,9 @@ export default function Course() {
       mbImage: "/dataScience.png",
       image: "/DataSciences.png",
       course: "Data & Analytics",
-      info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
+      info: "Dive into the world of data management, analytics, and machine learning. Master data-driven decision-making and predictive modeling.",
       captionName: "Duration",
-      durationPeriod: "2-4 months",
+      durationPeriod: "2 months",
       Instructor: "Instructor",
       InstructorName: "Mr Azeez",
     },
@@ -73,9 +73,9 @@ export default function Course() {
       mbImage: "/cyber.png",
       image: "/CyberSecuritys.png",
       course: "Cybersecurity",
-      info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
+      info: "Learn to protect digital assets from cyber threats with comprehensive training in cybersecurity.",
       captionName: "Duration",
-      durationPeriod: "2-4 months",
+      durationPeriod: "3 months",
       Instructor: "Instructor",
       InstructorName: "Mr Azeez",
     },
@@ -86,9 +86,9 @@ export default function Course() {
       mbImage: "/vrpix.png",
       image: "/VirtualRemoteJob.png",
       course: "Virtual Assistance and Remote Jobs",
-      info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
+      info: "Learn to protect digital assets from cyber threats with comprehensive training in cybersecurity.",
       captionName: "Duration",
-      durationPeriod: "2-4 months",
+      durationPeriod: "3 months",
       Instructor: "Instructor",
       InstructorName: "Mr Azeez",
     },
@@ -99,9 +99,9 @@ export default function Course() {
       mbImage: "/digitalpix.png",
       image: "/DMarketting.png",
       course: "Digital Marketing",
-      info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
+      info: "Master digital marketing and affiliate strategies to promote products and services effectively online.",
       captionName: "Duration",
-      durationPeriod: "2-4 months",
+      durationPeriod: "3 months",
       Instructor: "Instructor",
       InstructorName: "Mr Azeez",
     },
@@ -112,9 +112,9 @@ export default function Course() {
       mbImage: "/contentpix.png",
       image: "/CopyWritting.png",
       course: "Content Writing",
-      info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
+      info: "Master digital marketing and affiliate strategies to promote products and services effectively online.",
       captionName: "Duration",
-      durationPeriod: "2-4 months",
+      durationPeriod: "3 months",
       Instructor: "Instructor",
       InstructorName: "Mr Azeez",
     },
@@ -133,7 +133,7 @@ export default function Course() {
 
   return (
     <PageWrapper>
-      <div className="py-40">
+      <div className="md:py-40 px-2 md:px-0 py-24">
         <div className="space-y-3 px-6">
           <h1 className="text-5xl md:text-5xl text-[24px] font-bold">
             Courses {courses.id}

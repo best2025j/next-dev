@@ -40,7 +40,7 @@ export default function DesignAnimation() {
               <h1 className="font-bold text-[14px] md:text-[36px]">
                 Instructor
               </h1>
-              <span>Mr Victor</span>
+              <span>Victor</span>
             </div>
           </div>
         </div>
@@ -101,16 +101,18 @@ export default function DesignAnimation() {
           </div>
 
           <div className="py-6 pt-[64px] w-full">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
+             <Link href="https://wa.me/07011198112">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center w-full md:w-[399px]"
+                }
+                label={
+                  <>
+                    Enroll now <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </Link>
           </div>
         </div>
 
@@ -161,16 +163,18 @@ export default function DesignAnimation() {
           </div>
 
           <div className="py-6 pt-[64px]">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
+             <Link href="https://wa.me/07011198112">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center w-full md:w-[399px]"
+                }
+                label={
+                  <>
+                    Enroll now <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </Link>
           </div>
         </div>
 
@@ -214,16 +218,18 @@ export default function DesignAnimation() {
           </div>
 
           <div className="py-6 pt-[64px]">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
+             <Link href="https://wa.me/07011198112">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center w-full md:w-[399px]"
+                }
+                label={
+                  <>
+                    Enroll now <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </Link>
           </div>
         </div>
 
@@ -268,16 +274,18 @@ export default function DesignAnimation() {
           </div>
 
           <div className="py-6 pt-[64px]">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
+             <Link href="https://wa.me/07011198112">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center w-full md:w-[399px]"
+                }
+                label={
+                  <>
+                    Enroll now <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </Link>
           </div>
         </div>
       </div>

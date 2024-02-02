@@ -15,7 +15,6 @@ const CarouselCards = () => {
   useEffect(() => {
     const sequence = async () => {
       await controls.start("show");
-
       // Optionally, add a delay between each image
       await controls.start("hidden");
       await controls.start("show");

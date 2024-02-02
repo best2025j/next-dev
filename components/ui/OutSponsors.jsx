@@ -32,6 +32,7 @@ const OutSponsors = () => {
           ))}
         </div>
 
+        {/* mobile view */}
         <div className="flex md:hidden flex-col w-full items-center justify-center">
           <div className="grid justify-center grid-cols-3 gap-10">
             <Image

@@ -43,7 +43,7 @@ export default function WebDevelopment() {
               <h1 className="font-bold text-[14px] md:text-[36px]">
                 Instructor
               </h1>
-              <span className="text-xs md:text-[18px]">Mr Azeez</span>
+              <span className="text-xs md:text-[18px]"> Azeez</span>
             </div>
           </div>
         </div>
@@ -105,16 +105,18 @@ export default function WebDevelopment() {
           </div>
 
           <div className="py-6 pt-[64px] w-full ">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
+            <Link href="https://wa.me/07011198112">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center w-full md:w-[399px]"
+                }
+                label={
+                  <>
+                    Enroll now <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </Link>
           </div>
         </motion.div>
 
@@ -174,16 +176,18 @@ export default function WebDevelopment() {
           </div>
 
           <div className="py-6 pt-[64px]">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
+            <Link href="https://wa.me/07011198112">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center w-full md:w-[399px]"
+                }
+                label={
+                  <>
+                    Enroll now <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </Link>
           </div>
         </motion.div>
       </div>

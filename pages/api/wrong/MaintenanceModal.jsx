@@ -9,7 +9,7 @@ export default function MaintenanceModal() {
           <h1 className="md:text-xl text-xs font-[700] capitalize ">
             sorry site is under Maintenance !!!
           </h1>
-          <p className="text-[9px] md:text-xl">
+          <p className="text-[9px] md:text-xl text-center">
             We apologize for the inconvenience. Please check back later.
           </p>
         </div>

@@ -57,11 +57,7 @@ export default function ContentWriting() {
           </div>
 
           <div className=" text-[#4F616D] space-y-3 ">
-            <h1>
-              In our Front-End Development course, you&apos;ll master the art of
-              creating user-friendly and visually appealing websites.
-              Here&apos;s what you can expect to learn:
-            </h1>
+            <h1>Course Overview</h1>
 
             <ul className="list-disc list-inside md:text-[18px] text-sm font-normal pt-4 md:pt-0 space-y-2 md:space-y-0">
               <li>

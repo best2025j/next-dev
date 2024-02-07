@@ -81,7 +81,7 @@ export default function Course() {
     },
 
     {
-      id: "VA-RemoteJobs",
+      id: "VA_RemoteJobs",
       number: 6,
       mbImage: "/vrpix.png",
       image: "/VirtualRemoteJob.png",

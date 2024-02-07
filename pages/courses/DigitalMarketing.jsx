@@ -30,8 +30,8 @@ export default function DigitalMarketing() {
                 Digital Marketing{" "}
               </h1>
               <p className="md:text-base w-[201px] md:w-auto text-xs font-normal text-[#4F616D]">
-                Learn to protect digital assets from cyber threats with
-                comprehensive training in cybersecurity.
+                Master digital marketing and affiliate strategies to promote
+                products and services effectively online.
               </p>
             </div>
 
@@ -39,7 +39,7 @@ export default function DigitalMarketing() {
               <h1 className="font-bold text-[14px] md:text-[36px]">
                 Instructor
               </h1>
-              <span className="text-xs md:text-[18px]">Mr Azeez</span>
+              <span className="text-xs md:text-[18px]"> Adeniyi Ogundiran</span>
             </div>
           </div>
         </div>
@@ -58,58 +58,60 @@ export default function DigitalMarketing() {
 
             <ul className="list-disc list-inside md:text-[18px] text-sm font-normal pt-4 md:pt-0 space-y-2 md:space-y-0">
               <li>
-                Dive into the world of UI/UX design, where aesthetics meet
-                functionality.
+                Gain a deep understanding of the digital marketing landscape,
+                its importance, and its role in contemporary business and brand
+                promotion.
               </li>
               <li>
-                Learn the principles of user-centered design and create
-                intuitive digital experiences.
+                Create and implement effective digital marketing campaigns,
+                drive meaningful results, and advance your career in the dynamic
+                world.
               </li>
               <li>
-                Understand user research, wire framing, prototyping, and
-                usability testing.
+                Explore a wide range of digital marketing strategies, tactics,
+                and tools, enabling you to create and implement effective online
+                marketing campaigns that yield progressive results.
               </li>
 
               <h1> What You&apos;ll Learn</h1>
 
               <li>
-                User-Centered Design: Put the user at the forefront of your
-                design decisions.
+                Master digital marketing to reach your target audience, build
+                your brand, and drive business growth.
               </li>
               <li>
-                Information Architecture: Organize content for maximum clarity
-                and accessibility.
+                Master web development and content creation to craft
+                user-friendly web experiences.
               </li>
               <li>
-                Wire framing and Prototyping: Create visual blueprints and
-                interactive prototypes.
+                Master SEO and social media marketing to boost visibility, drive
+                traffic, engage audiences, and rank higher in search results.
               </li>
               <li>
-                Usability Testing: Ensure your designs are intuitive and
-                user-friendly.
+                Email marketing, PPC advertising, and content marketing are
+                essential digital marketing channels to nurture leads, build
+                relationships, and drive conversions.
               </li>
               <li>
-                Visual Design Principles: Enhance your skills in creating
-                visually appealing interfaces.
-              </li>
-              <li>
-                Tools and Software: Master industry-standard design tools such
-                as Figma,Miro, Sketch and Lucid.
+                Master analytics, CRO, and digital marketing tools to
+                turbocharge your campaigns and achieve superior results.
               </li>
             </ul>
           </div>
 
           <div className="py-6 pt-[64px] w-full ">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
+            <Link href="https://wa.me/07011198112">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center w-full md:w-[399px]"
+                }
+                label={
+                  <>
+                    Enroll now <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </Link>
           </div>
         </div>
       </div>

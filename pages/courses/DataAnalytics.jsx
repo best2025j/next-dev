@@ -102,7 +102,7 @@ export default function DataAnalytics() {
           </div>
 
           <div className="py-6 pt-[64px] w-full ">
-            <Link href="https://wa.me/07011198112">
+            <Link href="https://wa.me/+2347011198112">
               <ButtonWhite
                 className={
                   "flex items-center text-base text-center justify-center w-full md:w-[399px]"
@@ -177,7 +177,7 @@ export default function DataAnalytics() {
           </div>
 
           <div className="py-6 pt-[64px] w-full ">
-            <Link href="https://wa.me/07011198112">
+            <Link href="https://wa.me/+2347011198112">
               <ButtonWhite
                 className={
                   "flex items-center text-base text-center justify-center w-full md:w-[399px]"

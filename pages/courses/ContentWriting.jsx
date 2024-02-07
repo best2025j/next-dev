@@ -1,6 +1,6 @@
 import SectionContents from "../../components/ui/SectionContents";
 import Footer from "../../components/shared/Footer";
-import image from "../../assets/images/contentpix.png";
+import image from "../../public/contentwrit.png";
 import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
 import Image from "next/image";
@@ -24,16 +24,16 @@ export default function ContentWriting() {
         </Link>
 
         <div className="pt-14 h-full w-full">
-          <Image src={image} alt="no image" />
+          <Image src={image} alt="no image" quality={100} />
           <div className="flex justify-between px-2 md:py-[40px] bg-white items-start py-6">
             <div className="space-y-4 w-[439px]">
               <h1 className="font-bold text-[24px] md:text-[48px]">
-                Web Development{" "}
+                Content Writing
               </h1>
               <p className="md:text-base w-[201px] md:w-auto text-xs font-normal text-[#4F616D]">
-                Explore the world of web development, from creating stunning
-                front-end interfaces to building robust back-end systems and
-                mobile applications.
+                Welcome to the Content Writing Mastery course, a comprehensive
+                program designed to equip you with the skills and knowledge
+                needed to excel in the field of content writing.
               </p>
             </div>
 
@@ -41,7 +41,7 @@ export default function ContentWriting() {
               <h1 className="font-bold text-[14px] md:text-[36px]">
                 Instructor
               </h1>
-              <span className="text-xs md:text-[18px]">Mr Azeez</span>
+              <span className="text-xs md:text-[18px]">Adejumo A. A</span>
             </div>
           </div>
         </div>
@@ -49,10 +49,10 @@ export default function ContentWriting() {
         <div className="flex flex-col space-y-2 pt-[48px]">
           <div className="flex justify-between items-center">
             <h1 className="text-[#00AFF0] font-bold text-[24px] md:text-[30px]">
-              Front-end Development
+              Content Writing
             </h1>
             <span className="text-[#001E2D] font-[600] text-sm md:text-[28px]">
-              Duration: 2 months
+              Duration: 3 months
             </span>
           </div>
 
@@ -65,34 +65,43 @@ export default function ContentWriting() {
 
             <ul className="list-disc list-inside md:text-[18px] text-sm font-normal pt-4 md:pt-0 space-y-2 md:space-y-0">
               <li>
-                HTML & CSS: Dive into the fundamentals of web development with
-                HTML and CSS. Learn how to structure web pages and apply styling
-                for a polished look.
+                Assimilate the knowledge and practical experience needed to
+                excel in the field of content writing.
+              </li>
+              <li>Create real writing samples to build a writing portfolio.</li>
+              <li>
+                Gain a deep understanding of the principles, importance, and
+                diverse forms of content writing.
+              </li>
+
+              <h1> What You&apos;ll Learn</h1>
+
+              <li>
+                Master content writing principles and techniques to create
+                effective, audience-focused communication.
               </li>
               <li>
-                JavaScript: Explore the power of JavaScript to add interactivity
-                and dynamic features to your websites. Build interactive forms,
-                implement animations, and create responsive designs.
+                Gain a deep understanding of research and content strategy to
+                create informed, engaging content that achieves your business
+                goals.
               </li>
               <li>
-                Responsive Web Design: Master the art of responsive web design,
-                ensuring your websites look and function flawlessly on various
-                devices, from desktops to smartphones.
+                Become proficient in SEO and website content to boost
+                visibility, drive traffic, and engage audiences.
               </li>
               <li>
-                Version Control: Learn how to use version control systems like
-                Git to collaborate with others and track changes in your
-                projects.
+                Create content for various online platforms, including social
+                media, email marketing, and newsletters.
               </li>
               <li>
-                Web Performance Optimization: Discover techniques to optimize
-                website performance, including faster loading times and improved
-                user experiences.
+                Harness the power of persuasive copywriting for driving
+                conversions and sales, while honing essential editing and
+                proofreading skills to ensure flawless, polished content.
               </li>
               <li>
-                Website Deployment: Gain practical experience in deploying
-                websites to hosting platforms, making your projects accessible
-                to the world.
+                Unlock the potential of freelance writing and career building,
+                uncovering content writing opportunities, portfolio creation,
+                and the path to a thriving professional journey.
               </li>
             </ul>
           </div>

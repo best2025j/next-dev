@@ -107,79 +107,18 @@ export default function ContentWriting() {
           </div>
 
           <div className="py-6 pt-[64px] w-full ">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
-          </div>
-        </div>
-        <div className="flex flex-col space-y-2 pt-[120px]">
-          <div className="flex justify-between items-center">
-            <h1 className="text-[#00AFF0] font-bold text-[24px] md:text-[30px]">
-              Back-end Development
-            </h1>
-            <span className="text-[#001E2D] font-[600] md:text-[28px]">
-              Duration: 3 months
-            </span>
-          </div>
-
-          <div className=" text-[#4F616D] space-y-3 md:space-y-0">
-            <div>
-              <h1>What You Will Learn:</h1>
-              <h1>
-                Our Back-End Development course equips you with the skills to
-                create robust server-side systems and manage databases.
-                Here&apos;s what you&apos;ll learn:
-              </h1>
-            </div>
-
-            <ul className="list-disc list-inside md:text-[18px] text-sm font-normal space-y-3">
-              <li>
-                Server-Side Scripting: Dive into server-side scripting languages
-                like Node.js or Python to build the back-end logic of web
-                applications.
-              </li>
-              <li>
-                Database Management: Learn to design and manage databases
-                effectively, ensuring data integrity and security.
-              </li>
-              <li>
-                API Development: Explore the creation of APIs (Application
-                Programming Interfaces) for seamless communication between
-                front-end and back-end systems.
-              </li>
-              <li>
-                Authentication & Security: Implement authentication mechanisms
-                and security measures to protect your applications from threats.
-              </li>
-              <li>
-                Scalability: Understand how to build scalable back-end systems
-                to accommodate increasing user loads and data.
-              </li>
-              <li>
-                Version Control: Utilize version control systems like Git for
-                collaborative development and tracking changes.
-              </li>
-            </ul>
-          </div>
-
-          <div className="py-6 pt-[64px]">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
+            <Link href="https://wa.me/07011198112">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center w-full md:w-[399px]"
+                }
+                label={
+                  <>
+                    Enroll now <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </Link>
           </div>
         </div>
       </div>

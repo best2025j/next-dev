@@ -19,13 +19,14 @@ export default function ContentWriting() {
         </p>
 
         {/* Added a "Back to Courses" button using the Link component */}
+
         <Link href="/courses">
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
 
         <div className="pt-14 h-full w-full">
           <Image src={image} alt="no image" quality={100} />
-          <div className="flex justify-between px-2 md:py-[40px] bg-white items-start py-6">
+          <div className="flex justify-between px-2 md:py-[40px] bg-white dark:bg-black  items-start py-6">
             <div className="space-y-4 w-[439px]">
               <h1 className="font-bold text-[24px] md:text-[48px]">
                 Content Writing

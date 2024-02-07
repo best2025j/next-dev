@@ -4,9 +4,9 @@ import ButtonWhite from "../buttons/ButtonWhite";
 import ViewAllCourseIcon from "../icons/ViewAllCourseIcon";
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
-import ig from "../../assets/svgs/ig.svg";
-import Twitter from "../../assets/svgs/Twitterlogo.svg";
-import whatsapp from "../../assets/svgs/whatsapp.svg";
+// import ig from "../../assets/svgs/ig.svg";
+// import Twitter from "../../assets/svgs/Twitterlogo.svg";
+// import whatsapp from "../../assets/svgs/whatsapp.svg";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -29,22 +29,21 @@ const Footer = () => {
 
   return (
     <PageWrapper>
-      {" "}
-      <div className="bg-[#001E2D] dark:bg-black md:py-16 py-6 text-white w-full md:h-full">
-        <div className="w-[90%] mx-auto space-y-6">
-          <div className="flex justify-between md:flex-row flex-col-reverse items-center">
-            <div className="flex-col px-2 py-4 flex text-white mx-auto">
+      <div className="bg-[#001E2D] dark:bg-black text-white w-full md:h-full">
+        <div className="max-w-[90%] mx-auto h-full space-y-6 md:py-16 py-6">
+          <div className="flex md:flex-row flex-col-reverse items-center justify-between">
+            <div className="flex-col px-2 py-4 flex text-white">
               <div className="md:flex hidden">
                 <Image
                   src={images}
                   alt=""
                   width={500}
                   height={500}
-                  className="w-[50%] h-full"
+                  className="w-[50%] h-full md:h-[144px] md:w-[339px]"
                 />
               </div>
 
-              <div className="flex gap-[48px] flex-col md:flex-row">
+              <div className="flex gap-[28px] flex-col md:flex-row">
                 <div className="md:flex flex-col hidden">
                   <span className="flex space-x-2">
                     <svg
@@ -118,7 +117,7 @@ const Footer = () => {
                   </span>
                 </div>
 
-                <div className="flex space-x-4 items-center md:w-[360px] pt-4 text-2xl cursor-pointer">
+                <div className="flex space-x-4 items-center pt-4 text-2xl cursor-pointer">
                   <Link href="https://instagram.com/kwaratechacademy?igshid=MzRlODBiNWFlZA==">
                     <svg
                       width="24"
@@ -219,8 +218,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-start items-start h-full mx-auto md:flex-none md:mx-0">
-              <p className="md:text-2xl text-xs text-white md:w-[456px] w-[301px]">
+            <div className="flex flex-col h-full mx-auto md:flex-none md:mx-0">
+              <p className="md:text-xl text-xs text-white md:w-[366px] w-[301px]">
                 &quot; Aim for the top with Kwara Tech Academy, empowering tech
                 enthusiasts through education that is who we are and that is
                 what we do!&quot;
@@ -242,7 +241,7 @@ const Footer = () => {
           </div>
 
           <div className="flex-col px-2  items-center md:flex-row border-b flex text-white gap-[48px]"></div>
-
+          
           <div className="md:flex space-y-4 pt-[40px] justify-between items-center">
             <h6 className="text-center">© 2023 KTA. All rights reserved.</h6>
             <ul className="md:flex hidden space-x-4 md:space-x-10 text-sm">

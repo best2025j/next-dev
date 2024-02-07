@@ -62,7 +62,7 @@ export default function Course() {
       course: "Data & Analytics",
       info: "Dive into the world of data management, analytics, and machine learning. Master data-driven decision-making and predictive modeling.",
       captionName: "Duration",
-      durationPeriod: "2-4 months",
+      durationPeriod: "2 months",
       Instructor: "Instructor",
       InstructorName: " Azeez",
     },
@@ -75,7 +75,7 @@ export default function Course() {
       course: "Cybersecurity",
       info: "Learn to protect digital assets from cyber threats with comprehensive training in cybersecurity.",
       captionName: "Duration",
-      durationPeriod: "2-4 months",
+      durationPeriod: "3 months",
       Instructor: "Instructor",
       InstructorName: " Azeez",
     },
@@ -88,7 +88,7 @@ export default function Course() {
       course: "Virtual Assistance and Remote Jobs",
       info: "Learn to protect digital assets from cyber threats with comprehensive training in cybersecurity.",
       captionName: "Duration",
-      durationPeriod: "2-4 months",
+      durationPeriod: "3 months",
       Instructor: "Instructor",
       InstructorName: " Azeez",
     },
@@ -101,7 +101,7 @@ export default function Course() {
       course: "Digital Marketing",
       info: "Master digital marketing and affiliate strategies to promote products and services effectively online.",
       captionName: "Duration",
-      durationPeriod: "2-4 months",
+      durationPeriod: "3 months",
       Instructor: "Instructor",
       InstructorName: " Azeez",
     },
@@ -112,9 +112,9 @@ export default function Course() {
       mbImage: "/contentpix.png",
       image: "/CopyWritting.png",
       course: "Content Writing",
-      info: "This course is designed to equip you with the skills and knowledge needed to excel in the field of content writing.",
+      info: "Enhance your content marketing expertise and master the art of creating engaging and informative content that captivates your audience and drives business success.",
       captionName: "Duration",
-      durationPeriod: "2-4 months",
+      durationPeriod: "3 months",
       Instructor: "Instructor",
       InstructorName: " Azeez",
     },
@@ -133,7 +133,7 @@ export default function Course() {
 
   return (
     <PageWrapper>
-      <div className="py-40">
+      <div className="md:py-40 px-2 md:px-0 py-24">
         <div className="space-y-3 px-6">
           <h1 className="text-5xl md:text-5xl text-[24px] font-bold">
             Courses {courses.id}

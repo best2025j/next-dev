@@ -11,7 +11,7 @@ const Instructors = () => {
     {
       name: "Precious Ajayi",
       position: "Backend Developer",
-      image: "/Frame 23 (7).png",
+      image: "/precious.png",
     },
     {
       name: "Odekunle Joseph",

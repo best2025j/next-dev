@@ -211,9 +211,9 @@ const CarouselCards = () => {
                 04. Data Analysis
               </h1>
               <Image
+                src="/dataScience-full.png"
                 width={500}
                 height={500}
-                src="/dataScience-full.png"
                 alt=""
               />
             </motion.div>

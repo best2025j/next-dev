@@ -103,16 +103,18 @@ export default function UI_UX() {
           </div>
 
           <div className="py-6 pt-[64px] w-full ">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
+            <Link href="https://wa.me/07011198112">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center w-full md:w-[399px]"
+                }
+                label={
+                  <>
+                    Enroll now <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </Link>
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ export default function Course() {
       captionName: "Duration",
       durationPeriod: "2-4 months",
       Instructor: "Instructor",
-      InstructorName: "Mr Azeez",
+      InstructorName: " Azeez",
     },
 
     {
@@ -34,15 +34,15 @@ export default function Course() {
       mbImage: "/uifull.png",
       image: "/Designs.png",
       course: "Design/ Animation",
-      info: "Explore the world of web development, from creating stunning front-end interfaces to building robust back-end systems and mobile applications.",
+      info: "Create exceptional user experiences and user-friendly interfaces with courses in UI/UX design.",
       captionName: "Duration",
       durationPeriod: "2-4 months",
       Instructor: "Instructor",
-      InstructorName: "Mr Victor",
+      InstructorName: " Victor",
     },
 
     {
-      id: "UI-UX",
+      id: "UI_UX",
       number: 3,
       mbImage: "/ui_ux.png",
       image: "/UI.png",
@@ -51,7 +51,7 @@ export default function Course() {
       captionName: "Duration",
       durationPeriod: "2 months",
       Instructor: "Instructor",
-      InstructorName: "Mr victor",
+      InstructorName: " victor",
     },
 
     {
@@ -64,7 +64,7 @@ export default function Course() {
       captionName: "Duration",
       durationPeriod: "2 months",
       Instructor: "Instructor",
-      InstructorName: "Mr Azeez",
+      InstructorName: " Azeez",
     },
 
     {
@@ -77,11 +77,11 @@ export default function Course() {
       captionName: "Duration",
       durationPeriod: "3 months",
       Instructor: "Instructor",
-      InstructorName: "Mr Azeez",
+      InstructorName: " Azeez",
     },
 
     {
-      id: "VA-RemoteJobs",
+      id: "VA_RemoteJobs",
       number: 6,
       mbImage: "/vrpix.png",
       image: "/VirtualRemoteJob.png",
@@ -90,7 +90,7 @@ export default function Course() {
       captionName: "Duration",
       durationPeriod: "3 months",
       Instructor: "Instructor",
-      InstructorName: "Mr Azeez",
+      InstructorName: " Azeez",
     },
 
     {
@@ -103,7 +103,7 @@ export default function Course() {
       captionName: "Duration",
       durationPeriod: "3 months",
       Instructor: "Instructor",
-      InstructorName: "Mr Azeez",
+      InstructorName: " Azeez",
     },
 
     {
@@ -112,11 +112,11 @@ export default function Course() {
       mbImage: "/contentpix.png",
       image: "/CopyWritting.png",
       course: "Content Writing",
-      info: "Master digital marketing and affiliate strategies to promote products and services effectively online.",
+      info: "Enhance your content marketing expertise and master the art of creating engaging and informative content that captivates your audience and drives business success.",
       captionName: "Duration",
       durationPeriod: "3 months",
       Instructor: "Instructor",
-      InstructorName: "Mr Azeez",
+      InstructorName: " Azeez",
     },
   ];
 

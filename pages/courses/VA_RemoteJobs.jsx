@@ -30,8 +30,8 @@ export default function VA_RemoteJobs() {
                 Virtual Assistance and Remote Jobs{" "}
               </h1>
               <p className="md:text-base w-[201px] md:w-auto text-xs font-normal text-[#4F616D]">
-                Learn to protect digital assets from cyber threats with
-                comprehensive training in cybersecurity.
+                Learn about working effectively in virtual environments,
+                handling tasks remotely, and building a career in remote work.
               </p>
             </div>
 
@@ -39,7 +39,7 @@ export default function VA_RemoteJobs() {
               <h1 className="font-bold text-[14px] md:text-[36px]">
                 Instructor
               </h1>
-              <span className="text-xs md:text-[18px]">Mr Azeez</span>
+              <span className="text-xs md:text-[18px]"> Azeez</span>
             </div>
           </div>
         </div>
@@ -58,58 +58,48 @@ export default function VA_RemoteJobs() {
 
             <ul className="list-disc list-inside md:text-[18px] text-sm font-normal pt-4 md:pt-0 space-y-2 md:space-y-0">
               <li>
-                Dive into the world of UI/UX design, where aesthetics meet
-                functionality.
+                Introduction to virtual assistance and remote work and
+                identifying your skills and interests.
               </li>
+              <li>Essential skills for virtual assistants.</li>
               <li>
-                Learn the principles of user-centered design and create
-                intuitive digital experiences.
+                Success as a virtual assistant through building and maintaining
+                client relationships.
               </li>
-              <li>
-                Understand user research, wireframing, prototyping, and
-                usability testing.
-              </li>
+              <li>Managing your workload and time effectively.</li>
+              <li>Marketing your services and finding new clients.</li>
+              <li>Continuous education and development.</li>
 
               <h1> What You&apos;ll Learn</h1>
 
+              <li>Essential virtual assistance skills and tools.</li>
+              <li>How to build a professional online presence.</li>
+              <li>Effective job search strategies for remote work.</li>
+              <li>Specialized skills for remote job success.</li>
+              <li>Strategies for work-life balance in remote settings.</li>
               <li>
-                User-Centered Design: Put the user at the forefront of your
-                design decisions.
+                Techniques to stand out and build a personal brand as a virtual
+                assistant.
               </li>
-              <li>
-                Information Architecture: Organize content for maximum clarity
-                and accessibility.
-              </li>
-              <li>
-                Wireframing and Prototyping: Create visual blueprints and
-                interactive prototypes.
-              </li>
-              <li>
-                Usability Testing: Ensure your designs are intuitive and
-                user-friendly.
-              </li>
-              <li>
-                Visual Design Principles: Enhance your skills in creating
-                visually appealing interfaces.
-              </li>
-              <li>
-                Tools and Software: Master industry-standard design tools such
-                as Figma,Miro, Sketch and Lucid.
-              </li>
+              <li>Practical experience through a capstone project.</li>
+              <li>Interview preparation for remote job opportunities.</li>
+              <li>The ability to pursue remote job roles with confidence.</li>
             </ul>
           </div>
 
           <div className="py-6 pt-[64px] w-full ">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full md:w-[399px]"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
+            <Link href="https://wa.me/07011198112">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center w-full md:w-[399px]"
+                }
+                label={
+                  <>
+                    Enroll now <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </Link>
           </div>
         </div>
       </div>

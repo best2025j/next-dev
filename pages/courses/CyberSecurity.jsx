@@ -61,58 +61,69 @@ export default function CyberSecurity() {
 
             <ul className="list-disc list-inside md:text-[18px] text-sm font-normal pt-4 md:pt-0 space-y-2 md:space-y-0">
               <li>
-                Dive into the world of UI/UX design, where aesthetics meet
-                functionality.
+                Security Governance, Network Security, Cyber Attacks, Web
+                Application Security, Malware
               </li>
-              <li>
-                Learn the principles of user-centered design and create
-                intuitive digital experiences.
-              </li>
+              <li>Practical Cyber Security skills through hands on labs</li>
               <li>
                 Understand user research, wireframing, prototyping, and
                 usability testing.
               </li>
+              <li>
+                Prepare for Cyber Security interviews by learning common
+                interview questions and how to respond
+              </li>
+              <li>
+                Prepare for in-demand Cyber Security certifications such as
+                CompTIA Security+ and CEH
+              </li>
+              <li>
+                An advanced practical skillset in defeating all online threats -
+                advanced hackers, trackers, malware and all Internet nastiness
+                including mitigating government spying and mass surveillance.
+              </li>
 
-              <h1> What You&apos;ll Learn</h1>
-
               <li>
-                User-Centered Design: Put the user at the forefront of your
-                design decisions.
+                Start a career in cyber security. Become a cyber security
+                specialist.
+              </li>
+              <li>The very latest up-to-date information and methods.</li>
+              <li>
+                We cover operating system security, privacy, and patching - On
+                Windows 7, Windows 8, Windows 10, MacOS and Linux.
               </li>
               <li>
-                Information Architecture: Organize content for maximum clarity
-                and accessibility.
+                Explore the threat landscape - Darknets, dark markets, zero day
+                vulnerabilities, exploit kits, malware, phishing and much more.
               </li>
               <li>
-                Wireframing and Prototyping: Create visual blueprints and
-                interactive prototypes.
+                You will master encryption in an easy to follow crash course.
               </li>
               <li>
-                Usability Testing: Ensure your designs are intuitive and
-                user-friendly.
+                Go in-depth into security through physical and virtual isolation
+                and compartmentalization. Covering sandboxes, application
+                isolation, virtual machines, Whonix and Qubes OS.
               </li>
               <li>
-                Visual Design Principles: Enhance your skills in creating
-                visually appealing interfaces.
-              </li>
-              <li>
-                Tools and Software: Master industry-standard design tools such
-                as Figma,Miro, Sketch and Lucid.
+                You will learn about nation state secret tracking and hacking
+                infrastructure.
               </li>
             </ul>
           </div>
 
           <div className="py-6 pt-[64px] w-full ">
-            <ButtonWhite
-              className={
-                "flex items-center text-base text-center justify-center w-full"
-              }
-              label={
-                <>
-                  Enroll now <ViewAllCourseIcon />
-                </>
-              }
-            />
+            <Link href="https://wa.me/07011198112">
+              <ButtonWhite
+                className={
+                  "flex items-center text-base text-center justify-center w-full md:w-[399px]"
+                }
+                label={
+                  <>
+                    Enroll now <ViewAllCourseIcon />
+                  </>
+                }
+              />
+            </Link>
           </div>
         </div>
       </div>

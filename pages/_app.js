@@ -7,15 +7,15 @@ import MaintenanceModal from "./api/wrong/MaintenanceModal";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const isUnderMaintenance = true;
-  const isHomePage = router.pathname === "/";
+  // const isUnderMaintenance = true;
+  // const isHomePage = router.pathname === "/";
 
   return (
     <ThemeProvider attribute="class">
-      {isUnderMaintenance && isHomePage ? <MaintenanceModal /> : null}
-      {/* <Nav />
+      {/* {isUnderMaintenance && isHomePage ? <MaintenanceModal /> : null} */}
+      <Nav />
       <Component {...pageProps} />
-      <Footer /> */}
+      <Footer />
     </ThemeProvider>
   );
 }

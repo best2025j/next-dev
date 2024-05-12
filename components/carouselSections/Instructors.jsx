@@ -2,42 +2,44 @@ import React from "react";
 import Image from "next/image";
 
 const Instructors = () => {
-  const managementData = [
-    {
-      name: " OLUDELE Ayobami ",
-      position: "CEO",
-      image: "/mrAyo.jpeg",
-    },
+  // const managementData = [
+  //   {
+  //     name: " OLUDELE Ayobami ",
+  //     position: "CEO",
+  //     image: "/mrAyo.jpeg",
+  //   },
 
-    {
-      name: "  Ibrahim.O.OYEBANJI (FIDR,MIPAN) ",
-      position: "Executive director",
-      image: "/mrIbrahim.jpeg",
-    },
+  //   {
+  //     name: "  Ibrahim.O.OYEBANJI (FIDR,MIPAN) ",
+  //     position: "Executive director",
+  //     image: "/mrIbrahim.jpeg",
+  //   },
 
-    {
-      name: "James Moses Sambo",
-      position: "HRM, CRM & CSE",
-      image: "/mrSambo.jpeg",
-    },
-  ];
+  // ];
 
   const staffData = [
+   
+
     {
-      name: "  Audu Godstime ",
-      position: "Front-end Developer",
-      image: "/Frame 23 (6).png",
-    },
+      name: "OGUNDIRAN Moshood Adeniyi",
+      position: " Digital Marketing Instructor",
+      image: "/ade1.jpeg",
+      style: "md:h-[415px] w-full h-[147px] rounded-2xl md:rounded-[2.5rem]",
+    }, 
+    
     {
       name: "Precious Ajayi",
       position: "Backend Developer",
       image: "/precious.png",
     },
+
     {
-      name: "Odekunle Joseph",
-      position: "UI/UX Designer",
-      image: "/Frame 23 (8).png",
+      name: "  Audu Godstime ",
+      position: "Front-end Developer",
+      image: "/Frame 23 (6).png",
     },
+
+   
 
     {
       name: "Orolu Bisi Morenike",
@@ -46,16 +48,16 @@ const Instructors = () => {
     },
 
     {
-      name: "OGUNDIRAN Moshood Adeniyi",
-      position: " Digital Marketing Instructor",
-      image: "/ade1.jpeg",
-      style: "md:h-[420px] h-[147px] rounded-2xl md:rounded-[2.5rem]",
+      name: "Odekunle Joseph",
+      position: "UI/UX Designer",
+      image: "/Frame 23 (8).png",
     },
 
     {
-      name: " Abdul-Azeez A. Isa",
-      position: "Frontend Engineer",
-      image: "/Frame 23 (6).png",
+      name: "James Moses Sambo",
+      position: "HRM, CRM & CSE",
+      image: "/mrSambo.jpeg",
+      style: "md:h-[415px] w-full h-[147px] rounded-2xl md:rounded-[2.5rem]",
     },
   ];
 
@@ -81,7 +83,7 @@ const Instructors = () => {
         </div>
 
         <div className="md:py-28 py-12">
-          <div className="md:py-28 py-12">
+          {/* <div className="md:py-28 py-12">
             <div className="md:grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full hidden">
               {managementData.map((item, index) => (
                 <div key={index} className="py-6 space-y-2">
@@ -104,7 +106,7 @@ const Instructors = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div className="md:grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full hidden">
             {staffData.map((item, index) => (

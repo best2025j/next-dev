@@ -48,8 +48,10 @@ const Instructors = () => {
     {
       name: "OGUNDIRAN Moshood Adeniyi",
       position: " Digital Marketing Instructor",
-      image: "/Frame 23 (12).png",
+      image: "/ade1.jpeg",
+      style: "md:h-[420px] h-[147px] rounded-2xl md:rounded-[2.5rem]",
     },
+
     {
       name: " Abdul-Azeez A. Isa",
       position: "Frontend Engineer",
@@ -83,7 +85,13 @@ const Instructors = () => {
             <div className="md:grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full hidden">
               {managementData.map((item, index) => (
                 <div key={index} className="py-6 space-y-2">
-                  <Image src={item.image} alt="" width={500} height={500} className="rounded-[2.5rem] h-[400px]" />
+                  <Image
+                    src={item.image}
+                    alt=""
+                    width={500}
+                    height={500}
+                    className="rounded-[2.5rem] h-[400px]"
+                  />
 
                   <div className="space-y-2">
                     <h1 className="text-sky-500 dark:text-sky-400">
@@ -101,7 +109,13 @@ const Instructors = () => {
           <div className="md:grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full hidden">
             {staffData.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
-                <Image src={item.image} alt="" width={500} height={500} />
+                <Image
+                  src={item.image}
+                  alt=""
+                  width={500}
+                  height={500}
+                  className={item.style}
+                />
 
                 <div className="space-y-2">
                   <h1 className="text-sky-500 dark:text-sky-400">
@@ -118,7 +132,13 @@ const Instructors = () => {
           <div className="flex md:hidden flex-row h-full w-full gap-4">
             {visibleImages.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
-                <Image src={item.image} alt="" width={500} height={500} />
+                <Image
+                  src={item.image}
+                  alt=""
+                  width={500}
+                  height={500}
+                  className={item.style}
+                />
 
                 <div className="space-y-2">
                   <h1 className="text-sky-500 dark:text-sky-400 text-sm">

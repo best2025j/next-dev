@@ -2,6 +2,26 @@ import React from "react";
 import Image from "next/image";
 
 const Instructors = () => {
+  const managementData = [
+    {
+      name: " OLUDELE Ayobami ",
+      position: "CEO",
+      image: "/mrAyo.jpeg",
+    },
+
+    {
+      name: "  Ibrahim.O.OYEBANJI (FIDR,MIPAN) ",
+      position: "Executive director",
+      image: "/mrIbrahim.jpeg",
+    },
+
+    {
+      name: "James Moses Sambo",
+      position: "HRM, CRM & CSE",
+      image: "/mrSambo.jpeg",
+    },
+  ];
+
   const staffData = [
     {
       name: "  Audu Godstime ",
@@ -18,11 +38,7 @@ const Instructors = () => {
       position: "UI/UX Designer",
       image: "/Frame 23 (8).png",
     },
-    {
-      name: "James Moses Sambo",
-      position: "HRM, CRM & CSE",
-      image: "/Frame 23 (10).png",
-    },
+
     {
       name: "Orolu Bisi Morenike",
       position: "Data Analysis",
@@ -33,6 +49,11 @@ const Instructors = () => {
       name: "OGUNDIRAN Moshood Adeniyi",
       position: " Digital Marketing Instructor",
       image: "/Frame 23 (12).png",
+    },
+    {
+      name: " Abdul-Azeez A. Isa",
+      position: "Frontend Engineer",
+      image: "/Frame 23 (6).png",
     },
   ];
 
@@ -58,6 +79,25 @@ const Instructors = () => {
         </div>
 
         <div className="md:py-28 py-12">
+          <div className="md:py-28 py-12">
+            <div className="md:grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full hidden">
+              {managementData.map((item, index) => (
+                <div key={index} className="py-6 space-y-2">
+                  <Image src={item.image} alt="" width={500} height={500} className="rounded-[2.5rem] h-[400px]" />
+
+                  <div className="space-y-2">
+                    <h1 className="text-sky-500 dark:text-sky-400">
+                      {item.name}
+                    </h1>
+                    <h1 className="text-slate-700 dark:text-slate-500">
+                      {item.position}
+                    </h1>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="md:grid grid-cols-1 md:grid-cols-3 gap-20 h-full w-full hidden">
             {staffData.map((item, index) => (
               <div key={index} className="py-6 space-y-2">

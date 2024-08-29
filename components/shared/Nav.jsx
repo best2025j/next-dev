@@ -110,9 +110,14 @@ export default function Nav() {
         </ul>
 
         <div className="hidden md:flex items-center justify-center space-x-1">
-          <div className="">
+          <Link
+            href={`https://docs.google.com/forms/d/e/1FAIpQLScibjXiztMrsffaXgUtHjeLHJ51B0PaAygTzQCN7tIeIzaXpQ/viewform`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
             <ButtonWhite label="Get Started" className="" />
-          </div>
+          </Link>
 
           <div className="">
             <DarkModeSwitch />
@@ -215,7 +220,10 @@ export default function Nav() {
 
             <div className="bottom-1 sm:bottom-0 absolute  items-center justify-center w-[80%]">
               <div>
-                <ButtonWhite className={"w-full"} label="Get Started" />
+                <Link href={`/courses`}>
+                  {" "}
+                  <ButtonWhite className={"w-full"} label="Get Started" />
+                </Link>
               </div>
             </div>
           </div>

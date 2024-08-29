@@ -28,7 +28,7 @@ export default function Home() {
         <CarouselCards />
         <Sections />
         <ContactUs />
-        <Instructors />
+        {/* <Instructors /> */}
         <Testimony />
       </PageWrapper>
       {/* <Footer /> */}

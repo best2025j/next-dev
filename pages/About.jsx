@@ -86,7 +86,7 @@ export default function About() {
       </div>
       <div className="md:py-[60px] md:px-[112px] flex items-center justify-center py-4 px-4">
         <Image
-          priority
+          priority={true}
           width={500}
           height={500}
           className="md:w-full md:h-full"
@@ -419,7 +419,7 @@ export default function About() {
 
           <div className="w-full h-full md:w-[527.226px] md:h-[323.309px] hidden md:flex">
             <Image
-              priority
+              priority={true}
               width={500}
               height={500}
               src="/ktaSvg.png"

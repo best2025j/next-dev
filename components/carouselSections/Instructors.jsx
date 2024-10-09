@@ -108,7 +108,7 @@ const Instructors = () => {
             {staffData.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
                 <Image
-                  priority
+                  priority={true}
                   src={item.image}
                   alt=""
                   width={500}
@@ -132,7 +132,7 @@ const Instructors = () => {
             {visibleImages.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
                 <Image
-                  priority
+                  priority={true}
                   src={item.image}
                   alt=""
                   width={500}

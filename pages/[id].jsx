@@ -161,7 +161,7 @@ export default function Course() {
 
               <div className="md:w-[931px] w-full bg-white dark:bg-slate-900 p-4 rounded-3xl mx-auto">
                 <motion.img
-                  priority
+                  priority={true}
                   initial={{ scale: 0.9 }}
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.9, delay: 0.4, ease: "easeInOut" }}
@@ -176,7 +176,7 @@ export default function Course() {
                 />
 
                 <motion.img
-                  priority
+                  priority={true}
                   initial={{ scale: 0.9 }}
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.9, delay: 0.4, ease: "easeInOut" }}

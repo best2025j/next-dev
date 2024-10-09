@@ -61,7 +61,7 @@ const CarouselCards = () => {
                   </h1>
 
                   <Image
-                    priority
+                    priority={true}
                     width={500}
                     height={500}
                     src="/frontend-full.png"
@@ -83,7 +83,7 @@ const CarouselCards = () => {
                     02. Python and Java
                   </h1>
                   <Image
-                    priority
+                    priority={true}
                     src="/backend-full.png"
                     width={500}
                     height={500}
@@ -108,7 +108,7 @@ const CarouselCards = () => {
                     03. Design
                   </h1>
                   <Image
-                    priority
+                    priority={true}
                     src="/design-full.png"
                     width={500}
                     height={500}
@@ -131,7 +131,7 @@ const CarouselCards = () => {
                     04.Data Analysis{" "}
                   </h1>
                   <Image
-                    priority
+                    priority={true}
                     src="/dataScience-full.png"
                     alt=""
                     width={500}

@@ -21,7 +21,7 @@ const OutSponsors = () => {
               className="flex justify-center items-center rounded-3xl p-2 sm:flex h-full w-auto flex-col"
             >
               <Image
-                priority
+                priority={true}
                 className="h-14 w-14 md:h-full md:w-full"
                 src={image}
                 width={500}
@@ -37,7 +37,7 @@ const OutSponsors = () => {
         <div className="flex md:hidden flex-col w-full items-center justify-center">
           <div className="grid justify-center grid-cols-3 gap-10">
             <Image
-              priority
+              priority={true}
               width={500}
               height={500}
               className="h-14 w-14 md:h-full md:w-full"
@@ -45,7 +45,7 @@ const OutSponsors = () => {
               alt=""
             />
             <Image
-              priority
+              priority={true}
               width={500}
               height={500}
               className="h-14 w-14 md:h-full md:w-full"
@@ -53,7 +53,7 @@ const OutSponsors = () => {
               alt=""
             />{" "}
             <Image
-              priority
+              priority={true}
               width={500}
               height={500}
               className="h-14 w-14 md:h-full md:w-full"
@@ -64,7 +64,7 @@ const OutSponsors = () => {
 
           <div className="grid justify-center grid-cols-2 gap-10">
             <Image
-              priority
+              priority={true}
               width={500}
               height={500}
               className="h-14 w-14 md:h-full md:w-full"
@@ -73,7 +73,7 @@ const OutSponsors = () => {
             />
 
             <Image
-              priority
+              priority={true}
               width={500}
               height={500}
               className="h-14 w-14 md:h-full md:w-full"

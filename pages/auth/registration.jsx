@@ -76,7 +76,7 @@ export default function Registration() {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await fetch("/api/register", {
+        const response = await fetch("/api/registration", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -84,7 +84,16 @@ export default function Registration() {
           body: JSON.stringify(formData),
         });
 
+        // Check if response is ok (status 200-299)
+        if (!response.ok) {
+          const errorMessage = `Error: ${response.status} ${response.statusText}`;
+          console.error(errorMessage);
+          alert("Something went wrong with the server");
+          return;
+        }
+
         const result = await response.json();
+
         if (result.success) {
           alert("Registration successful");
           console.log("Form submitted successfully:", result.data);
@@ -93,6 +102,7 @@ export default function Registration() {
           console.error("Form submission failed:", result.message);
         }
       } catch (error) {
+        console.error("Error during form submission:", error); // Log the actual error
         alert("Something went wrong");
       }
     } else {
@@ -118,6 +128,8 @@ export default function Registration() {
                 first Name
               </label>
               <input
+                autoComplete="giving-name"
+                id="firstName"
                 className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
                 type="text"
                 name="firstName"
@@ -128,11 +140,14 @@ export default function Registration() {
                 <p className="text-red-500 text-sm">{errors.firstName}</p>
               )}
             </div>
+
             <div className="flex flex-col space-y-1">
               <label htmlFor="middleName" className="text-slate-500 text-sm">
                 Middle Name
               </label>
               <input
+                autoComplete="additional-name"
+                id="middleName"
                 className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
                 type="text"
                 name="middleName"
@@ -149,6 +164,8 @@ export default function Registration() {
                 last Name
               </label>
               <input
+                autoComplete="family-name"
+                id="lastName"
                 className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
                 type="text"
                 name="lastName"
@@ -169,12 +186,14 @@ export default function Registration() {
                   Date of Birth
                 </label>
                 <input
-                  className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
-                  type="text"
-                  name="lastName"
-                  value={formData.lastName}
+                  id="dateOfBirth"
+                  name="dateOfBirth" // Ensures it's recognized for autofill
+                  autocomplete="bday" // Added autocomplete attribute
+                  type="date"
+                  className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  value={formData.dateOfBirth}
                   onChange={handleChange}
-                />{" "}
+                />
                 {errors.dateOfBirth && (
                   <p className="text-red-500 text-sm">{errors.dateOfBirth}</p>
                 )}
@@ -190,10 +209,13 @@ export default function Registration() {
                 </label>
                 {/* sex */}
                 <select
+                  autoComplete="sex" // Added autoComplete attribute
                   required
+                  value={formData.sex}
+                  onChange={handleChange}
                   className="mt-1 block w-full p-2 border border-gray-300 bg-white dark:bg-black dark:text-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 >
-                  <option value="0" >please select</option>
+                  <option value="0">please select</option>
                   <option value="1">male</option>
                   <option value="2">female</option>
                 </select>
@@ -203,10 +225,12 @@ export default function Registration() {
           {/*  */}
           <h1 className="font-medium text-xl"> Address</h1>
           <div className="flex flex-col space-y-1">
-            <label htmlFor="lastName" className="text-slate-500 text-sm">
+            <label htmlFor="address" className="text-slate-500 text-sm">
               Street Address
             </label>
             <input
+              autoComplete="address-line1" // Added autoComplete attribute
+              id="address"
               className="outline-none py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
               type="text"
               name="address"
@@ -220,10 +244,12 @@ export default function Registration() {
 
           <div className="gap-4 py-4 grid md:grid-cols-2">
             <div className="flex flex-col space-y-1">
-              <label htmlFor="firstName" className="text-slate-500 text-sm">
+              <label htmlFor="city" className="text-slate-500 text-sm">
                 City
               </label>
               <input
+                autoComplete="address-level2" // Added autoComplete attribute
+                id="city"
                 className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
                 type="text"
                 name="city"
@@ -236,10 +262,12 @@ export default function Registration() {
             </div>
 
             <div className="flex flex-col space-y-1">
-              <label htmlFor="middleName" className="text-slate-500 text-sm">
+              <label htmlFor="stateProvince" className="text-slate-500 text-sm">
                 State / Province
               </label>
               <input
+                autoComplete="address-level1" // Added autoComplete attribute
+                id="stateProvince"
                 className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
                 type="text"
                 name="stateProvince"
@@ -253,10 +281,12 @@ export default function Registration() {
           </div>
 
           <div className="flex flex-col space-y-1">
-            <label htmlFor="lastName" className="text-slate-500 text-sm">
+            <label htmlFor="zipCode" className="text-slate-500 text-sm">
               Postal / Zip Code
             </label>
             <input
+              autoComplete="postal-code" // Added autoComplete attribute
+              id="zipCode"
               className="outline-none py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
               type="text"
               name="zipCode"
@@ -270,10 +300,12 @@ export default function Registration() {
 
           <div className="gap-4 py-4 grid md:grid-cols-2">
             <div className="flex flex-col space-y-1">
-              <label htmlFor="lastName" className="text-slate-500 text-sm">
+              <label htmlFor="email" className="text-slate-500 text-sm">
                 Student E-mail
               </label>
               <input
+                autoComplete="email" // Added autoComplete attribute
+                id="email"
                 placeholder="example@example.com..."
                 className="outline-none py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
                 type="text"
@@ -287,10 +319,12 @@ export default function Registration() {
             </div>
 
             <div className="flex flex-col space-y-1">
-              <label htmlFor="lastName" className="text-slate-500 text-sm">
+              <label htmlFor="mobileNumber" className="text-slate-500 text-sm">
                 Mobile Number
               </label>
               <input
+                autoComplete="tel"
+                id="mobileNumber"
                 placeholder="(000) 000 0000"
                 className="outline-none py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 type="text"
@@ -304,7 +338,7 @@ export default function Registration() {
             </div>
 
             <div className="flex flex-col space-y-1">
-              <label htmlFor="lastName" className="text-slate-500 text-sm">
+              <label htmlFor="courses" className="text-slate-500 text-sm">
                 Courses
               </label>
               <select

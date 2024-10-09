@@ -3,17 +3,18 @@ import Image from "next/image";
 import ContactIcon from "../icons/ContactIcon";
 import ButtonWhite from "../buttons/ButtonWhite";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ContactUs = () => {
   return (
     <div className="md:flex w-full h-full bg-white dark:bg-black py-20 px-4">
-      <div className="flex-1 h-full w-full relative">
+      <div className="h-full md:w-1/2 relative">
         <Image
           width={500}
           height={500}
           src="/Rectangle 1.png"
           alt="show pix alone"
-          className="rounded-t-[50px] md:rounded-none md:rounded-l-[240px] shrink-0 w-full h-[355px] md:h-[595px] md:w-[780px]"
+          className="rounded-t-[50px] md:rounded-none md:rounded-l-[240px] shrink-0 w-full h-[355px] md:h-[595px]"
         />
 
         <motion.img
@@ -32,7 +33,7 @@ const ContactUs = () => {
         />
       </div>
 
-      <div className="flex-1 bg-[#001E2D] md:w-full w-full h-[355px] md:h-[595px] rounded-b-[50px] md:rounded-none md:rounded-r-[240px]">
+      <div className="bg-[#001E2D] md:w-1/2 h-[355px] md:h-[595px] rounded-b-[50px] md:rounded-none md:rounded-r-[240px]">
         <div className="flex flex-col mx-auto h-full w-full items-center justify-center">
           <div className="text-[#fff] space-y-[16px]">
             <h1 className="md:text-6xl text-2xl font-bold">Reach Out to Us</h1>
@@ -43,16 +44,18 @@ const ContactUs = () => {
               learning and workspace experience possible.
             </p>
             <div className="py-6 w-[288px] md:w-full">
-              <ButtonWhite
-                className={
-                  "flex items-center w-full text-base text-center justify-center"
-                }
-                label={
-                  <>
-                    Contact Us <ContactIcon />
-                  </>
-                }
-              />
+              <Link href="">
+                <ButtonWhite
+                  className={
+                    "flex items-center w-full text-base text-center justify-center"
+                  }
+                  label={
+                    <>
+                      Contact Us <ContactIcon />
+                    </>
+                  }
+                />
+              </Link>
             </div>
           </div>
         </div>

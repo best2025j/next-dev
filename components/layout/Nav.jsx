@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import DarkModeSwitch from "../ui//DarkModeSwitch";
+import DarkModeSwitch from "../ui/DarkModeSwitch";
 import ButtonWhite from "@/components/buttons/ButtonWhite";
 import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
@@ -111,11 +111,10 @@ export default function Nav() {
 
         <div className="hidden md:flex items-center justify-center space-x-1">
           <Link
-            href={`https://docs.google.com/forms/d/e/1FAIpQLScibjXiztMrsffaXgUtHjeLHJ51B0PaAygTzQCN7tIeIzaXpQ/viewform`}
+            href="/auth/registration"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
             <ButtonWhite label="Get Started" className="" />
           </Link>
 

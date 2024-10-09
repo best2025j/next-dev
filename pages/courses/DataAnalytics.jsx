@@ -1,6 +1,6 @@
 import React from "react";
 import SectionContents from "../../components/ui/SectionContents";
-import Footer from "../../components/shared/Footer";
+import Footer from "../../components/layout/Footer";
 import image from "../../assets/images/dataScience.png";
 import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";

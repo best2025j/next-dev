@@ -13,4 +13,4 @@ const nextConfig = {
 //   target: "server",
 // };
 
-module.exports = nextConfig;
+module.exports = { nextConfig };

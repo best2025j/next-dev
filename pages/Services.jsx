@@ -73,6 +73,7 @@ export default function Services() {
               whileInView={{ y: 0 }}
               width={500}
               height={500}
+              priority
               src="/girlpix.png"
               alt=""
               quality={100}

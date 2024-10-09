@@ -10,6 +10,7 @@ const ContactUs = () => {
     <div className="md:flex w-full h-full bg-white dark:bg-black py-20 px-4">
       <div className="h-full md:w-1/2 relative">
         <Image
+          priority
           width={500}
           height={500}
           src="/Rectangle 1.png"

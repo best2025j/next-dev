@@ -42,6 +42,7 @@ export default function Nav() {
         <Link href="/">
           <Image
             src="/kwaraTech.png"
+            priority
             alt="logo-pix"
             width={120} // Set to the desired width in pixels
             height={120} // Set to the desired height in pixels
@@ -154,6 +155,7 @@ export default function Nav() {
               <Link href="/">
                 <Image
                   src="/kwaraTech.png"
+                  priority
                   quality={100}
                   alt="/no pix"
                   width={120} // Set to the desired width in pixels

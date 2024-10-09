@@ -35,6 +35,7 @@ const Footer = () => {
             <div className="flex-col px-2 py-4 flex text-white">
               <div className="md:flex hidden">
                 <Image
+                  priority
                   src={images}
                   alt=""
                   width={500}
@@ -241,7 +242,7 @@ const Footer = () => {
           </div>
 
           <div className="flex-col px-2  items-center md:flex-row border-b flex text-white gap-[48px]"></div>
-          
+
           <div className="md:flex space-y-4 pt-[40px] justify-between items-center">
             <h6 className="text-center">© 2023 KTA. All rights reserved.</h6>
             <ul className="md:flex hidden space-x-4 md:space-x-10 text-sm">

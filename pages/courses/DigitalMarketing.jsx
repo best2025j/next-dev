@@ -23,7 +23,7 @@ export default function DigitalMarketing() {
           <button className="underline text-blue-400">Back to Courses</button>
         </Link>
         <div className="pt-14 h-full">
-          <Image src={image} alt="no image" />
+          <Image priority src={image} alt="no image" />
           <div className="flex justify-between px-2 md:py-[40px] bg-white items-start py-6">
             <div className="space-y-4 w-[439px]">
               <h1 className="font-bold text-[24px] md:text-[48px]">

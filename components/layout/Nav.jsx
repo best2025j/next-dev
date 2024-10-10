@@ -115,8 +115,9 @@ export default function Nav() {
             href="/auth/registration"
             target="_blank"
             rel="noopener noreferrer"
+            passHref
           >
-            <ButtonWhite label="Get Started" className="" />
+              <ButtonWhite label="Get Started" className="" />
           </Link>
 
           <div className="">

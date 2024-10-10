@@ -1,33 +1,30 @@
-import connectDB from "../../lib/mongodb";
-import Student from "../../models/student"; // Ensure the correct casing for import
+// pages/api/registration.js
+import mongoDB from "@/lib/mongodb";
+import Student from "@/models/student";
 
-export default async function registration(req, res) {
-  await connectDB(); // Connect to the database
+export default async function handler(req, res) {
+  await mongoDB(); // Connect to the database
 
   if (req.method === "POST") {
     try {
-      // Validate request body if needed
-      // For example, you could check for required fields
-
       const {
         firstName,
-        middleNmae,
+        middleName,
         lastName,
         email,
         mobileNumber,
-        dateOfBirth,
-        course,
         address,
         city,
         stateProvince,
         zipCode,
+        dateOfBirth,
+        course,
       } = req.body;
 
-      // Example validation (you can enhance this with a library)
+      // Validate request body
       if (
         !firstName ||
         !lastName ||
-        !middleNmae ||
         !email ||
         !mobileNumber ||
         !address ||
@@ -42,21 +39,31 @@ export default async function registration(req, res) {
           .json({ success: false, message: "All fields are required" });
       }
 
-      // Create a new student document from request body
-      const newStudent = new Student(req.body);
+      // Create a new student document
+      const newStudent = new Student({
+        firstName,
+        middleName,
+        lastName,
+        email,
+        mobileNumber,
+        address,
+        city,
+        stateProvince,
+        zipCode,
+        dateOfBirth,
+        course,
+      });
 
       // Save the student document to the database
       await newStudent.save();
 
-      // Send success response
+      // Send a success response
       res.status(201).json({ success: true, data: newStudent });
     } catch (error) {
-      // Handle errors during saving
       console.error("Error saving student:", error);
-      res.status(400).json({ success: false, error: error.message });
+      res.status(500).json({ success: false, error: error.message });
     }
   } else {
-    // Send method not allowed response for other methods
     res.status(405).json({ success: false, message: "Method Not Allowed" });
   }
 }

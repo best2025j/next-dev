@@ -5,8 +5,6 @@ import ButtonWhite from "@/components/buttons/ButtonWhite";
 export default function Registration() {
   // State for holding validation errors
   const [errors, setErrors] = useState({});
-  const currentYear = new Date().getFullYear();
-
   const [formData, setFormData] = useState({
     firstName: "",
     middleName: "",
@@ -72,43 +70,45 @@ export default function Registration() {
     return Object.keys(tempErrors).length === 0;
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (validate()) {
-      try {
-        const response = await fetch("/api/registration", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
+ const handleSubmit = async (e) => {
+   e.preventDefault(); // Prevent default form submission
 
-        // Check if response is ok (status 200-299)
-        if (!response.ok) {
-          const errorMessage = `Error: ${response.status} ${response.statusText}`;
-          console.error(errorMessage);
-          alert("Something went wrong with the server");
-          return;
-        }
+   if (validate()) {
+     // Validate the form data
+     try {
+       const response = await fetch("/api/student/registration", {
+         method: "POST",
+         headers: {
+           "Content-Type": "application/json", // Specify JSON content type
+         },
+         body: JSON.stringify(formData), // Send the form data as JSON
+       });
 
-        const result = await response.json();
+       if (!response.ok) {
+         const errorMessage = await response.text(); // Get error message from response
+         console.error("Server Error:", errorMessage);
+         alert("Something went wrong with the server: " + errorMessage);
+         return;
+       }
 
-        if (result.success) {
-          alert("Registration successful");
-          console.log("Form submitted successfully:", result.data);
-        } else {
-          alert("Registration failed");
-          console.error("Form submission failed:", result.message);
-        }
-      } catch (error) {
-        console.error("Error during form submission:", error); // Log the actual error
-        alert("Something went wrong");
-      }
-    } else {
-      alert("Please fix the errors in the form.");
-    }
-  };
+       const result = await response.json(); // Parse the JSON response
+
+       if (result.success) {
+         alert("Registration successful");
+         console.log("Form submitted successfully:", result.data);
+       } else {
+         alert("Registration failed: " + result.message);
+         console.error("Form submission failed:", result.message);
+       }
+     } catch (error) {
+       console.error("Error during form submission:", error);
+       alert("Something went wrong during form submission. Please try again.");
+     }
+   } else {
+     alert("Please fix the errors in the form."); // Prompt to fix validation errors
+   }
+ };
+
 
   return (
     <div className="py-20 w-full h-full">
@@ -128,7 +128,7 @@ export default function Registration() {
                 first Name
               </label>
               <input
-                autoComplete="giving-name"
+                // autoComplete="giving-name"
                 id="firstName"
                 className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
                 type="text"
@@ -146,7 +146,7 @@ export default function Registration() {
                 Middle Name
               </label>
               <input
-                autoComplete="additional-name"
+                // autoComplete="additional-name"
                 id="middleName"
                 className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
                 type="text"
@@ -164,7 +164,7 @@ export default function Registration() {
                 last Name
               </label>
               <input
-                autoComplete="family-name"
+                // autoComplete="family-name"
                 id="lastName"
                 className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
                 type="text"
@@ -188,7 +188,7 @@ export default function Registration() {
                 <input
                   id="dateOfBirth"
                   name="dateOfBirth" // Ensures it's recognized for autofill
-                  autocomplete="bday" // Added autocomplete attribute
+                  // autocomplete="bday" // Added autocomplete attribute
                   type="date"
                   className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   value={formData.dateOfBirth}
@@ -209,7 +209,7 @@ export default function Registration() {
                 </label>
                 {/* sex */}
                 <select
-                  autoComplete="sex" // Added autoComplete attribute
+                  // autoComplete="sex" // Added autoComplete attribute
                   required
                   value={formData.sex}
                   onChange={handleChange}
@@ -229,7 +229,7 @@ export default function Registration() {
               Street Address
             </label>
             <input
-              autoComplete="address-line1" // Added autoComplete attribute
+              // autoComplete="address-line1" // Added autoComplete attribute
               id="address"
               className="outline-none py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
               type="text"
@@ -248,7 +248,7 @@ export default function Registration() {
                 City
               </label>
               <input
-                autoComplete="address-level2" // Added autoComplete attribute
+                // autoComplete="address-level2" // Added autoComplete attribute
                 id="city"
                 className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
                 type="text"
@@ -266,7 +266,7 @@ export default function Registration() {
                 State / Province
               </label>
               <input
-                autoComplete="address-level1" // Added autoComplete attribute
+                // autoComplete="address-level1" // Added autoComplete attribute
                 id="stateProvince"
                 className="outline-none capitalize py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
                 type="text"
@@ -285,7 +285,7 @@ export default function Registration() {
               Postal / Zip Code
             </label>
             <input
-              autoComplete="postal-code" // Added autoComplete attribute
+              // autoComplete="postal-code" // Added autoComplete attribute
               id="zipCode"
               className="outline-none py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
               type="text"
@@ -304,7 +304,7 @@ export default function Registration() {
                 Student E-mail
               </label>
               <input
-                autoComplete="email" // Added autoComplete attribute
+                // autoComplete="email" // Added autoComplete attribute
                 id="email"
                 placeholder="example@example.com..."
                 className="outline-none py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500yarn dev  "
@@ -323,7 +323,7 @@ export default function Registration() {
                 Mobile Number
               </label>
               <input
-                autoComplete="tel"
+                // autoComplete="tel"
                 id="mobileNumber"
                 placeholder="(000) 000 0000"
                 className="outline-none py-2 border rounded-md pl-2 dark:bg-transparent dark:text-white text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"

@@ -1,7 +1,13 @@
-import connectDB from "../../lib/mongodb";
-import Student from "../../models/student"; // Ensure the correct casing for import
+export default async function handler(req, res) {
+  console.log("Request received:", req.body); // Debugging request data
 
-export default async function registration(req, res) {
+  if (req.method === "POST") {
+    // Your logic here
+    res.status(200).json({ message: "Data submitted successfully!" });
+  } else {
+    res.status(405).json({ message: "Method Not Allowed" });
+  }
+
   await connectDB(); // Connect to the database
 
   if (req.method === "POST") {

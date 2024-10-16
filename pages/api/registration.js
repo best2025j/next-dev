@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     res.status(405).json({ message: "Method Not Allowed" });
   }
 
-  await connectDB(); // Connect to the database
+  // await connectDB(); // Connect to the database
 
   if (req.method === "POST") {
     try {

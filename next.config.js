@@ -2,6 +2,8 @@
 // const nextConfig = {}
 
 // module.exports = nextConfig
+
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
@@ -9,8 +11,9 @@ const nextConfig = {
   },
 };
 
-// module.exports = {
-//   target: "server",
-// };
+module.exports = {
+  target: "server",
+  output: "export",
+};
 
 module.exports = { nextConfig };

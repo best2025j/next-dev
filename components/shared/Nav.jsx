@@ -111,9 +111,7 @@ export default function Nav() {
 
         <div className="hidden md:flex items-center justify-center space-x-1">
           <Link
-            href={`https://docs.google.com/forms/d/e/1FAIpQLScibjXiztMrsffaXgUtHjeLHJ51B0PaAygTzQCN7tIeIzaXpQ/viewform`}
-            target="_blank"
-            rel="noopener noreferrer"
+            href='/KwararForm'
           >
             {" "}
             <ButtonWhite label="Get Started" className="" />
@@ -220,8 +218,7 @@ export default function Nav() {
 
             <div className="bottom-1 sm:bottom-0 absolute  items-center justify-center w-[80%]">
               <div>
-                <Link href={`/courses`}>
-                  {" "}
+                <Link href='/KwararForm'>
                   <ButtonWhite className={"w-full"} label="Get Started" />
                 </Link>
               </div>

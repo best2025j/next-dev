@@ -27,33 +27,34 @@ const Sections = () => {
   ];
 
   return (
-    <div className="py-20 bg-[#ffffff] dark:bg-black md:px-14 px-4">
-      <div className="space-y-[16px] ">
-        <h1 className="md:text-5xl font-bold text-[24px]">
+    <div className="py-14 bg-[#ffffff] dark:bg-black md:px-14 px-4">
+      <div className="space-y-[16px] lg:max-w-[590px] lg:mx-auto md:max-w-[480px] text-center lg:mb-10 lg:mt-10">
+        <h1 className="md:text-[43px] font-bold text-[24px]">
           What we have to offer
         </h1>
-        <p className="md:text-lg text-base font-normal text-[#4F616D] w-[294px] md:w-[480px]">
+        <p className="lg:text-[18px] md:text-lg text-base font-normal text-[#4F616D]">
           At Kwaratech Academy, we&apos;re not just another tech education
           provider; we&apos;re your partner in unlocking a world of
           opportunities, and here is why you should choose us...
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-14 py-6 lg:w-[95%] mx-auto">
         {data.map((item, index) => (
           <div
-            className="relative bg-[#f4f6f9] dark:bg-slate-800 py-[56px] rounded-3xl md:px-[24px] space-y-2 p-4"
+            className="relative bg-[#f4f6f9] shadow-sm border-t-transparent border-l-transparent border-[3px] border-b-[#e4e4e4] border-r-[#e4e4e4] dark:bg-slate-800 lg:w-[24rem] sm:w-[16rem] lg:py-[46px] py-[56px] rounded-ss-[65px] rounded-ee-[65px] lg:px-10 md:px-[24px] space-y-2 p-4"
             key={index}
           >
             <div>{item.svg}</div>
             <h1 className="font-bold text-[24px] md:text-4xl w-[288px]">
               {item.headings}
             </h1>
-            <p className="text-md py-[16px]">{item.paragraph}</p>
+            <p className="lg:text-[18px] text-md py-[16px]">{item.paragraph}</p>
           </div>
         ))}
       </div>
     </div>
+
   );
 };
 

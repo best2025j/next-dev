@@ -53,3 +53,6 @@ body {
     @apply text-[#4F616D] dark:text-white
   }
 }
+.carousel-card-div .carousel-card-text {
+  line-height: 30px;
+}

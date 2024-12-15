@@ -23,7 +23,7 @@ const SectionContents = () => {
           Let’s start your tech journey
         </h1>
 
-        <div className="md:py-6 flex items-center justify-center ">
+        <div className=" md:py-6 flex items-center justify-center ">
           <Link href="/courses">
             <ButtonWhite
               className={

@@ -26,12 +26,12 @@ const Hero = () => {
   return (
     <div className="md:pt-56 pt-44 md:py-0 w-full md:h-full h-[16rem] sm:px-[64px] px-[36px] flex flex-col justify-center text-center mx-auto items-center">
       <div className="md:max-w-[852px] space-y-2">
-        <div className="bg-[#4F616D] rounded-full text-white p-2 w-44 text-center mx-auto ">
+        <div className="bg-[#4F616D] rounded-full text-white p-2 w-44 text-center mx-auto lg:mb-0 sm:mb-0 mb-5 ">
           Kwaratech Academy
         </div>
 
         <h1 className="font-bold md:text-6xl text-lg animate__animated animate__zoomIn">
-          Your journey to a
+          Your journey to a 
           <span className="text-[#00AFF0] bg-[#C6E7FF] dark:bg-slate-900 md:px-6 px-4 py-1 rounded-full animate-fade-in">
             {text}
           </span>

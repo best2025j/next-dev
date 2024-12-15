@@ -45,7 +45,7 @@ const ContactUs = () => {
             <div className="py-6 w-[288px] md:w-full">
               <ButtonWhite
                 className={
-                  "flex items-center w-full text-base text-center justify-center"
+                  "flex items-center w-full sm:w-[400px] text-base lg:py-4 text-center justify-center"
                 }
                 label={
                   <>

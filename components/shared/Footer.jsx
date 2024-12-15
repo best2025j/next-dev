@@ -112,7 +112,7 @@ const Footer = () => {
                     </svg>
 
                     <h1 className="text-xs md:text-[14px]">
-                      0701198112, 08066406464
+                      07011198112, 08066406464
                     </h1>
                   </span>
                 </div>
@@ -243,7 +243,7 @@ const Footer = () => {
           <div className="flex-col px-2  items-center md:flex-row border-b flex text-white gap-[48px]"></div>
           
           <div className="md:flex space-y-4 pt-[40px] justify-between items-center">
-            <h6 className="text-center">© 2023 KTA. All rights reserved.</h6>
+            <h6 className="text-center">© 2024 KTA. All rights reserved.</h6>
             <ul className="md:flex hidden space-x-4 md:space-x-10 text-sm">
               <li
                 onClick={handleClose}

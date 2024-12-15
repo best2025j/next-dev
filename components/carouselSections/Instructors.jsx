@@ -18,15 +18,13 @@ const Instructors = () => {
   // ];
 
   const staffData = [
-   
-
     {
       name: "OGUNDIRAN Moshood Adeniyi",
       position: " Digital Marketing Instructor",
       image: "/ade1.jpeg",
       style: "md:h-[415px] w-full h-[147px] rounded-2xl md:rounded-[2.5rem]",
-    }, 
-    
+    },
+
     {
       name: "Precious Ajayi",
       position: "Backend Developer",
@@ -38,8 +36,6 @@ const Instructors = () => {
       position: "Front-end Developer",
       image: "/Frame 23 (6).png",
     },
-
-   
 
     {
       name: "Orolu Bisi Morenike",
@@ -112,6 +108,7 @@ const Instructors = () => {
             {staffData.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
                 <Image
+                  priority={true}
                   src={item.image}
                   alt=""
                   width={500}
@@ -135,6 +132,7 @@ const Instructors = () => {
             {visibleImages.map((item, index) => (
               <div key={index} className="py-6 space-y-2">
                 <Image
+                  priority={true}
                   src={item.image}
                   alt=""
                   width={500}

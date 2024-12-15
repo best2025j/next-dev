@@ -10,6 +10,7 @@ const SectionContents = () => {
   return (
     <div className="bg-[#C6E7FF] dark:bg-slate-900 w-full h-[400px] hidden md:flex justify-between items-center relative">
       <Image
+        priority={true}
         className="w-20 h-24 md:w-[674.984px] md:h-full"
         src={image1}
         alt=""
@@ -40,6 +41,7 @@ const SectionContents = () => {
       </div>
 
       <Image
+        priority={true}
         className="w-20 h-24 md:w-[674.984px] md:h-full"
         src={image2}
         alt=""

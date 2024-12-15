@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../components/shared/Footer";
+import Footer from "../components/layout/Footer";
 import SectionContents from "../components/ui/SectionContents";
 import PageWrapper from "./PageWrapper";
 

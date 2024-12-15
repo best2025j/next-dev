@@ -1,8 +1,8 @@
-import Nav from "@/components/shared/Nav";
+import Nav from "@/components/layout/Nav";
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import { useRouter } from "next/router";
-import Footer from "@/components/shared/Footer";
+import Footer from "@/components/layout/Footer";
 import MaintenanceModal from "./api/wrong/MaintenanceModal";
 import "react-datepicker/dist/react-datepicker.css";
 

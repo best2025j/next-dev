@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import DarkModeSwitch from "../ui//DarkModeSwitch";
+import DarkModeSwitch from "../ui/DarkModeSwitch";
 import ButtonWhite from "@/components/buttons/ButtonWhite";
 import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
@@ -42,6 +42,7 @@ export default function Nav() {
         <Link href="/">
           <Image
             src="/kwaraTech.png"
+            priority={true}
             alt="logo-pix"
             width={120} // Set to the desired width in pixels
             height={120} // Set to the desired height in pixels
@@ -111,10 +112,16 @@ export default function Nav() {
 
         <div className="hidden md:flex items-center justify-center space-x-1">
           <Link
+<<<<<<< HEAD:components/shared/Nav.jsx
             href='/KwararForm'
+=======
+            href="/auth/registration"
+            target="_blank"
+            rel="noopener noreferrer"
+            passHref
+>>>>>>> ec6c8e840e5958e41242d4069bbffda41ca9dc65:components/layout/Nav.jsx
           >
-            {" "}
-            <ButtonWhite label="Get Started" className="" />
+              <ButtonWhite label="Get Started" className="" />
           </Link>
 
           <div className="">
@@ -153,6 +160,7 @@ export default function Nav() {
               <Link href="/">
                 <Image
                   src="/kwaraTech.png"
+                  priority={true}
                   quality={100}
                   alt="/no pix"
                   width={120} // Set to the desired width in pixels

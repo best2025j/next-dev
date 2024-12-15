@@ -6,24 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Add this CSS to your stylesheet */
-/* .relative {
-  transition: transform 0.3s ease-in-out;
-}
-
-.relative.hovered {
-  transform: translateX(-50px); 
-}
-
-.image-container {
-  overflow: hidden;
-}
-
-.container {
-  display: inline-block;
-  cursor: pointer;
-} */
-
 @font-face {
   font-family: "SF Pro Display Regular";
   src: url("../assets/fonts/sf_Display/SF-Pro-Display-Regular.ttf")
@@ -50,8 +32,10 @@ body {
   }
 
   p {
-    @apply text-[#4F616D] dark:text-white
+    @apply text-[#4F616D] dark:text-white;
   }
+
+
 }
 .carousel-card-div .carousel-card-text {
   line-height: 30px;

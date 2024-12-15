@@ -73,6 +73,7 @@ export default function Services() {
               whileInView={{ y: 0 }}
               width={500}
               height={500}
+              priority={true}
               src="/girlpix.png"
               alt=""
               quality={100}
@@ -88,9 +89,9 @@ export default function Services() {
                 Tech Skill Programs
               </h1>
               <p className=" md:w-[384px] w-[358px]">
-                At Kwaratech, your success is our priority. As you embark on
-                your learning journey with us, we focus on ensuring specific key
-                areas and takeaways for your growth and development
+                At Kwaratech, your success is our priority={true}. As you embark
+                on your learning journey with us, we focus on ensuring specific
+                key areas and takeaways for your growth and development
               </p>
             </div>
 

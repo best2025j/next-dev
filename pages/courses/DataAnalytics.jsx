@@ -1,6 +1,6 @@
 import React from "react";
 import SectionContents from "../../components/ui/SectionContents";
-import Footer from "../../components/shared/Footer";
+import Footer from "../../components/layout/Footer";
 import image from "../../assets/images/dataScience.png";
 import ButtonWhite from "../../components/buttons/ButtonWhite";
 import ViewAllCourseIcon from "../../components/icons/ViewAllCourseIcon";
@@ -25,7 +25,7 @@ export default function DataAnalytics() {
         </Link>
 
         <div className="pt-14 h-full w-full">
-          <Image src={image} alt="no image" />
+          <Image priority={true} src={image} alt="no image" />
           <div className="flex justify-between px-2 md:py-[40px] bg-white items-start py-6">
             <div className="space-y-4 w-[439px]">
               <h1 className="font-bold text-[24px] md:text-[48px]">

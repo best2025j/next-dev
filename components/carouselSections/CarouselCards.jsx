@@ -59,22 +59,13 @@ const CarouselCards = () => {
                   className="flex flex-col space-y-20"
                 >
 
-                  <div className="relative mx-20">
-                    <a href="/">
-                      <Image
-                        width={400}
-                        height={400}
-                        src="/frontend-full.png"
-                        alt=""
-                        className="object-cover scale-125 lg:mb-16 sm:mb-[70px] rounded-2xl z-10"
-                      />
-                    </a>
-                    <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-10">
-                      <Link href="/courses/WebDevelopment">
-                        <FaArrowDown className="text-3xl text-blue-300 translate-y-6"/>
-                        </Link>
-                    </div>
-                  </div>
+                  <Image
+                    priority={true}
+                    width={500}
+                    height={500}
+                    src="/frontend-full.png"
+                    alt=""
+                  />
                 </motion.div>
 
                 <motion.div
@@ -87,24 +78,16 @@ const CarouselCards = () => {
                   whileInView={{ y: 0 }}
                   className="flex flex-col space-y-20"
                 >
-
-                  <div className="relative mx-6">
-                    <a href="/">
-                      <Image
-                        width={400}
-                        height={400}
-                        src="/backend-full.png"
-                        alt=""
-                        quality={100}
-                        className="object-cover scale-125 lg:mb-16 sm:mb-[70px] rounded-2xl z-10"
-                      />
-                    </a>
-                    <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-10">
-                      <Link href="/courses/WebDevelopment">
-                        <FaArrowDown className="text-3xl text-blue-300 translate-y-6"/>
-                      </Link>
-                    </div>
-                  </div>
+                  <h1 className="font-bold text-[48px] md:w-[401px]">
+                    02. Python and Java
+                  </h1>
+                  <Image
+                    src="/backend-full.png"
+                    width={500}
+                    height={500}
+                    alt=""
+                    quality={100}
+                  />
                 </motion.div>
               </div>
 
@@ -119,23 +102,16 @@ const CarouselCards = () => {
                   whileInView={{ x: 0 }}
                   className="flex flex-col space-y-20"
                 >
-
-                  <div className="relative mx-20">
-                    <a href="/">
-                      <Image
-                        width={400}
-                        height={400}
-                        src="/design-full.png"
-                        alt=""
-                        className="object-cover scale-125 lg:mb-16 sm:mb-[70px] rounded-2xl z-10"
-                      />
-                    </a>
-                    <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-10">
-                      <Link href="/courses/UI_UX">
-                      <FaArrowDown className="text-3xl text-blue-300 translate-y-6"/>
-                      </Link>
-                    </div>
-                  </div>
+                  <h1 className="font-bold text-[48px] md:w-[401px]">
+                    03. Design
+                  </h1>
+                  <Image
+                    src="/design-full.png"
+                    width={500}
+                    height={500}
+                    alt=""
+                    quality={100}
+                  />
                 </motion.div>
 
                 <motion.div
@@ -148,24 +124,16 @@ const CarouselCards = () => {
                   whileInView={{ y: 0 }}
                   className="flex flex-col space-y-20"
                 >
-
-                  <div className="relative mx-6">
-                    <a href="/">
-                      <Image
-                        width={400}
-                        height={400}
-                        src="/dataScience-full.png"
-                        alt=""
-                        quality={100}
-                        className="object-cover scale-125 lg:mb-16 sm:mb-[70px] rounded-2xl z-10"
-                      />
-                    </a>
-                    <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-10">
-                      <Link href="/courses/DataAnalytics">
-                      <FaArrowDown className="text-3xl text-blue-300 translate-y-8"/>
-                      </Link>
-                    </div>
-                  </div>
+                  <h1 className="font-bold text-[48px] md:w-[401px]">
+                    04.Data Analysis{" "}
+                  </h1>
+                  <Image
+                    src="/dataScience-full.png"
+                    alt=""
+                    width={500}
+                    height={500}
+                    quality={100}
+                  />
                 </motion.div>
               </div>
             </div>

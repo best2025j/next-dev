@@ -11,6 +11,7 @@ export default function DarkModeSwitch() {
     <div>
       {theme == "dark" ? (
         <Image
+          priority={true}
           src={LightModeSvg}
           alt="dark-mode"
           width={34}
@@ -20,6 +21,7 @@ export default function DarkModeSwitch() {
         />
       ) : (
         <Image
+          priority={true}
           src={DarkModeSvg}
           alt="dark-mode"
           width={34}

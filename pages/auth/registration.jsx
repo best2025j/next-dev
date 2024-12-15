@@ -70,48 +70,47 @@ export default function Registration() {
     return Object.keys(tempErrors).length === 0;
   };
 
- const handleSubmit = async (e) => {
-   e.preventDefault(); // Prevent default form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default form submission
 
-   if (validate()) {
-     // Validate the form data
-     try {
-       const response = await fetch("/api/student/registration", {
-         method: "POST",
-         headers: {
-           "Content-Type": "application/json", // Specify JSON content type
-         },
-         body: JSON.stringify(formData), // Send the form data as JSON
-       });
+    if (validate()) {
+      // Validate the form data
+      try {
+        const response = await fetch("/api/student/registration", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json", // Specify JSON content type
+          },
+          body: JSON.stringify(formData), // Send the form data as JSON
+        });
 
-       if (!response.ok) {
-         const errorMessage = await response.text(); // Get error message from response
-         console.error("Server Error:", errorMessage);
-         alert("Something went wrong with the server: " + errorMessage);
-         return;
-       }
+        if (!response.ok) {
+          const errorMessage = await response.text(); // Get error message from response
+          console.error("Server Error:", errorMessage);
+          alert("Something went wrong with the server: " + errorMessage);
+          return;
+        }
 
-       const result = await response.json(); // Parse the JSON response
+        const result = await response.json(); // Parse the JSON response
 
-       if (result.success) {
-         alert("Registration successful");
-         console.log("Form submitted successfully:", result.data);
-       } else {
-         alert("Registration failed: " + result.message);
-         console.error("Form submission failed:", result.message);
-       }
-     } catch (error) {
-       console.error("Error during form submission:", error);
-       alert("Something went wrong during form submission. Please try again.");
-     }
-   } else {
-     alert("Please fix the errors in the form."); // Prompt to fix validation errors
-   }
- };
-
+        if (result.success) {
+          alert("Registration successful");
+          console.log("Form submitted successfully:", result.data);
+        } else {
+          alert("Registration failed: " + result.message);
+          console.error("Form submission failed:", result.message);
+        }
+      } catch (error) {
+        console.error("Error during form submission:", error);
+        alert("Something went wrong during form submission. Please try again.");
+      }
+    } else {
+      alert("Please fix the errors in the form."); // Prompt to fix validation errors
+    }
+  };
 
   return (
-    <div className="py-20 w-full h-full">
+    <div className="py-20 w-full h-full hidden">
       <div className="h-full flex flex-col justify-center mt-10 items-center w-full md:max-w-3xl mx-auto md:border rounded-2xl shadow">
         <div className="flex-col flex py-4">
           <h1 className="font-black text-3xl capitalize text-center">

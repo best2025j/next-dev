@@ -45,7 +45,6 @@ const ContactUs = () => {
               learning and workspace experience possible.
             </p>
             <div className="py-6 w-[288px] md:w-full">
-<<<<<<< HEAD
               <ButtonWhite
                 className={
                   "flex items-center w-full sm:w-[400px] text-base lg:py-4 text-center justify-center"
@@ -56,20 +55,6 @@ const ContactUs = () => {
                   </>
                 }
               />
-=======
-              <Link href="">
-                <ButtonWhite
-                  className={
-                    "flex items-center w-full text-base text-center justify-center"
-                  }
-                  label={
-                    <>
-                      Contact Us <ContactIcon />
-                    </>
-                  }
-                />
-              </Link>
->>>>>>> ec6c8e840e5958e41242d4069bbffda41ca9dc65
             </div>
           </div>
         </div>

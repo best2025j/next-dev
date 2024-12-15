@@ -3,14 +3,12 @@ import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import { useRouter } from "next/router";
 import Footer from "@/components/layout/Footer";
-import MaintenanceModal from "./api/wrong/MaintenanceModal";
-import "react-datepicker/dist/react-datepicker.css";
+// import "react-datepicker/dist/react-datepicker.css";
 
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  // const isUnderMaintenance = true;
-  // const isHomePage = router.pathname === "/";
+  
 
   return (
     <ThemeProvider attribute="class">

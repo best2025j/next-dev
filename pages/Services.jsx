@@ -83,7 +83,7 @@ export default function Services() {
         </div>
 
         <div className="flex justify-between items-start py-[120.1px]">
-          <div className="flex flex-col md:pl-[56px] pl-0 mx-auto">
+          <div className="flex flex-col pl-0 mx-auto">
             <div className="space-y-3">
               <h1 className="text-[24px] md:text-[42px] font-bold">
                 Tech Skill Programs
@@ -346,7 +346,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="md:flex hidden pl-[153px]">
+          <div className="md:flex mx-auto justify-center items-center">
             <Image
               width={500}
               height={500}
@@ -357,7 +357,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center md:w-[90%] w-full h-full mx-auto pt-[240px]">
+        <div className="flex flex-col justify-center  w-full h-full mx-auto pt-[240px]">
           <div className="flex flex-col justify-center items-center py-10 space-y-5">
             <h1 className="text-[24px] md:text-[42px] font-bold">
               Specialized Programs

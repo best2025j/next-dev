@@ -58,7 +58,10 @@ const CarouselCards = () => {
                   whileInView={{ y: 0 }}
                   className="flex flex-col space-y-20"
                 >
-
+                  {" "}
+                  <h1 className="font-bold text-[48px] md:w-[401px]">
+                    01. frontend development
+                  </h1>
                   <Image
                     priority={true}
                     width={500}
@@ -164,9 +167,7 @@ const CarouselCards = () => {
               className="space-y-3"
             >
               <div className="">
-                <h1 className=" text-xl font-bold ">
-                  Explore our courses
-                </h1>
+                <h1 className=" text-xl font-bold ">Explore our courses</h1>
                 <div className="">
                   <p className="text-[#4F616D] text-sm mb-10 carousel-card-text">
                     At KTA, we offer a diverse range of tech courses that cater
@@ -182,15 +183,18 @@ const CarouselCards = () => {
                 01. Introduction to HTML and CSS
               </h1>
               <div className="relative">
-  <Image width={500} height={500} src="/frontend-full.png" alt="" />
-  <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-10">
-    <Link href="/courses/WebDevelopment">
-      <FaArrowDown className="text-3xl text-blue-300 translate-y-10" />
-    </Link>
-  </div>
-</div>
-
-
+                <Image
+                  width={500}
+                  height={500}
+                  src="/frontend-full.png"
+                  alt=""
+                />
+                <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-10">
+                  <Link href="/courses/WebDevelopment">
+                    <FaArrowDown className="text-3xl text-blue-300 translate-y-10" />
+                  </Link>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div
@@ -205,13 +209,18 @@ const CarouselCards = () => {
             >
               <h1 className="text-[24px] font-bold">02. python and java</h1>
               <div className="relative">
-              <Image width={500} height={500} src="/backend-full.png" alt="" />
-  <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-10">
-    <Link href="/courses/WebDevelopment">
-      <FaArrowDown className="text-3xl text-blue-300 translate-y-10" />
-    </Link>
-  </div>
-</div>
+                <Image
+                  width={500}
+                  height={500}
+                  src="/backend-full.png"
+                  alt=""
+                />
+                <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-10">
+                  <Link href="/courses/WebDevelopment">
+                    <FaArrowDown className="text-3xl text-blue-300 translate-y-10" />
+                  </Link>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div
@@ -226,13 +235,13 @@ const CarouselCards = () => {
             >
               <h1 className="text-[24px] font-bold">03. Design </h1>
               <div className="relative">
-              <Image width={500} height={500} src="/design-full.png" alt="" />
-  <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-10">
-    <Link href="/courses/UI_UX">
-      <FaArrowDown className="text-3xl text-blue-300 translate-y-10" />
-    </Link>
-  </div>
-</div>
+                <Image width={500} height={500} src="/design-full.png" alt="" />
+                <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-10">
+                  <Link href="/courses/UI_UX">
+                    <FaArrowDown className="text-3xl text-blue-300 translate-y-10" />
+                  </Link>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div
@@ -248,19 +257,19 @@ const CarouselCards = () => {
               <h1 className="text-[24px] font-bold capitalize">
                 04. Data Analysis
               </h1>
-<div className="relative">
-<Image
-                src="/dataScience-full.png"
-                width={500}
-                height={500}
-                alt=""
-              />
+              <div className="relative">
+                <Image
+                  src="/dataScience-full.png"
+                  width={500}
+                  height={500}
+                  alt=""
+                />
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-10">
-    <Link href="/courses/DataAnalytics">
-      <FaArrowDown className="text-3xl text-blue-300 translate-y-10" />
-    </Link>
-  </div>
-</div>
+                  <Link href="/courses/DataAnalytics">
+                    <FaArrowDown className="text-3xl text-blue-300 translate-y-10" />
+                  </Link>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
